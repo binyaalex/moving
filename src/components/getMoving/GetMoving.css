@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+.bg-main {
+    background-image: linear-gradient(#16a65c, #aae9c9);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.contact-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--White-color);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.contact-title {
+    margin-top: 20px;
+    font-family: "Rubik Dirt", cursive;
+    font-weight: 400;
+    color: var(--oil-green);
+}
+
+.card-title {
+    color: var(--oil-green);
+    font-family: "Rubik Dirt", cursive;
+}
+
+.contact-number {
+    margin-top: 20px;
+    margin-left: 55px;
+}
+
+.telephone-icon {
+    transform: rotate(250deg);
+    height: 20px;
+    margin-top: 20px;
+    width: 20px;
+}
+
+.any-comments-div {
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    background-color: var(--White-color);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.any-comments-text {
+    text-align: center;
+}
+
+.inputs-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.next-step-btn {
+    margin: auto;
+    width: 400px;
+    margin-bottom: auto;
+    position: fixed;
+    margin-top: 40px;
+    background-color: var(--blue-green);
+    height: 40px;
+    color: var(--White-color);
+}

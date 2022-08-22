@@ -1,3 +1,5 @@
+import { IoIosArrowBack } from 'react-icons/io';
+
 const Main = (props) => {
     return (
         <div className="homeMain">
@@ -10,6 +12,7 @@ const Main = (props) => {
                 props.openSideBarComponent("getmoving");
               }}
             >
+                <IoIosArrowBack />
                 התחל
             </div>
         </div>
