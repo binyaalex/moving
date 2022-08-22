@@ -77,7 +77,7 @@
 }
 
 .customizer .customizer-content .closeBtnHeader .closeBtnDiv {
-  background-color: var(--primary);
+  background-color: black;
   width: 25px;
   height: 25px;
   border-radius: 50%;

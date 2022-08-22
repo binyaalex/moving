@@ -3,7 +3,7 @@ import React from "react";
 
 import CloseIcon from "@mui/icons-material/Close";
 
-import GetMoving from '../getMoving/GetMoving'
+import Address from '../address/Address'
 
 const Sidebar = (props) => {
   const checkPropSidebar =
@@ -28,7 +28,7 @@ const Sidebar = (props) => {
           </div>
         </div>
         {props.openGetMovingSideBar === true ? (
-          <GetMoving />
+          <Address />
         ) : (
           ""
         )}

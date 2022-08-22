@@ -9,10 +9,10 @@ const Head = () => {
                 <BsFillHouseFill />
                 <div>Moving</div>
             </div>
-            {/* <div className="headPhone">
+            <div className="headPhone">
                 <BsTelephone />
                 <div>0523456789</div>
-            </div> */}
+            </div>
         </div>
     )
 }
