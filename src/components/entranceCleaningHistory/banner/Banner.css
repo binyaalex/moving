@@ -1,0 +1,28 @@
+/* Banner Section */
+.entranceCleaningHistoryBanner {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.entranceCleaningHistoryBanner .bannerImg {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.entranceCleaningHistoryBanner .bannerContent {
+  position: absolute;
+  bottom: 5%;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  right: 5%;
+}
+
+.entranceCleaningHistoryBanner .bannerContent h1 {
+  color: var(--White-color);
+  font-weight: 600;
+  font-size: 20px;
+  text-shadow: black 0px 0px 5px;
+}

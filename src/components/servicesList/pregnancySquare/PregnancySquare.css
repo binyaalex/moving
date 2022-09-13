@@ -1,0 +1,53 @@
+.pregnancySquareContainer {
+    height: 724px;
+    margin-top: 24px;
+}
+
+.pregnancySquare {
+    height: 168.5px;
+}
+
+.pregnancySquareImg {
+    width: 90%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 386px;
+    margin: 0 20px;
+}
+
+.pregnancySquareHeader {
+    position: relative;
+    bottom: 47px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: var(--primary);
+    background-color: white;
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: 0 8px;
+    border-radius: 7px;
+    right: 10px;
+    display: inline-block;
+    margin: 0 21px;
+}
+
+.modal-pay-method-title {
+    width: 400px !important;
+    height: 80px !important;
+    text-align: center !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.modal-pay-method-choices {
+    margin: auto;
+    width: 180px !important;
+    height: 50px !important;
+    text-align: center !important;
+    background-color: var(--blue-green);
+    color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+}

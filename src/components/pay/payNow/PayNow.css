@@ -1,0 +1,157 @@
+/* Create the Default Paragraphs */
+.pay_now_pages.rtl * {
+  text-align: right !important;
+}
+
+.pay_now_pages {
+  height: 100%;
+  max-width: 428px;
+  width: 100%;
+}
+
+.pay_now_pages .pay_now_pages_area {
+  padding: 20px 10px 10px 10px;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_now_pages_area_h1 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #1e2022;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_now_text_area {
+  background-image: linear-gradient(to right, #fafafa, #f7f7f7, #fafafa);
+  padding: 10px 10px 1px 10px;
+  margin-top: 30px;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_now_text_area .pay_now_card {
+  background-color: white;
+  border-radius: 5px;
+  height: 46px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_now_text_area .master_card {
+  padding: 5px 10px 0px 0px !important;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_now_text_area .pay_now_card_img {
+  position: absolute;
+  padding: 0px 10px 0px 0px;
+  margin: 0px auto;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_now_text_area .pay_now_card_input {
+  text-align: center !important;
+  width: 52%;
+  padding: 0px 10px 0px 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #77838f;
+  margin-right: 30%;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_now_text_area .pay_now_card_input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #77838f;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_now_text_area .pay_now_card_checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  background: #edf1f7;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 10px;
+  right: 9%;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_now_text_area .pay_now_card_checkbox:checked:after {
+  content: url("../../../assets/images/filter/victory.png");
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  background: var(--primary);
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.pay_now_pages .pay_now_pages_area .add_new_card_div {
+  display: flex;
+  justify-content: center;
+}
+
+.pay_now_pages .pay_now_pages_area .add_new_card_h1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e2022;
+  text-align: center !important;
+  margin-top: 20px;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_with_balance_div {
+  margin-top: 10%;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_with_balance_div .pay_with_balance_h1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e2022;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_with_balance_div .total_e_credits_earned_h1 {
+  margin-top: 8%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #77838f;
+  text-align: center !important;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_with_bonuses_div {
+  margin-top: 10%;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_with_bonuses_div .pay_with_bonuses_h1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e2022;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_with_bonuses_div .show_all_bonuses_h1 {
+  margin-top: 8%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e2022;
+  text-align: center !important;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_now_pages_box_btn .pay_now_pages_box_btn_area {
+  margin-top: 5%;
+  text-align: center !important;
+  margin-top: 30%;
+  margin-bottom: 100px;
+}
+
+.pay_now_pages .pay_now_pages_area .pay_now_pages_box_btn .pay_now_pages_box_btn_area .pay_now_pages_box_go_btn {
+  max-width: 97%;
+  width: 100%;
+  margin: 0 auto;
+  color: var(--White-color);
+  background: var(--primary);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 17px;
+  font-weight: 600;
+  height: 48px;
+  text-align: center !important;
+}

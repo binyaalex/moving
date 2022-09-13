@@ -1,0 +1,97 @@
+.footer {
+  background-color: white;
+  width: 100%;
+  padding: 15px 21px;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.2);
+  max-width: 428px;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.footer .sosAndGray {
+    display: flex;
+    align-items: center;
+    width: 290px;
+}
+
+.footer .sosAndGray > a {
+  margin-right: 36px;
+}
+
+.footer .homeIconLink {
+  background: var(--secondry);
+  border-radius: 50%;
+  padding: 2px 7px 7px;
+}
+
+.footer .homeIconLink svg {
+  fill: white;
+}
+
+
+.footer .grayIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.webChatImg {
+  height: 22px;
+  width: 22px;
+}
+
+.footer  .grayIcon {
+  height: 22px;
+  width: 22px;
+}
+
+.footer .grayIconLink > svg {
+  color: var(--gray);
+}
+
+.footer .grayIconLinkActive > svg {
+  color: var(--primary);
+  font-size: 30px;
+}
+
+.footer .mainChat {
+  background: var(--primary);
+  width: 79px;
+  position: absolute;
+  right: 19px;
+  bottom: 17px;
+  display: flex;
+  justify-content: center;
+  height: 79px;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.footer .chat {
+  width: 36px;
+  height: 36px;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer {
+    padding: 15px 10px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  
+  .footer .grayIcons {
+    width: 175px !important;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  
+  .footer {
+    padding-bottom: 17px;
+  }
+}

@@ -1,0 +1,181 @@
+/* Create the Default Paragraphs */
+
+.add_card_pages.rtl * {
+    text-align: right !important;
+}
+
+.add_card_pages {
+    /* height: 100%; */
+    max-width: 428px;
+    width: 100%;
+}
+
+.add_card_pages .add_card_area {
+    padding: 10px 10px 10px 10px;
+}
+
+.add_card_pages .add_card_area .add_card_h1 {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center !important;
+}
+
+.add_card_pages .add_card_area .add_card_text_area {
+    background-image: linear-gradient(to right, #fafafa, #f7f7f7, #fafafa);
+    padding: 10px 10px 10px 10px;
+    /* margin-top: 30px; */
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_card_number {
+    background-color: white;
+    border-radius: 5px;
+    height: 72px;
+    position: relative;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_card_number .add_card_number_h1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary);
+    margin: 0px;
+    padding: 10px 10px 0px 0px;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_card_number .add_card_number_input {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+    margin-right: 10px;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_card_number .add_card_number_input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_card_number .master_card_img {
+    position: absolute;
+    display: block;
+    padding: 7px 0px 0px 10px;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_expiry_cvv {
+    display: flex;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_expiry_cvv .add_expiry_date {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+    height: 72px;
+    width: 49%;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_expiry_cvv .add_expiry_date .add_expiry_date_h1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary);
+    margin: 0px;
+    padding: 10px 10px 0px 0px;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_expiry_cvv .add_expiry_date_input {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+    margin-right: 10px;
+    width: 50%;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_expiry_cvv .add_expiry_date_input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_expiry_cvv .add_cvv {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+    height: 72px;
+    width: 48%;
+    margin-right: 10px;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_expiry_cvv .add_cvv .add_cvv_h1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary);
+    margin: 0px;
+    padding: 10px 10px 0px 0px;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_cvv .add_cvv_input {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+    margin-right: 10px;
+    width: 50%;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_cvv .add_cvv_input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_card_name {
+    background-color: white;
+    border-radius: 5px;
+    height: 72px;
+    margin-top: 10px;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_card_name .add_card_name_h1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary);
+    margin: 0px;
+    padding: 10px 10px 0px 0px;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_card_name .add_card_name_input {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+    margin-right: 10px;
+}
+
+.add_card_pages .add_card_area .add_card_text_area .add_card_name .add_card_name_input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.add_card_pages .add_card_area .add_card_pages_box_btn .add_card_pages_box_btn_area {
+    margin-top: 5%;
+    text-align: center !important;
+    margin-top: 30%;
+    margin-bottom: 100px;
+}
+
+.add_card_pages .add_card_area .add_card_pages_box_btn .add_card_pages_box_btn_area .add_card_pages_box_go_btn {
+    max-width: 97%;
+    width: 100%;
+    margin: 0 auto;
+    color: var(--White-color);
+    background: var(--primary);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: 600;
+    height: 48px;
+    text-align: center !important;
+}
+
+.datePicker {
+    padding-right: 10px;
+}

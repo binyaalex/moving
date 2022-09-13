@@ -1,0 +1,21 @@
+.personal {
+    overflow-y: visible !important;
+}
+
+.space {
+    margin-top: 25px !important;
+}
+
+.desc {
+    height: 100px !important;
+}
+
+.descText {
+    width: 100%;
+    direction: rtl;
+    padding-right: 10px !important;
+}
+
+option {
+    direction: rtl;
+}

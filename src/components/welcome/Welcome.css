@@ -1,0 +1,121 @@
+.Welcome-description-container {
+    width: 80%;
+    /* background-color: pink; */
+    /* height: 100vh; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--White-color);
+}
+
+.welcome-text-title {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--White-color);
+    font-size: 24px;
+}
+
+.sub-title {
+    /* text-align: center; */
+    /* line-height: 1.5; */
+    font-size: 22px;
+}
+
+.long-description {
+    direction: rtl;
+    text-align: justify;
+    font-size: 15px;
+    /* line-height: 2; */
+}
+
+.services {
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    /* margin-left: -100px; */
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.services-title {
+    text-align: center;
+    color: var(--White-color);
+    margin-bottom: 20px;
+}
+
+.services>div {
+    flex: 50%;
+}
+
+.services>div:nth-child(odd) {
+    flex: 50%;
+    justify-content: end;
+}
+
+.services>div:nth-child(even) {
+    flex: 50%;
+    justify-content: end;
+}
+
+.service-img-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.service {
+    margin-bottom: 0;
+    /* text-align: justify; */
+    /* margin-left: 40px; */
+    font-weight: bold;
+}
+
+.service-img {
+    width: 35px;
+    height: 35px;
+    /* margin-right: 5px; */
+}
+
+.customers {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: fit-content;
+    padding: 0px 0 10px;
+
+}
+
+.customers div {
+    width: 25%;
+}
+
+.customer {
+    width: 160px;
+    height: 43px;
+    font-size: 14px !important;
+    background-color: var(--primary) !important;
+    border: none !important;
+    direction: rtl;
+}
+
+.customer:hover {
+    background-color: var(--primary) !important;
+}
+
+.upgradeBtn {
+    background-color: var(--White-color) !important;
+    color: var(--primary) !important;
+    font-size: 18px !important;
+    width: 200px;
+}
+
+.services-titleAndIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,356 @@
+/* Create the Default Paragraphs */
+.marketPlacePage.rtl * {
+  text-align: right !important;
+}
+/* Create the Default Paragraphs */
+
+.marketPlacePage {
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 100px;
+}
+
+.marketPlacePage .collectiveMeetingArea .collectiveMeetingHeading {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.marketPlacePage .collectiveMeetingArea .collectiveMeetingHeading a {
+  font-size: 15px;
+  color: var(--primary) !important;
+  font-weight: 400;
+  display: flex;
+}
+
+.marketPlacePage .collectiveMeetingArea .collectiveMeetingHeading a svg {
+  transform: rotate(90deg);
+}
+
+.marketPlacePage .collectiveMeetingArea .collectiveMeetingHeading h3 {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.marketPlacePage .collectiveMeetingArea .swiper-pagination {
+  text-align: center !important;
+}
+
+.marketPlacePage
+  .collectiveMeetingArea
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  background: var(--swiper-pagination-color, #fff);
+}
+
+.marketPlacePage .collectiveMeetingArea .imageArrow {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  height: 18px;
+  width: 10px;
+}
+
+.marketPlacePage .collectiveMeetingArea .imageTitle {
+  position: absolute;
+  bottom: 10%;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  width: 75%;
+  right: 8%;
+  text-shadow: black 0px 0px 5px;
+}
+
+.marketPlacePage .collectiveMeetingArea .swiper {
+  padding: 0px 10px 0px 0px;
+}
+
+.marketPlacePage .service_list_sec {
+    padding: 10px 15px;
+}
+
+.marketPlacePage .service_list_sec #tabs-nav li a {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #a5a6a8;
+  padding: 6px 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: inline-block;
+  text-decoration: unset;
+}
+
+.marketPlacePage .service_list_sec #tabs-nav li.active a {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.marketPlacePage .service_list_sec #tabs-content .list_box_area {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.marketPlacePage .service_list_sec #tabs-content .list_box_area .list_box {
+  /* max-width: 180px; */
+  /* width: 100%; */
+  /* margin: 0 12px 30px; */
+  position: relative;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_img {
+  /*height: 180px;*/
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 13px;
+  position: relative;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_img
+  img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_img
+  span {
+  text-align: center !important;
+  margin-right: 5px;
+  color: #373C41;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_img
+  .discount_dt {
+  position: absolute;
+  left: 16px;
+  bottom: 15px;
+  font-size: 15px;
+  color: #ffffff;
+  background: #bf2c7d;
+  width: 63px;
+  height: 35px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 600;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_img
+  .time_dt {
+  position: absolute;
+  /*max-width: 161px;*/
+  height: 37px;
+  line-height: 37px;
+  font-size: 15px;
+  border-radius: 20px;
+  right: 5px;
+  bottom: 15px;
+  background: #ffffff;
+  /*width: 100%;*/
+  text-align: center;
+  font-weight: 700;
+  margin: auto;
+}
+
+.marketPlacePage .service_list_sec .time_dt .off15 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_img
+  .time_dt
+  p {
+  margin: 0 10px;
+}
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_img
+  .time_dt.dark {
+  background-color: var(--primary);
+}
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_img
+  .time_dt.dark
+  strong {
+  color: #fff;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_img
+  .time_dt
+  strong {
+  color: var(--primary);
+  direction: rtl;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_detail {
+  padding: 0 9px;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_detail
+  span {
+  text-align: left !important;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_detail
+  .product_title {
+  width: 80%;
+
+  color: #a5a6a8;
+  font-weight: normal;
+  word-wrap: break-word;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_detail
+  .product_title
+  p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_detail
+  .product_title
+  h6 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .box_detail
+  span {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "poppins";
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .wish_list_icon {
+  position: absolute;
+  top: 12px;
+  left: 25px;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background: #0000001a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.marketPlacePage
+  .service_list_sec
+  #tabs-content
+  .list_box_area
+  .list_box
+  .wish_list_icon svg > path {
+    color: white;
+  }
+
+.best_deals_sec > h3 {
+  padding-right: 5px;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "poppins";
+}
+
+.marketPlacePage .best_deals_sec {
+    padding: 0px 15px;
+}
+
+.best_deals_sec {
+  margin-bottom: 70px;
+}
+
+

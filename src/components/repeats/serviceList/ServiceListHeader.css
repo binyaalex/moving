@@ -1,0 +1,12 @@
+#serviceListHeader a img {
+	max-width: unset;
+	transform: rotate(180deg);
+}
+
+.services_area .service_box_area {
+	direction: rtl;
+}
+
+.service_box_area .row-r {
+	flex-direction: row-reverse;
+}

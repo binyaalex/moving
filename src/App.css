@@ -1,11 +1,87 @@
-* {
-  box-sizing: border-box;
-}
-
 html {
-  --blue-green: #56b49d;
-  --oil-green: rgb(26, 70, 16);
-  --bg-main: linear-gradient(#16a65c, #aae9c9);
+    --primary: #17ab5f;
+    --secondry: #97e6bd;
+    --gradient: linear-gradient(to right, #17ab5f, #97e6bd);
+    --verticalGradient: linear-primary(to top, #17ab5f, #a7d684);
+    --firstCircle: #7bc19d;
+    --secondCircle: #b2dfc8;
+    --black: #373c41;
+    --lightgray: #f4f4f4;
+    --middlegray: #9ba1a8;
+    --gray: #77838f;
+    --White-color: #ffffff;
+    --blue-green: #56b49d;
+    --oil-green: rgb(30, 76, 19);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+.PageDad {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.page {
+    /* padding: 38px 21px 80px; */
+    max-width: 428px;
+    width: 100%;
+    /* height: 100vh; */
+    /*border: 1px solid gray;*/
+}
+
+input {
+    border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    direction: rtl;
+}
+
+
+/* web sidebar */
+.web-sideBar {
+    right: 0;
+    width: 428px !important;
+
+}
+
+.web-sideBar>.pageDad {
+    height: 100vh;
+    overflow-y: scroll !important;
+}
+
+.footer-container {
+    /* position: relative; */
+    right: 0 !important;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 428px;
+    z-index: 1;
+}
+
+/* 
+.footer-container .footer {
+    position: relative !important;
+} */
+
+.web-sideBar .menu {
+    z-index: 10;
+    left: calc(100% - 170px) !important;
+}

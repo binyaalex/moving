@@ -1,0 +1,19 @@
+.filter-btn-div {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.filter-btn-div .filter-btn {
+    background: var(--primary);
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 17px;
+    width: 100%;
+    text-align: center !important;
+}
+
+.paidServiceSqaureList>* {
+    margin-bottom: 5% !important;
+}

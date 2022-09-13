@@ -1,0 +1,23 @@
+.online_or_onphone_page
+  .add_card_area
+  .add_card_pages_box_btn
+  .add_card_pages_box_btn_area {
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.online_or_onphone_page
+  .add_card_area
+  .add_card_pages_box_btn
+  .add_card_pages_box_btn_online {
+    margin-top: 5%;
+    margin-bottom: 100px;
+}
+
+.online_or_onphone_page .add_card_area .add_card_h1 {
+    margin-top: 0;
+}
+
+.online_or_onphone_page .add_card_area {
+    padding: 0px 10px 10px 10px;
+}

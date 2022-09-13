@@ -1,0 +1,118 @@
+
+.review_rating_sec .service_box_area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review_rating_sec {
+    padding: 20px 0 10px;
+}
+.review_rating_sec .justify-between {
+    justify-content: space-between;
+}
+.review_rating_sec .review_heading h3 {
+    font-size: 17px;
+    font-weight: 400;
+}
+.review_rating_sec .review_heading a {
+    font-size: 15px;
+    color: #bf2c7d !important;
+    font-weight: 400;
+}
+.review_rating_sec .review_heading a img {
+    margin-right: 3px;
+    margin-top: 4px;
+    transition: all 0.5s ease;
+    width: 9px;
+    height: 9px;
+}
+.review_rating_sec .d-flex {
+    display: flex;
+}
+.review_rating_sec .container {
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+.service_box .box_round_img {
+    max-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    width: 100%;
+    overflow: hidden;
+  }
+  .service_box .box_round_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .review_box h4 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .review_box p {
+    font-size: 15px;
+    margin: 0;
+  }
+  .review_box span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #c5cee0;
+  }
+  .review_box .star i {
+    color: #df2d86;
+    font-size: 13px !important;
+  }
+  .review_box .star {
+    font-size: 13px !important;
+  }
+  .box_con .star svg {
+    color: var(--primary);
+    font-size: 15px !important;
+    margin-bottom: 3px;
+  }
+  .box_con .star {
+    color: #8f9bb3;
+    font-size: 13px !important;
+    font-weight: 400;
+  }
+  
+.service_box_area .rating_box {
+    background: #f4f4f4;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 12px 12px 10px 15px;
+}
+.service_box .review_box {
+    border-bottom: none;
+    width: 100%;
+    direction: rtl;
+}
+.service_box .review_box p {
+    color: #8f9bb3;
+}
+
+#review_box {
+  padding: 8px 0 5px;
+  margin: 0;
+}
+
+#review_box h4 {
+  margin: 0;
+}
+
+#review_box span {
+  margin-top: 0;
+}
+
+#review_box .box_heading {
+  padding-bottom: 5px;
+}
+
+.review .box_round_img {
+  margin-top: 8px;
+}
+

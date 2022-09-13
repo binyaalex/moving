@@ -1,0 +1,44 @@
+.entranceCleaningHistory .entranceCleaningHistoryPage {
+  padding: 0px 20px 0;
+  margin-bottom: 100px;
+}
+
+.entranceCleaningHistory .entranceCleaningHistoryPage * {
+  text-align: right;
+}
+
+.entranceCleaningHistory .entranceCleaningHistoryPage .titleDiv {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.entranceCleaningHistory .entranceCleaningHistoryPage .titleDiv .titleP {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.entranceCleaningHistory .entranceCleaningHistoryPage .titleDiv img {
+  height: 22px;
+  width: 22px;
+}
+
+.entranceCleaningHistory .entranceCleaningHistoryPage .staffSquaresDiv {
+  background-image: linear-gradient(to right, #fafafa, #f7f7f7, #fafafa);
+  margin-top: 10px;
+}
+
+.entranceCleaningHistory
+  .entranceCleaningHistoryPage
+  .staffSquaresDiv
+  .entranceCleaningHistoryOpenRound {
+  background-color: white;
+  flex-direction: row-reverse;
+  margin-bottom: 12px;
+  border-radius: 5px;
+}
+
+@media screen only(max-width:420px) {
+  
+}

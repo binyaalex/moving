@@ -1,0 +1,74 @@
+.provider_banner {
+  background: url('/public/images/moving/providerLogo3.png');
+  background-size: contain;
+  height: 240px;
+}
+
+.banner_content {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.banner_content>* {
+  width: 50%;
+}
+
+.banner_content .bannerLeft {
+  display: flex;
+  justify-content: center;
+
+}
+
+.provider_banner .banner_content h1 {
+  color: black;
+}
+
+.provider_banner .banner_content h6 {
+  color: black;
+}
+
+.provider_banner .banner_content small {
+  color: black;
+}
+
+.provider_banner .banner_content_phone {
+  display: flex;
+  justify-content: end;
+}
+
+.bannerLeft .aboutBtn {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  background: var(--primary);
+  color: white;
+  padding: 0px;
+  border-radius: 10px;
+  text-align: center !important;
+
+}
+
+.office .specialistsListSec  {
+  padding: 0px 0 10px;
+}
+
+.office .add_card_pages .add_card_area {
+  padding: 0px 10px 10px 10px;
+}
+
+.aboutProvider .office .add_card_pages .add_card_area .add_card_h1 {
+  margin-top: 0;
+}
+
+.about_area {
+  padding: 0 15px;
+}
+
+.about_text {
+  direction: rtl;
+}
+
+.aboutProvidesMainBtnDiv {
+  padding: 0 10px;
+}

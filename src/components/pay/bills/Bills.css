@@ -1,0 +1,258 @@
+/* Create the Default Paragraphs */
+.bills_pages.rtl * {
+  text-align: right !important;
+}
+
+.bills_pages {
+  height: 100%;
+  max-width: 428px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.bills_pages .SearchDiv {
+  padding: 0 10px 26px;
+}
+
+.bills_pages .bills_pages_area {
+  padding: 30px 15px 0px 15px;
+}
+
+.bills_pages .bills_pages_area .bills_pages_doctor_area .box_round_img {
+  max-width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  width: 100%;
+  overflow: hidden;
+  float: right;
+}
+
+.bills_pages .bills_pages_area .bills_pages_doctor_area .box_round_img .bills_pages_doctor_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bills_pages .bills_pages_area .bills_pages_doctor_area .bills_pages_doctor_p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #77838f;
+}
+
+.bills_pages .bills_pages_area .bills_pages_doctor_area {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bills_pages .bills_pages_area .bills_pages_doctor_area .img_and_text {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.bills_pages .bills_pages_area .bills_pages_doctor_area .img_and_text .bills_pages_doctor_img {
+  width: 38px;
+  height: 38px;
+  margin-left: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bills_pages .bills_pages_area .bills_pages_doctor_area .img_and_text .bills_pages_doctor_text .bills_pages_doctor_text_h1 {
+  font-size: 14px;
+  line-height: 1.33;
+  color: #77838f;
+  font-weight: 400;
+}
+
+.bills_pages .bills_pages_area .bills_pages_card_area {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px 30px 20px;
+  box-shadow: 0px 0px 10px 0px #f2f2f2;
+  margin-top: 20px;
+}
+
+.bills_pages .bills_pages_area .bills_pages_card_area .img_and_text {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.bills_pages .bills_pages_area .bills_pages_card_area .img_and_text .bills_pages_card_img {
+  width: 66px;
+  height: 66px;
+  margin-left: 20px;
+  border-radius: 15%;
+  object-fit: cover;
+}
+
+.bills_pages .bills_pages_area .bills_pages_card_area .img_and_text .bills_pages_card_text .bills_pages_card_h1 {
+  font-size: 15px;
+  color: #222b45;
+  font-weight: 500;
+}
+
+.bills_pages .bills_pages_area .bills_pages_card_area .img_and_text .bills_pages_card_text .bills_pages_card_p {
+  font-size: 13px;
+  line-height: 1.23;
+  color: #8f9bb3;
+}
+
+.bills_pages .bills_pages_area .bills_pages_card_area .bills_pages_card_btn_area {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.bills_pages .bills_pages_area .bills_pages_card_area .bills_pages_card_btn_area .bills_pages_card_btn {
+  background: var(--primary);
+  color: white;
+  padding: 3px 0px 0px 2px;
+  border-radius: 10px;
+  text-align: center !important;
+}
+
+.bills_pages .bills_pages_area .bills_pages_card_area .bills_pages_card_btn_area>* {
+  width: 66px;
+  height: 26px;
+}
+
+.bills_pages .bills_pages_area .bills_pages_coupon_code_area {
+  text-align: center !important;
+  margin-top: 10%;
+  position: relative;
+  margin-bottom: 30%;
+}
+
+.bills_pages .bills_pages_area .bills_pages_coupon_code_area .dotted_border_img {
+  width: 100%;
+  height: 50px;
+}
+
+.bills_pages .bills_pages_area .bills_pages_coupon_code_area .discount {
+  position: absolute;
+  margin-top: 6px;
+  top: 0%;
+  right: 10%;
+  color: var(--primary);
+  border-radius: 50%;
+  font-size: 36px;
+  padding: 4px;
+}
+
+.bills_pages .bills_pages_area .bills_pages_coupon_code_area .right_arrow {
+  position: absolute;
+  margin-top: 17px;
+  display: block;
+  top: 0%;
+  left: 10%;
+  height: 16px
+}
+
+.bills_pages .bills_pages_area .bills_pages_coupon_code_area .coupon_code {
+  position: absolute;
+  display: block;
+  top: 0%;
+  margin-top: 8.5px;
+  font-size: 17px;
+  font-weight: 400;
+  width: 63%;
+  margin-left: 15%;
+}
+
+.bills_pages .bills_pages_area .bills_pages_pay_now_area {
+  margin-top: 5%;
+  margin-bottom: 30%;
+}
+
+.bills_pages .bills_pages_area .bills_pages_pay_now_heading a {
+  font-size: 17px;
+  color: var(--primary) !important;
+  font-weight: 500;
+  float: left;
+}
+
+.bills_pages .bills_pages_area .bills_pages_pay_now_heading a img {
+  margin-right: 3px;
+  transition: all 0.5s ease;
+  max-width: 11px;
+}
+
+.bills_pages .bills_pages_area .bills_pages_pay_now_heading h3 {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.bills_pages_pay_now_heading {
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.bills_pages .bills_pages_area .bills_pages_box_btn .bills_pages_box_btn_area {
+  margin-top: 5%;
+  text-align: center !important;
+}
+
+.bills_pages .bills_pages_area .bills_pages_box_btn .bills_pages_box_btn_area .bills_pages_box_go_btn {
+  max-width: 97%;
+  width: 100%;
+  margin: 0 auto;
+  color: var(--White-color);
+  background: var(--primary);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 17px;
+  font-weight: 600;
+  height: 48px;
+  text-align: center !important;
+}
+
+/* FOR SEARCH SECTION TEXT BOX */
+.search_sec .search_area .search_form {
+  max-width: 80%;
+}
+
+.search_sec .search_area .input_ser {
+  text-align: end;
+}
+
+@media only screen and (max-width: 420px) {
+
+  .bills_pages .bills_pages_area .bills_pages_coupon_code_area .right_arrow {
+    position: absolute;
+    margin-top: 17px;
+    display: block;
+    top: 0%;
+    left: 7%;
+    height: 16px;
+  }
+
+  .bills_pages .bills_pages_area .bills_pages_coupon_code_area .discount {
+    margin-top: 6px;
+    right: 5%;
+    font-size: 35px;
+    padding: 4px;
+  }
+
+  .bills_pages .bills_pages_area .bills_pages_coupon_code_area .coupon_code {
+    position: absolute;
+    display: block;
+    top: 0%;
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 69%;
+    margin-left: 13%;
+    color: aqua;
+  }
+}

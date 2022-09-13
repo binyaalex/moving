@@ -1,0 +1,28 @@
+.businessStoring .add_card_pages {
+    height: unset;
+}
+
+.businessStoring .filter-btn-div .filter-btn {
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+.storingType_h1,
+.storingType_h1_wrapper h3 {
+    color: var(--primary);
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+.storingType_h1_wrapper {
+    width: 100%;
+    padding: 5px 30px;
+}
+
+.storingType_h1_wrapper h3 {
+    margin: 0 !important;
+}
+
+.why {
+    /* margin-bottom: 25px; */
+}

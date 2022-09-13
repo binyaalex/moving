@@ -1,0 +1,107 @@
+.page {
+  /* max-width: 428px; */
+  width: 100%;
+}
+
+.patientPage {
+  margin-bottom: 100px;
+}
+
+.patientPage * {
+  text-align: right;
+}
+
+.patientImgDiv {
+  /* height: 280px; */
+}
+
+.patientImgPhoto {
+  width: 100%;
+}
+
+.patientImgText {
+  position: relative;
+  top: -50px;
+  padding: 0;
+  /* 21px 21px 17px 9px; */
+}
+
+.patientImgH {
+  /* font-size: 25px;
+  line-height: 1.28;
+  color: white; */
+  position: relative;
+  bottom: 25%;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #01a2e6;
+  background-color: white;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 0 8px;
+  border-radius: 7px;
+  right: 10px;
+  display: inline-block;
+  margin: 0 21px;
+}
+
+.patientImgP {
+  font-size: 15px;
+  line-height: 1.73;
+  color: white;
+}
+
+.patientTextDiv {
+  height: 70px;
+  padding: 10px 20px 0px 15px;
+}
+
+.patientTextPDiv {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.patientTextH {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #373c41;
+}
+
+.patientTextPText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #373c41;
+}
+
+.patientTextPDate {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.patientSquaresDiv {
+  padding: 0 20.5px 0 7px;
+}
+
+.openFault {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.openFault > div {
+  font-size: 40px;
+  padding: 0 0 5px 20px;
+  font-family: secular one;
+}
+
+.openFault > svg {
+  color: #01a2e6;
+  font-size: 40px;
+}

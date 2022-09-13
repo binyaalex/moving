@@ -1,0 +1,137 @@
+.confirmPage .openRoundImg {
+  object-fit: cover;
+}
+
+.confirmPage .startH2 {
+  padding-bottom: 25px;
+}
+
+.confirmPage .openRound {
+  padding: 0;
+  text-align: right;
+}
+
+.confirmPage .openRoundText {
+  padding-left: 20px;
+}
+
+.confirmPage .startMain .date_area {
+  margin-top: 10%;
+}
+
+.confirmPage .startMain .date_area h1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222b45;
+}
+
+.confirmPage .startMain .date_area span {
+  color: var(--primary);
+}
+
+.startPage {
+	/*padding: 10px 0;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	/*margin-top: 38px;*/
+}
+
+.startPage .startImg {
+    width: 90%;
+    position: relative;
+}
+
+.startMain {
+    position: relative;
+    top: -75px;
+}
+
+.startH1 {
+	padding: 0px 30px 30px;
+	text-transform: uppercase;
+	color: var(--primary);
+	font-size: 27px;
+	font-weight: bold;
+	line-height: 1.26;
+	/*margin-top: 55px;*/
+	z-index: 1;
+	direction: rtl;
+}
+
+.startH2 {
+	font-size: 17px;
+	line-height: 1.1;
+	font-weight: 400;
+	padding-bottom: 38px;
+}
+
+.startDates {
+	padding: 19px 0;
+	display: flex;
+	flex-direction: column;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.date {
+	display: flex;
+	color: #858585;
+	padding: 22px 0;
+}
+
+.date > * {
+	width: 66px;
+	height: 36px;
+	text-transform: capitalize;
+}
+
+.month {
+	margin: 0 35px;
+}
+
+.startDateChoosen {
+	color: var(--primary);
+	font-size: 25px;
+	font-weight: 500;
+	padding: 17px 0;
+	border-bottom: solid 1px #E2E2E2;
+	border-top: solid 1px #E2E2E2;
+}
+
+.startDateChoosen > * {
+	color: var(--primary);
+}
+
+.startDateChoosen > .month {
+	font-weight: 700;
+}
+
+.fixed_btn_section{
+	position: fixed;
+	bottom: 0;
+}
+
+.startSubmit {
+	width: 100%;
+	min-width: 350px;
+	height: 48px;
+	border-radius: 10px;
+	border: 0;
+	background-color: var(--primary);
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-top: 20px;
+	text-align: center;
+	position: relative;
+	bottom: 15px;
+}
+
+@media all and (max-width: 500px) {
+	.startMain {
+		position: unset;
+	}
+}

@@ -1,0 +1,29 @@
+.select_address_input {
+    min-width: 300px;
+    border: none;
+}
+
+.address-title-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+    fill: var(--primary);
+}
+
+.house-icon {
+    margin-top: 10px !important;
+    margin-left: 15px !important;
+    width: 25px !important;
+    height: 25px !important;
+    fill: var(--primary) !important;
+}
+
+.movingType {
+    margin: 0 10px;
+}
+
+.itemPick {
+    background: var(--primary) !important;
+}

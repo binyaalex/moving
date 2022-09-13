@@ -1,0 +1,21 @@
+.dayPicker {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 15px
+}
+
+.dayPickerInput {
+	width: 192px;
+	padding: 0 31.5px 0 60px;
+	color: var(--primary);
+	direction: rtl;
+}
+
+.dayPickerInput::placeholder {
+	color: var(--primary);
+}
+
+.dayPickerInput option {
+	color: var(--primary);
+}

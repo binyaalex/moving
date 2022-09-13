@@ -1,0 +1,11 @@
+.buildingCommitteeMemberList .doctorsbtn {
+    display: none;
+}
+
+.buildingCommitteeMemberList .starSection {
+    display: none;
+}
+
+.buildingCommitteeMemberList .openRoundText {
+    justify-content: center;
+}

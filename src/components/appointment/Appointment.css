@@ -1,0 +1,303 @@
+/* Create the Default Paragraphs */
+.appointmentPage.rtl * {
+  text-align: right !important;
+}
+.appointmentPage {
+  height: 100%;
+  max-width: 428px;
+  width: 100%;
+}
+
+.appointmentPage .appointment {
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 100px;
+}
+
+.appointmentPage .appointment .searchBoxContainer {
+  max-width: 767px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.appointmentPage .appointment .searchBoxContainer h2 {
+  color: #4a4e53;
+  font-size: 14px;
+  text-align: right;
+  font-weight: 600;
+}
+.appointmentPage .appointment .searchBoxContainer .searchBox {
+  text-align: left;
+  height: auto;
+  margin: 15px 0px;
+  padding: 10px;
+  border: 1px solid #bec4c8;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+}
+.appointmentPage .appointment .searchBoxContainer input[type="search"] {
+  width: 80%;
+  text-align: right !important;
+  margin-left: 10%;
+}
+.appointmentPage .appointment .searchBoxContainer input[type="search"]::placeholder {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 90%;
+  text-align: right !important;
+  color: #77838f;
+  margin-left: 5%;
+}
+
+.appointmentPage .appointment .searchBoxContainer svg {
+  margin-left: 3%;
+  color: var(--primary);
+}
+
+.appointmentPage .appointment .searchBoxContainer .searchBox i.fa-search {
+  font-size: 20px;
+  width: 5%;
+  margin-left: -30px;
+  margin-top: 3px;
+  color: #bf2c7d;
+  float: right;
+}
+
+.appointmentPage .appointment .searchBoxContainer .searchboxHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appointmentPage .appointment .dateSelectorContainer {
+  max-width: 767px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.appointmentPage .appointment .dateSelectorOptionContainer {
+  max-width: 767px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.appointmentPage .appointment .dateSelectorContainer .dateSelectorHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appointmentPage .appointment .dateSelectorContainer h2 {
+  color: #4a4e53;
+  font-size: 14px;
+  text-align: right;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.appointmentPage .appointment .dateSelectorContainer .dateSelector {
+  text-align: left;
+  height: auto;
+  margin: 15px 0px;
+  padding: 10px;
+  border: 1px solid #bec4c8;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.appointmentPage .appointment .dateSelectorContainer .dateSelector img {
+  font-size: 20px;
+  margin-top: 3px;
+  margin-bottom: -5px;
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+
+.appointmentPage .appointment .dateSelectorContainer input[type="text"] {
+  width: 97%;
+  text-align: right;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.appointmentPage .appointment .dateSelectorContainer input[type="text"]::placeholder {
+  color: #6a6a6a;
+  font-size: 14px;
+  width: 85%;
+  text-align: right;
+  font-weight: 600;
+}
+
+.appointmentPage .appointment .dateSelectorOptionContainer {
+  display: inline-flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.appointmentPage .appointment .dateSelectorOptionContainer .dateSelectorOption {
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+}
+
+.appointmentPage .appointment .dateSelectorOptionContainer
+  .dateSelectorOption
+  .dateSelectorOptionsLable:hover,
+.dateSelectorOptionContainer .dateSelectorOption .dateOptions:hover {
+  cursor: pointer;
+}
+
+.appointmentPage .appointment .dateSelectorOptionContainer .dateselectoroptionActive {
+  text-align: center;
+  border-radius: 8px;
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appointmentPage .appointment .dateSelectorOptionContainer .dateSelectorOption .dateSelectorOptionsLable {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.appointmentPage .appointment .dateSelectorOptionContainer .dateselectoroptionActive .dateOptionsActive {
+  background: var(--primary) !important;
+  color: #fff !important;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 5px 2px 0px 0px;
+}
+
+.appointmentPage .appointment .dateSelectorOptionContainer
+  .dateselectoroptionActive
+  .dateSelectorOptionsLableActive {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.appointmentPage .appointment .timeSelectorContainer {
+  max-width: 767px;
+}
+
+.appointmentPage .appointment .timeSelectorContainer h2 {
+  color: #4a4e53;
+  font-size: 14px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.appointmentPage .appointment .timeSelectorContainer .timeSelector {
+  text-align: left;
+  height: auto;
+  margin: 15px 0px;
+  padding: 10px;
+  border: 1px solid #bec4c8;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.appointmentPage .appointment .timeSelectorContainer .timeSelector img {
+  font-size: 20px;
+  margin-top: 3px;
+  margin-bottom: -5px;
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+
+.appointmentPage .appointment .timeSelectorContainer input[type="text"] {
+  width: 97%;
+  text-align: right;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.appointmentPage .appointment .timeSelectorContainer input[type="text"]::placeholder {
+  color: #6a6a6a;
+  font-size: 14px;
+  width: 85%;
+  text-align: right;
+  font-weight: 600;
+}
+
+.appointmentPage .appointment .timeSelectorContainer .timeSelectorHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.appointmentPage .appointment .timeSelectorOptionContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 767px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+.appointmentPage .appointment .timeSelectorOptionContainer .timeSelectorOption {
+  text-align: center;
+  width: 20%;
+  padding: 15px;
+  border: 1px solid #bec4c8;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.appointmentPage .appointment .timeSelectorOptionContainer .timeSelectorOption:hover {
+  background-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+.appointmentPage .appointment .timeSelectorOptionContainer .choosen {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* Button */
+.appointmentPage .boxBtn {
+  padding: 17px 0;
+  box-shadow: 0px -2px 5px 0px #00000042;
+  background: white;
+  text-align: center;
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  margin-top: 15px;
+  z-index: 9;
+}
+
+.appointmentPage .boxBtn .goBtn {
+  max-width: 65%;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  background: var(--primary);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 0px 10px 0px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .appointmentPage .boxBtn {
+    padding: 26px 0;
+  }
+}
