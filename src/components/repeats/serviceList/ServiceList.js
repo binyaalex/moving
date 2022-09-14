@@ -19,14 +19,14 @@ const ServiceList = (props) => {
             {
               props.serviceListArr.map((el, i) => {
                 return (
-                  <ServiceItem 
+                  <ServiceItem
                     header={el.header}
                     link={el.link}
                     price={el.price}
                     par={el.par}
                     img={el.img}
                     key={i}
-                  /> 
+                  />
                 )
               })
             }
