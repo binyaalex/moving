@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import PregnancySquare from '../../servicesList/pregnancySquare/PregnancySquare';
+import PregnancySquare from '../../getMoving/movingKindSelect/pregnancySquare/PregnancySquare';
 import Head from '../../repeats/head/Head';
 import SpecialistsList from '../../getMoving/selectMovingCategory/specialistsList/SpecialistsList';
 

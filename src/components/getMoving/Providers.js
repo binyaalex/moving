@@ -1,8 +1,8 @@
-import ".././specialists/Doctors.css"
+// import ".././specialists/Doctors.css"
 import React, { useRef, useState } from "react";
 
 import Head from "../repeats/head/Head";
-import Filter from "../specialists/filter/Filter";
+// import Filter from "../specialists/filter/Filter";
 import OpenRound from "../repeats/opensquare/OpenRound";
 
 import filterIcon from "../../assets/images/filter/filterBtn.png";
@@ -96,7 +96,7 @@ function Providers(props) {
               </div>
             </div>
 
-            <Filter
+            {/* <Filter
               showfilter={showfilter}
               setShowfilter={setShowfilter}
               scrollToTop={scrollToTop}
@@ -109,7 +109,7 @@ function Providers(props) {
               setShowsareadrp={setShowsareadrp}
               messagesEndRef1={messagesEndRef1}
               isProviders={true}
-            />
+            /> */}
 
             <div className="staffSquaresDiv">
               {doctorsArr.map((el, i) => {

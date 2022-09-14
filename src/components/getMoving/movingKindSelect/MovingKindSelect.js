@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import PregnancySquare from '../../servicesList/pregnancySquare/PregnancySquare';
+import PregnancySquare from './pregnancySquare/PregnancySquare';
 import Head from '../../repeats/head/Head';
 
 import oneRoomApartment from '../../../assets/images/getMoving/oneRoomApartment.jpg'
@@ -9,22 +9,22 @@ import office from '../../../assets/images/getMoving/office.jpg'
 const MovingKindSelect = () => {
 
 	const pregnancyArr = [
-    {
-      img: oneRoomApartment,
-      text: "הובלת פריטים בודדים",
-      link: "/singleproducts",
-    },
-    {
-      img: apartment,
-      text: "הובלת תכולת דירות בתים",
-      link: null,
-    },
-    {
-      img: office,
-      text: "הובלות משרדים/מפעלים",
-      link: "/factoryoroffice",
-    }
-  ];
+		{
+			img: oneRoomApartment,
+			text: "הובלת פריטים בודדים",
+			link: "/singleproducts",
+		},
+		{
+			img: apartment,
+			text: "הובלת תכולת דירות בתים",
+			link: null,
+		},
+		{
+			img: office,
+			text: "הובלות משרדים/מפעלים",
+			link: "/factoryoroffice",
+		}
+	];
 
 	return (
 		<div className='PageDad' >
