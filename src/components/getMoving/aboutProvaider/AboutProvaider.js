@@ -102,6 +102,9 @@ const AboutProvaider = () => {
           </div>
         </div>
       </div>
+      <div className="pros">
+
+      </div>
 
       {/* <div className="bannerRight">
             <div className="banner_content_phone">

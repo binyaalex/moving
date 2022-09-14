@@ -81,6 +81,14 @@
   justify-content: center;
 }
 
+.filter-btn {
+  transition: all .2s ease-in-out;
+}
+
+.filter-btn:hover {
+  transform: scale(1.1);
+}
+
 .filter-btn-div .filter-btn {
   background: var(--primary);
   color: #fff;

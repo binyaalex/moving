@@ -48,11 +48,15 @@
   font-size: 16px;
   color: white;
   font-weight: 500 !important;
+  transition: all .1s ease-in-out;
+
 
 }
 
 .navBtn:hover {
-  color: var(--primary);
+  transform: scale(1.1);
+  color: white;
+
 }
 
 .thisPage {
