@@ -51,183 +51,43 @@ import PayNow from "./components/pay/payNow/PayNow";
 import AddCard from "./components/pay/addCard/AddCard";
 import PaymentSuccess from "./components/pay/paymentSuccess/PaymentSuccess";
 import GetMoving from "./components/getMoving/GetMoving";
-
+import Nav from "./components/nav/Nav"
 function App() {
   return (
-    <div className="PageDad">
-      <div className="page">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<AboutProvaider />} />
-            {/* <Route
-              path="/services"
-              element={<ServiceList />} 
-            />
-            <Route
-              path="/specialists"
-              element={<Specialists />} 
-            />
-            <Route
-              path="/appointment"
-              element={<Appointment />} 
-            />
-            <Route
-              path="/entrancecleaninghistory"
-              element={<EntranceCleaningHistory />} 
-            />
-            <Route
-              path="/marketplace"
-              element={<MarketPlace />} 
-            />
-            <Route
-              path="/myprofile"
-              element={<MyProfile />} 
-            />
-            <Route
-              path="/specialistAccount"
-              element={<SpecialistAccount />} 
-            />
-            <Route
-              path="/paidservices"
-              element={<PaidServices />} 
-            />
-            <Route
-              path="/myadresses"
-              element={<MyAdresses />} 
-            />
-            <Route
-              path="/manageraccount"
-              element={<ManagerAccount />} 
-            />
-            <Route path="/check" element={<Check />}  />
-            <Route
-              path="/aboutspesialist"
-              element={<AboutSpesialist />} 
-            />
-            <Route
-              path="/productdetails"
-              element={<ProductDetails />} 
-            />
-            <Route
-              path="/confirm"
-              element={<Confirm />} 
-            />
-            <Route path="/bills" element={<Bills />}  /> */}
-            <Route
-              path="/paynow"
-              element={<PayNow />}
-            />
-            <Route
-              path="/addcard"
-              element={<AddCard />}
-            />
-            <Route
-              path="/paymentsuccess"
-              element={<PaymentSuccess />}
-            />
-            {/* <Route
-              path="/settings"
-              element={<Settings />} 
-            />
-            <Route
-              path="/notifications"
-              element={<Notifications />} 
-            />
-            <Route
-              path="/buildingcommitteeaccount"
-              element={<BuildingCommitteeAccount />} 
-            />
-            <Route
-              path="/buildingcommitteememberlist"
-              element={<BuildingCommitteeMemberList />} 
-            />
-            <Route
-              path="/memberaccount"
-              element={<MemberAccount />} 
-            /> */}
-            <Route
-              path="/singleproducts"
-              element={<ProductsList />}
-            />
-            <Route
-              path="/moving"
-              element={<GetMoving />}
-            />
-            <Route path="/store" element={<Store />} />
-            <Route
-              path="/pickitem"
-              element={<PickItem />}
-            />
-            <Route
-              path="/providers"
-              element={<Providers />}
-            />
-            <Route
-              path="/apartment"
-              element={<Apartments />}
-            />
-            <Route
-              path="/callback"
-              element={<CallBack />}
-            />
-            <Route
-              path="/getoffer"
-              element={<GetOffer />}
-            />
-            <Route
-              path="/paylater"
-              element={<PayAtTheEnd />}
-            />
-            <Route
-              path="/personaldetails"
-              element={<DetailsBeforeCallBack />}
-            />
-            <Route
-              path="/movingkindselect"
-              element={<MovingKindSelect />}
-            />
+    // <div className="PageDad">
+    // <div className="page">
 
-            <Route
-              path="/factoryoroffice"
-              element={<FactoryOrOffice />} />
-            <Route
-              path="/storingkindselect"
-              element={<StoringKindSelect />}
-            />
-            <Route
-              path="/wherestoring"
-              element={<WhereStoring />}
-            />
-            <Route
-              path="/businessstoring"
-              element={<BusinessStoring />}
-            />
-            <Route
-              path="/totalprice"
-              element={<TotalPrice />}
-            />
-            <Route
-              path="/howmany"
-              element={<HowMany />}
-            />
-            <Route
-              path="/calculator"
-              element={<Calculator />}
-            />
-            <Route
-              path="/calculatorpickitem"
-              element={<CalculatorPickItem />}
-            />
-            {/* <Route
-              path="/aboutprovider"
-              element={<AboutProvaider />} 
-            /> */}
+    <BrowserRouter>
+      <Nav />
 
-
-          </Routes>
-        </BrowserRouter>
-      </div>
-    </div>
+      <Routes>
+        <Route path="/" element={<AboutProvaider />} />
+        <Route path="/paynow" element={<PayNow />} />
+        <Route path="/addcard" element={<AddCard />} />
+        <Route path="/paymentsuccess" element={<PaymentSuccess />} />
+        <Route path="/singleproducts" element={<ProductsList />} />
+        <Route path="/moving" element={<GetMoving />} />
+        <Route path="/store" element={<Store />} />
+        <Route path="/pickitem" element={<PickItem />} />
+        <Route path="/providers" element={<Providers />} />
+        <Route path="/apartment" element={<Apartments />} />
+        <Route path="/callback" element={<CallBack />} />
+        <Route path="/getoffer" element={<GetOffer />} />
+        <Route path="/paylater" element={<PayAtTheEnd />} />
+        <Route path="/personaldetails" element={<DetailsBeforeCallBack />} />
+        <Route path="/movingkindselect" element={<MovingKindSelect />} />
+        <Route path="/factoryoroffice" element={<FactoryOrOffice />} />
+        <Route path="/storingkindselect" element={<StoringKindSelect />} />
+        <Route path="/wherestoring" element={<WhereStoring />} />
+        <Route path="/businessstoring" element={<BusinessStoring />} />
+        <Route path="/totalprice" element={<TotalPrice />} />
+        <Route path="/howmany" element={<HowMany />} />
+        <Route path="/calculator" element={<Calculator />} />
+        <Route path="/calculatorpickitem" element={<CalculatorPickItem />} />
+      </Routes>
+    </BrowserRouter>
+    // </div>
+    // </div>
   );
 }
 

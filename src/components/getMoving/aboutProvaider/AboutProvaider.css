@@ -1,7 +1,14 @@
 .provider_banner {
-  background: url('/public/images/moving/providerLogo3.png');
-  background-size: contain;
-  height: 240px;
+  background: transparent url('/public/images/home.jpg') 0% 0% no-repeat padding-box;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 70vh;
+  /* border: 1px solid #707070; */
+  opacity: 1;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
 }
 
 .banner_content {
@@ -49,7 +56,7 @@
 
 }
 
-.office .specialistsListSec  {
+.office .specialistsListSec {
   padding: 0px 0 10px;
 }
 

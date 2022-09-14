@@ -12,6 +12,7 @@ html {
     --White-color: #ffffff;
     --blue-green: #56b49d;
     --oil-green: rgb(30, 76, 19);
+    direction: rtl;
 }
 
 .PageDad {
@@ -57,7 +58,7 @@ h6 {
 /* web sidebar */
 .web-sideBar {
     right: 0;
-    width: 428px !important;
+    /* width: 428px !important; */
 
 }
 
@@ -72,7 +73,7 @@ h6 {
     width: 100%;
     position: fixed;
     bottom: 0;
-    width: 428px;
+    /* width: 428px; */
     z-index: 1;
 }
 

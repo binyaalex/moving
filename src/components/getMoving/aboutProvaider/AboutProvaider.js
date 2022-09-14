@@ -82,93 +82,67 @@ const AboutProvaider = () => {
 
   return (
     <>
-      <div className="PageDad">
-        <div className="page">
-          <div className="doctor_pages rtl aboutProvider">
-            <Head text='א.א מובילים' />
-            <div className="doctor_banner provider_banner">
-              <div className="banner_content">
-                {/* <h1>א.א מובילים</h1> */}
-                <div className="bannerRight">
-                  <div className="banner_content_phone">
-                    <h6>03-7777777</h6>
-                    <BsTelephone className="telephone-icon" />
-                  </div>
-                  <div className="doctor_heading align-center justify-between all_review_section">
-                    <small>
-                      <StarIcon />
-                      4.6 (1435 ביקורות){" "}
-                    </small>
-                  </div>
-                </div>
-                <div className="bannerLeft">
-                  <div
-                    onClick={movingHandle}
-                    to="#"
-                    className="aboutBtn"
-                  >
-                    אודות
-                  </div>
-                </div>
-              </div>
+      {/* <div className="PageDad"> */}
+      {/* <div className="page"> */}
+      {/* <div className="doctor_pages rtl aboutProvider"> */}
+      {/* <Head text='א.א מובילים' /> */}
+      <div className="doctor_banner provider_banner">
+        <div className="banner_content">
+          <div className="bannerRight">
+            <div className="banner_content_phone">
+              {/* <h6>03-7777777</h6> */}
+              {/* <BsTelephone className="telephone-icon" /> */}
             </div>
-
-            {isMoving ? (
-              <div className="about_area">
-                <div className="about_text"> א.א מובילים חברת הובלות ואחסנה, מספקים שירותי הובלות לכל הארץ כולל הובלות קירור. </div>
-              </div>
-            ) : (
-              ""
-            )}
-
-            <ServiceList serviceListArr={serviceListArr} text='השירותים שלנו' />
-
-            <div className="review_rating_sec office ">
-              {/* <div className="container">
-                <div className="doctors_area"> */}
-              {/* <div className="review_heading d-flex align-center justify-between">
-                    <Link to="#" className="d-flex align-center">
-                      <KeyboardDoubleArrowRightIcon />
-                      לכל הביקורות{" "}
-                    </Link>
-                    <h3>ביקורות</h3>
-                  </div> */}
-              <SpecialistsList />
-              {/* <div className="service_box_area">
-                    {
-                      reviewList.map((el, i) => {
-                        return (
-                          <Review
-                            writerName={el.writerName}
-                            date={el.date}
-                            rating={el.rating}
-                            text={el.text}
-                            img={el.img}
-                            key={i}
-                          />
-                        )
-                      })
-                    }
-                  </div> */}
-              {/* </div>
-              </div> */}
+            <div className="doctor_heading align-center justify-between all_review_section">
+              <small>
+                {/* <StarIcon /> */}
+                {/* 4.6 (1435 ביקורות){" "} */}
+              </small>
             </div>
-            <div className="add_card_pages rtl">
-              <div className="add_card_area factorytime">
-                <div className="storingType_h1_wrapper">
-                  <h1 className="storingType_h1 storingType_h1">צור קשר</h1>
-                </div>
-                <div className="row specialistsBoxArea">
-                  <PersonalInfo header='השאר פרטים ליצירת קשר' />
-                </div>
-              </div>
-            </div>
-            <div className="aboutProvidesMainBtnDiv" >
-              <MainBtn text='אישור' link='#' />
-            </div>
+          </div>
+          <div className="bannerLeft">
+            {/* <div
+              onClick={movingHandle}
+              to="#"
+              className="aboutBtn"
+            >
+              אודות
+            </div> */}
           </div>
         </div>
       </div>
+
+      {isMoving ? (
+        <div className="about_area">
+          <div className="about_text"> א.א מובילים חברת הובלות ואחסנה, מספקים שירותי הובלות לכל הארץ כולל הובלות קירור. </div>
+        </div>
+      ) : (
+        ""
+      )}
+
+      <ServiceList serviceListArr={serviceListArr} text='השירותים שלנו' />
+
+      <div className="review_rating_sec office ">
+
+        <SpecialistsList />
+
+      </div>
+      <div className="add_card_pages rtl">
+        <div className="add_card_area factorytime">
+          <div className="storingType_h1_wrapper">
+            <h1 className="storingType_h1 storingType_h1">צור קשר</h1>
+          </div>
+          <div className="row specialistsBoxArea">
+            <PersonalInfo header='השאר פרטים ליצירת קשר' />
+          </div>
+        </div>
+      </div>
+      <div className="aboutProvidesMainBtnDiv" >
+        <MainBtn text='אישור' link='#' />
+      </div>
+      {/* </div> */}
+      {/* </div> */}
+      {/* </div> */}
     </>
   );
 };
