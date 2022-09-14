@@ -20,6 +20,7 @@ import service2 from "../../../assets/images/getMoving/service2.jpg";
 import { BsTelephone } from "react-icons/bs";
 import SpecialistsList from "../selectMovingCategory/specialistsList/SpecialistsList";
 import PersonalInfo from "../../storing/generalComponents/PersonalInfo";
+import Button from "react-bootstrap/Button";
 
 const AboutProvaider = () => {
 
@@ -87,14 +88,22 @@ const AboutProvaider = () => {
       {/* <div className="doctor_pages rtl aboutProvider"> */}
       {/* <Head text='א.א מובילים' /> */}
       <div className="provider_banner">
+        <img />
         <div className="banner_content">
           <div className="banner_title">
-            <h1>א.א מובילים</h1>
+            <h1>א.א מובילים &</h1>
             <h1>ב.ר שירותי אחסון</h1>
+            <p>כל פתרונות ההובלה והאחסנה מרוכזים במקום אחד</p>
+            <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
+          </div>
+          <div className="btnDiv">
+            <MainBtn text='הובלה' link='#' isLight={true} />
+            <MainBtn text='אחסנה' link='#' />
           </div>
         </div>
+      </div>
 
-        {/* <div className="bannerRight">
+      {/* <div className="bannerRight">
             <div className="banner_content_phone">
               <h6>03-7777777</h6>
               <BsTelephone className="telephone-icon" />
@@ -115,7 +124,6 @@ const AboutProvaider = () => {
               אודות
             </div>
           </div> */}
-      </div>
 
       {isMoving ? (
         <div className="about_area">
