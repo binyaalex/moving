@@ -86,30 +86,35 @@ const AboutProvaider = () => {
       {/* <div className="page"> */}
       {/* <div className="doctor_pages rtl aboutProvider"> */}
       {/* <Head text='א.א מובילים' /> */}
-      <div className="doctor_banner provider_banner">
+      <div className="provider_banner">
         <div className="banner_content">
-          <div className="bannerRight">
+          <div className="banner_title">
+            <h1>א.א מובילים</h1>
+            <h1>ב.ר שירותי אחסון</h1>
+          </div>
+        </div>
+
+        {/* <div className="bannerRight">
             <div className="banner_content_phone">
-              {/* <h6>03-7777777</h6> */}
-              {/* <BsTelephone className="telephone-icon" /> */}
+              <h6>03-7777777</h6>
+              <BsTelephone className="telephone-icon" />
             </div>
             <div className="doctor_heading align-center justify-between all_review_section">
               <small>
-                {/* <StarIcon /> */}
-                {/* 4.6 (1435 ביקורות){" "} */}
+                <StarIcon />
+                4.6 (1435 ביקורות){" "}
               </small>
             </div>
           </div>
           <div className="bannerLeft">
-            {/* <div
+            <div
               onClick={movingHandle}
               to="#"
               className="aboutBtn"
             >
               אודות
-            </div> */}
-          </div>
-        </div>
+            </div>
+          </div> */}
       </div>
 
       {isMoving ? (

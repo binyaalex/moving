@@ -1,24 +1,57 @@
 .provider_banner {
-  background: transparent url('/public/images/home.jpg') 0% 0% no-repeat padding-box;
+  background: transparent url('/public/images/home-flipped.jpg') 0% 0% no-repeat padding-box;
   top: 0px;
   left: 0px;
   width: 100vw;
   height: 70vh;
   /* border: 1px solid #707070; */
   opacity: 1;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px) !important;
+  -webkit-backdrop-filter: blur(3px) !important;
+  display: flex;
 
 }
 
-.banner_content {
-  display: flex;
+.provider_banner .banner_content {
+  /* display: flex;
   flex-direction: row-reverse;
-  width: 100%;
+  width: 100%; */
+  /* top: 40px !important; */
+  /* left: 300px; */
+  width: 70%;
+  height: 70%;
+  /* UI Properties */
+  opacity: 1;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.provider_banner .banner_content .banner_title {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.provider_banner .banner_content .banner_title h1 {
+  font-size: 58px;
+  font-weight: 500;
+  color: white;
+  /* direction: rtl !important; */
+  /* top: 278px; */
+  /* left: 300px; */
+  /* width: 870px; */
+  /* height: 149px; */
+  /* UI Properties */
+  text-align: right;
+  /* font: normal normal bold 58px/68px; */
+  letter-spacing: 0px;
+  opacity: 1;
 }
 
 .banner_content>* {
-  width: 50%;
+  /* width: 50%; */
 }
 
 .banner_content .bannerLeft {
