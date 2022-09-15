@@ -16,7 +16,7 @@
 }
 
 .provider_banner .banner_content {
-  width: 70%;
+  width: 70vw;
   height: 90%;
   opacity: 1;
   margin: auto;
@@ -34,7 +34,7 @@
 
 .provider_banner .banner_content .banner_title h1 {
   font-size: 58px;
-  font-weight: 700;
+  font-weight: bold;
   color: white;
   text-align: right;
   letter-spacing: 0px;
@@ -79,8 +79,10 @@
 
 .pros {
   display: flex;
-  justify-content: space-evenly;
-  margin: 50px 0;
+  justify-content: space-between;
+  width: 70vw;
+  margin: auto;
+  padding: 5vh 0;
 }
 
 .pros .pro {
@@ -104,6 +106,55 @@
 .pros .pro p {
   font-size: 15px;
 }
+
+
+.servicesDiv {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  margin: auto;
+}
+
+.servicesDiv .servicesTitle {
+  font-size: 33px;
+  text-align: center;
+  margin: 50px 0;
+  font-weight: bold;
+
+}
+
+.servicesDiv .services {
+  display: flex;
+  /* margin: auto; */
+  justify-content: space-between;
+
+}
+
+
+.servicesDiv .services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicesDiv .services .service img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.servicesDiv .services .service img {
+  width: 34vw;
+  height: 22vw;
+  transition: all .2s ease-in-out;
+}
+
+.servicesDiv .services .service h1 {
+  font-size: 25px;
+  margin: 5vh 0;
+}
+
+
+
 
 .banner_content .bannerLeft {
   display: flex;

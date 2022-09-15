@@ -20,9 +20,11 @@ import review3 from "../../../assets/images/review/review3.jpg";
 import service1 from "../../../assets/images/getMoving/service1.jpg";
 import service2 from "../../../assets/images/getMoving/service2.jpg";
 import { BsTelephone } from "react-icons/bs";
-import clock from "../../../assets/images/icons/clock.png"
-import pc from "../../../assets/images/icons/pc.png"
-import lock from "../../../assets/images/icons/lock.png"
+import clock from "../../../assets/images/icons/clock.png";
+import pc from "../../../assets/images/icons/pc.png";
+import lock from "../../../assets/images/icons/lock.png";
+import moving from "../../../assets/images/moving.jpg";
+import storing from "../../../assets/images/storing.jpg";
 
 const AboutProvaider = () => {
 
@@ -40,7 +42,6 @@ const AboutProvaider = () => {
       setIsMoving(true)
     }
   }
-
   const prosArr = [
     {
       header: 'שירות 24/7',
@@ -57,6 +58,16 @@ const AboutProvaider = () => {
       par: 'הזמנה קלה ומהירה אונליין',
       img: pc,
     }
+  ]
+  const servicesArr = [
+    {
+      header: 'הובלה',
+      img: moving,
+    },
+    {
+      header: 'אחסנה',
+      img: storing,
+    },
   ]
 
 
@@ -115,6 +126,21 @@ const AboutProvaider = () => {
             </div>
           )
         })}
+      </div>
+
+      <div className="servicesDiv">
+        <h1 className="servicesTitle">השירותים שלנו</h1>
+        <div className="services">
+
+          {servicesArr.map((el, i) => {
+            return (
+              <div className="service" key={i}>
+                <img src={el.img} />
+                <h1>{el.header}</h1>
+              </div>
+            )
+          })}
+        </div>
       </div>
 
       {/* <div className="bannerRight">
