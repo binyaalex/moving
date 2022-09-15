@@ -45,7 +45,7 @@ import Calculator from "./components/storing/calculator/Calculator";
 import CalculatorPickItem from "./components/storing/calculator/CalculatorPickItem";
 import BusinessStoring from "./components/storing/storingKindSelect/BusinessStoring";
 import TotalPrice from "./components/storing/price/TotalPrice";
-import AboutProvaider from "./components/getMoving/aboutProvaider/AboutProvaider";
+import Home from "./components/getMoving/home/Home";
 import DetailsBeforeCallBack from "./components/getMoving/getOffer/DetailsBeforeCallBack";
 import PayNow from "./components/pay/payNow/PayNow";
 import AddCard from "./components/pay/addCard/AddCard";
@@ -61,7 +61,7 @@ function App() {
       <Nav />
 
       <Routes>
-        <Route path="/" element={<AboutProvaider />} />
+        <Route path="/" element={<Home />} />
         <Route path="/paynow" element={<PayNow />} />
         <Route path="/addcard" element={<AddCard />} />
         <Route path="/paymentsuccess" element={<PaymentSuccess />} />

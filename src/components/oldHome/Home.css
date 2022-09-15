@@ -1,0 +1,337 @@
+/* Create the Default Paragraphs */
+
+.homePage.rtl * {
+    text-align: right !important;
+}
+
+.browser-view {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.welcome-container {
+    /* overflow-y: scroll !important; */
+    height: 100vh;
+    /* width: 75%; */
+    width: calc(100vw - 428px) !important;
+    background-image: url('../../assets/images/homepage/homeBG.jpg');
+    background-size: cover;
+    /* background-image: linear-gradient(var(--primary), var(--secondry)); */
+    /* position: fixed; */
+}
+
+.sideBar-container {
+    height: 100vh;
+    width: 25%;
+}
+
+
+/* Create the Default Paragraphs */
+
+.homePage {
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 100px;
+}
+
+.homePage .categoryArea {
+    padding: 20px 0px 20px 0px;
+}
+
+.homePage .categoryArea .imageDate {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: black 0px 0px 5px;
+}
+
+.homePage .categoryArea .imageDiscount {
+    position: absolute;
+    right: 5%;
+    bottom: 40%;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    text-shadow: black 0px 0px 5px;
+}
+
+.homePage .categoryArea .imageCode {
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    text-shadow: black 0px 0px 5px;
+}
+
+.homePage .categoryArea .swiper {
+    padding: 0px 10px 0px 0px;
+}
+
+.homePage .categoryArea .swiper-pagination {
+    text-align: center !important;
+}
+
+.homePage .categoryArea .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--swiper-pagination-color, #fff);
+}
+
+.homePage .servicesArea .servicesHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homePage .servicesArea .servicesHeading a {
+    font-size: 15px;
+    color: var(--primary) !important;
+    font-weight: 400;
+    display: flex;
+}
+
+.homePage .servicesArea .servicesHeading a svg {
+    transform: rotate(90deg);
+}
+
+.homePage .servicesArea .servicesHeading h3 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.homePage .servicesArea .serviceSqaureList {
+    padding: 10px 8px 0px 0px;
+}
+
+.homePage .servicesArea .serviceSqaureList .serviceSquare {
+    margin-bottom: 5px;
+}
+
+.homePage .servicesArea .serviceSqaureList .serviceSquare .serviceSquareImgDiv {
+    position: relative;
+}
+
+.homePage .servicesArea .serviceSqaureList .serviceSquare .serviceSquareImgDiv .serviceSquareImg {
+    position: relative;
+    border-radius: 15px;
+}
+
+.homePage .servicesArea .serviceSqaureList .serviceSquare .serviceSquareImgDiv .serviceSquareText {
+    position: absolute;
+    bottom: 25%;
+    right: 5%;
+}
+
+.homePage .servicesArea .serviceSqaureList .serviceSquare .serviceSquareImgDiv .serviceSquareText .serviceSquareTitle {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    text-shadow: black 0px 0px 5px;
+    margin-bottom: 0;
+    text-align: right !important;
+}
+
+.homePage .servicesArea .serviceSqaureList .serviceSquare .serviceSquareImgDiv .serviceSquareText .serviceSquareTiming {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    text-shadow: black 0px 0px 5px;
+    margin-bottom: 0;
+    text-align: end !important;
+}
+
+.homePage .paidServicesArea .paidServicesHeading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.homePage .paidServicesArea .paidServicesHeading a {
+    font-size: 15px;
+    color: var(--primary) !important;
+    font-weight: 400;
+    display: flex;
+}
+
+.homePage .paidServicesArea .paidServicesHeading a svg {
+    transform: rotate(90deg);
+}
+
+.homePage .paidServicesArea .paidServicesHeading h3 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.homePage .paidServicesArea .paidServiceSqaureList {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 10px 0px 10px;
+}
+
+.homePage .paidServicesArea .paidServiceSqaureList .paidServiceSquareDiv {
+    width: 30%;
+    height: 141px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.homePage .paidServicesArea .paidServiceSqaureList .paidServiceSquareDiv .paidServiceSquareImg {
+    width: 100%;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.homePage .paidServicesArea .paidServiceSqaureList .paidServiceSquareDiv #paidServiceSquareTitle {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center !important;
+    color: #222b45;
+    padding-top: 5px;
+}
+
+.homePage .paidServicesArea .paidServiceSqaureList .paidServiceSquareDiv #paidServiceSquarePrice {
+    text-align: center !important;
+}
+
+.homePage .orderServiceArea {
+    display: flex;
+    margin-top: 5px;
+}
+
+.homePage .orderServiceArea .orderServiceBtnDiv {
+    width: 100%;
+    margin: 0 auto;
+    color: var(--White-color);
+    background: rgb(255, 255, 255);
+    background-image: none;
+    background: var(--verticalGradient);
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: 700;
+    height: auto;
+}
+
+.homePage .orderServiceArea .orderServiceBtnDiv .btnHeading {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.homePage .orderServiceArea .orderServiceBtnDiv .btnHeading .textArea div {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.homePage .orderServiceArea .orderServiceBtnDiv .btnHeading svg {
+    background: white;
+    color: var(--primary);
+    font-size: 46px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.homePage .blogArea .blogHeading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.homePage .blogArea .blogHeading a {
+    font-size: 15px;
+    color: var(--primary) !important;
+    font-weight: 400;
+    display: flex;
+}
+
+.homePage .blogArea .blogHeading a svg {
+    transform: rotate(90deg);
+}
+
+.homePage .blogArea .blogHeading h3 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.homePage .blogArea .swiper-pagination {
+    text-align: center !important;
+}
+
+.homePage .blogArea .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--swiper-pagination-color, #fff);
+}
+
+.homePage .blogArea .imageArrow {
+    position: absolute;
+    bottom: 22%;
+    left: 5%;
+    height: 18px;
+    width: 10px;
+}
+
+.homePage .blogArea .imageTitle {
+    position: absolute;
+    bottom: 14%;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    width: 80%;
+    right: 8%;
+    text-shadow: black 0px 0px 5px;
+}
+
+.homePage .blogArea .swiper {
+    padding: 0px 10px 0px 0px;
+}
+
+
+/* web sidebar */
+
+.web-sideBar {
+    right: 0;
+    width: 428px !important;
+}
+
+.web-sideBar.web-sideBar .page {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.footer-container {
+    /* position: relative; */
+    right: 0 !important;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 428px;
+    z-index: 1;
+}
+
+.web-sideBar .menu {
+    z-index: 10;
+    left: calc(100% - 170px) !important;
+}
+
+@media only screen and (min-width: 500px) {
+    .footer-container .footer {
+        position: relative !important;
+    }
+}
