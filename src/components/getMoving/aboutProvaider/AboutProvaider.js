@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-
+import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import "./AboutProvaider.css";
 
+//components
 import Head from '../../repeats/head/Head';
 import ServiceList from "../../repeats/serviceList/ServiceList";
-
-import "./AboutProvaider.css";
-//components
 import Review from "../../repeats/review/Review";
 import MainBtn from '../../storing/generalComponents/MainBtn'
+import SpecialistsList from "../selectMovingCategory/specialistsList/SpecialistsList";
+import PersonalInfo from "../../storing/generalComponents/PersonalInfo";
+
 //images
 import StarIcon from '@mui/icons-material/Star';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
@@ -18,9 +20,9 @@ import review3 from "../../../assets/images/review/review3.jpg";
 import service1 from "../../../assets/images/getMoving/service1.jpg";
 import service2 from "../../../assets/images/getMoving/service2.jpg";
 import { BsTelephone } from "react-icons/bs";
-import SpecialistsList from "../selectMovingCategory/specialistsList/SpecialistsList";
-import PersonalInfo from "../../storing/generalComponents/PersonalInfo";
-import Button from "react-bootstrap/Button";
+import clock from "../../../assets/images/icons/clock.png"
+import pc from "../../../assets/images/icons/pc.png"
+import lock from "../../../assets/images/icons/lock.png"
 
 const AboutProvaider = () => {
 
@@ -39,21 +41,22 @@ const AboutProvaider = () => {
     }
   }
 
-  const serviceListArr = [
+  const prosArr = [
     {
-      header: 'שירותי הובלה',
-      price: '',
-      par: 'כולל הובלות קירור',
-      img: service1,
-      link: '/movingkindselect',
+      header: 'שירות 24/7',
+      par: 'זמינות מסביב לשעון',
+      img: clock,
     },
     {
-      header: 'שירותי אחסנה',
-      price: '',
-      par: `אחסנה בכל הארץ`,
-      img: service2,
-      link: '/storingkindselect',
+      header: 'בטחון מלא',
+      par: 'אחריות ואבטחה על כל הציוד',
+      img: lock,
     },
+    {
+      header: 'זה פשוט!',
+      par: 'הזמנה קלה ומהירה אונליין',
+      img: pc,
+    }
   ]
 
 
@@ -103,7 +106,15 @@ const AboutProvaider = () => {
         </div>
       </div>
       <div className="pros">
-
+        {prosArr.map((el, i) => {
+          return (
+            <div className="pro" key={i}>
+              <img src={el.img} />
+              <h1>{el.header}</h1>
+              <p>{el.par}</p>
+            </div>
+          )
+        })}
       </div>
 
       {/* <div className="bannerRight">
@@ -136,7 +147,7 @@ const AboutProvaider = () => {
         ""
       )}
 
-      <ServiceList serviceListArr={serviceListArr} text='השירותים שלנו' />
+      {/* <ServiceList serviceListArr={serviceListArr} text='השירותים שלנו' /> */}
 
       <div className="review_rating_sec office ">
 

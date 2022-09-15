@@ -1,9 +1,4 @@
 .provider_banner {
-  /* top: 0px; */
-  /* left: 0px; */
-  /* border: 1px solid #707070; */
-  /* opacity: 1; */
-  /* -webkit-backdrop-filter: blur(3px) !important; */
   display: flex;
   width: 100vw;
   height: 70vh;
@@ -14,21 +9,15 @@
   background: transparent url('/public/images/home-flipped.jpg') 0% 0% no-repeat padding-box;
   filter: blur(3px);
   width: 100vw;
-  height: 71vh;
+  height: 70vh;
   position: absolute;
   z-index: -10;
   overflow: clip !important;
 }
 
 .provider_banner .banner_content {
-  /* display: flex;
-  flex-direction: row-reverse;
-  width: 100%; */
-  /* top: 40px !important; */
-  /* left: 300px; */
   width: 70%;
   height: 90%;
-  /* UI Properties */
   opacity: 1;
   margin: auto;
   display: flex;
@@ -43,24 +32,11 @@
   background-color: #fff;
 }
 
-.provider_banner .banner_content .banner_title {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-}
-
 .provider_banner .banner_content .banner_title h1 {
   font-size: 58px;
   font-weight: 700;
   color: white;
-  /* direction: rtl !important; */
-  /* top: 278px; */
-  /* left: 300px; */
-  /* width: 870px; */
-  /* height: 149px; */
-  /* UI Properties */
   text-align: right;
-  /* font: normal normal bold 58px/68px; */
   letter-spacing: 0px;
   opacity: 1;
 }
@@ -81,15 +57,12 @@
   justify-content: center;
 }
 
-.filter-btn {
-  transition: all .2s ease-in-out;
-}
-
 .filter-btn:hover {
   transform: scale(1.1);
 }
 
 .filter-btn-div .filter-btn {
+  transition: all .2s ease-in-out;
   background: var(--primary);
   color: #fff;
   padding: 5px 0;
@@ -97,7 +70,6 @@
   font-size: 17px;
   width: 150px;
   text-align: center !important;
-  /* height: 50px; */
 }
 
 .lightBtn {
@@ -105,8 +77,32 @@
   background: #fff !important;
 }
 
-.banner_content>* {
-  /* width: 50%; */
+.pros {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+
+.pros .pro {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.pros .pro img {
+  width: 80px;
+  height: 80px;
+}
+
+.pros .pro h1 {
+  color: var(--primary);
+  font-size: 25px;
+}
+
+.pros .pro p {
+  font-size: 15px;
 }
 
 .banner_content .bannerLeft {
