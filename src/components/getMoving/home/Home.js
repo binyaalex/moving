@@ -10,22 +10,23 @@ import Review from "../../repeats/review/Review";
 import MainBtn from '../../storing/generalComponents/MainBtn'
 import SpecialistsList from "../selectMovingCategory/specialistsList/SpecialistsList";
 import PersonalInfo from "../../storing/generalComponents/PersonalInfo";
+import Pros from "../../pros/Pros";
 
 //images
 import StarIcon from '@mui/icons-material/Star';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import microsoft from '../../../assets/images/getMoving/microsoft.jpg'
 import law from '../../../assets/images/getMoving/law.jpg'
+import review1 from "../../../assets/images/review/review1.jpg";
+import review2 from "../../../assets/images/review/review2.jpg";
 import review3 from "../../../assets/images/review/review3.jpg";
 import service1 from "../../../assets/images/getMoving/service1.jpg";
 import service2 from "../../../assets/images/getMoving/service2.jpg";
 import { BsTelephone } from "react-icons/bs";
-import clock from "../../../assets/images/icons/clock.png";
-import pc from "../../../assets/images/icons/pc.png";
-import lock from "../../../assets/images/icons/lock.png";
 import moving from "../../../assets/images/moving.jpg";
 import storing from "../../../assets/images/storing.jpg";
 import clip from "../../../assets/images/magal/clip.mp4";
+import star from "../../../assets/images/icons/star.png";
 const Home = () => {
 
   const [isMoving, setIsMoving] = useState(false);
@@ -42,23 +43,7 @@ const Home = () => {
       setIsMoving(true)
     }
   }
-  const prosArr = [
-    {
-      header: 'שירות 24/7',
-      par: 'זמינות מסביב לשעון',
-      img: clock,
-    },
-    {
-      header: 'בטחון מלא',
-      par: 'אחריות ואבטחה על כל הציוד',
-      img: lock,
-    },
-    {
-      header: 'זה פשוט!',
-      par: 'הזמנה קלה ומהירה אונליין',
-      img: pc,
-    }
-  ]
+
   const servicesArr = [
     {
       header: 'הובלה',
@@ -71,20 +56,20 @@ const Home = () => {
   ]
 
 
-  const reviewList = [
+  const reviewsArr = [
     {
-      writerName: 'מיקרוסופט',
+      writerName: 'יובל לוי',
       date: '11 מאי 2022',
       rating: '5.0',
       text: "עבדו באופן מקצועי ושמרו על הרהיטים",
-      img: microsoft,
+      img: review1,
     },
     {
-      writerName: 'משרד עורכי דין',
+      writerName: 'ניסים בוסקילה',
       date: '7 מאי 2022',
       rating: '4.0',
-      text: "עבדו באופן מקצועי ושמרו על הרהיטים",
-      img: law,
+      text: "חוויה משנת חיים",
+      img: review2,
     },
     {
       writerName: 'יונתן ספקטור',
@@ -116,22 +101,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="pros">
-        {prosArr.map((el, i) => {
-          return (
-            <div className="pro" key={i}>
-              <img src={el.img} />
-              <h1>{el.header}</h1>
-              <p>{el.par}</p>
-            </div>
-          )
-        })}
-      </div>
+
+      <Pros />
 
       <div className="servicesDiv">
         <h1 className="homeTitle">השירותים שלנו</h1>
         <div className="services">
-
           {servicesArr.map((el, i) => {
             return (
               <div className="service" key={i}>
@@ -144,11 +119,42 @@ const Home = () => {
       </div>
 
       <div className="about">
-        <h1 className="homeTitle">אודותנו</h1>
+        <h1 className="homeTitle">אודותינו</h1>
         <div className="clipWrapper">
           <video className="clip" src={clip} autoPlay={true} muted={true} controls />
         </div>
       </div>
+
+      <div className="reviewsDiv">
+        <h1 className="homeTitle">ביקורות</h1>
+        <div className="reviews">
+          {reviewsArr.map((el, i) => {
+            return (
+              <div className="review" key={i}>
+                <div className="stars">
+                  <img src={star} />
+                  <img src={star} />
+                  <img src={star} />
+                  <img src={star} />
+                  <img src={star} />
+                </div>
+                <p className="reviewText">
+                  {el.text}
+                </p>
+                <div className="reviewer">
+                  <img src={el.img} />
+                  <div className="reviewerDetails">
+                    <h1 className="name">{el.writerName}</h1>
+                    <p className="date">{el.date}</p>
+                  </div>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+
+
       {/* <div className="bannerRight">
             <div className="banner_content_phone">
               <h6>03-7777777</h6>
