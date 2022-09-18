@@ -8,7 +8,7 @@ import { BsFillHouseFill } from "react-icons/bs";
 import { BsClockFill } from "react-icons/bs";
 import { FaCouch } from "react-icons/fa";
 import Head from '../../repeats/head/Head';
-import AddressInput from '../../getMoving/addressSection/AddressInput';
+import AddressInput from '../../addressSection/AddressInput';
 import PersonalInfo from '../generalComponents/PersonalInfo';
 import subDays from "date-fns/subDays"
 import ToggleButton from '@mui/material/ToggleButton';

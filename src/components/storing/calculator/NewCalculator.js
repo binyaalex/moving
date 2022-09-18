@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Head from "../../repeats/head/Head";
 import PaidServiceSqaure from "../../oldHome/paidServiceSqaure/PaidServiceSqaure";
 import { BsFillHouseFill } from "react-icons/bs";
-import AddressInput from '../../getMoving/addressSection/AddressInput';
+import AddressInput from '../../addressSection/AddressInput';
 
 const NewCalculator = () => {
 

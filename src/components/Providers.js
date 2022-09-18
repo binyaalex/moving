@@ -1,13 +1,13 @@
 // import ".././specialists/Doctors.css"
 import React, { useRef, useState } from "react";
 
-import Head from "../repeats/head/Head";
+import Head from "./repeats/head/Head";
 // import Filter from "../specialists/filter/Filter";
-import OpenRound from "../repeats/opensquare/OpenRound";
+import OpenRound from "./repeats/opensquare/OpenRound";
 
-import filterIcon from "../../assets/images/filter/filterBtn.png";
+import filterIcon from "../assets/images/filter/filterBtn.png";
 import SearchIcon from "@mui/icons-material/Search";
-import logo from "../../assets/images/getMoving/providerLogo1.png";
+import logo from "../assets/images/moving/providerLogo1.png";
 
 function Providers(props) {
   const [showfilter, setShowfilter] = useState(false);

@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import paymentSuccess from "../../../assets/images/pay/happyWoman.png";
+import paymentSuccess from "../../assets/images/pay/happyWoman.png";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import CircleIcon from "@mui/icons-material/Circle";
-import PersonalInfo from "../../storing/generalComponents/PersonalInfo";
-import Head from "../../repeats/head/Head";
-import ContactUs from "../../storing/generalComponents/ContactUs";
+import PersonalInfo from "../storing/generalComponents/PersonalInfo";
+import Head from "../repeats/head/Head";
+import ContactUs from "../storing/generalComponents/ContactUs";
 import { useSelector } from "react-redux/es/exports";
 
 function CallBack(props) {

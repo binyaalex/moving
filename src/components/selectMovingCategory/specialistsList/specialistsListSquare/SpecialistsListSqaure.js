@@ -5,9 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import StarIcon from '@mui/icons-material/Star';
 
-import microsoft from '../../../../../assets/images/getMoving/microsoft.jpg'
-import law from '../../../../../assets/images/getMoving/law.jpg'
-import textile from '../../../../../assets/images/getMoving/textile1.jpg'
+import microsoft from '../../../../assets/images/moving/microsoft.jpg'
+import law from '../../../../assets/images/moving/law.jpg'
+import textile from '../../../../assets/images/moving/textile1.jpg'
 
 const SpecialistsListSqaure = () => {
 
@@ -66,26 +66,26 @@ const SpecialistsListSqaure = () => {
   ];
 
   const slides =
-  specialistsListArr.length > 0
+    specialistsListArr.length > 0
       ? specialistsListArr.map((el, i) => (
-          <div className="" key={i}>
-            {/* <Link to={el.link}> */}
-              <div className="specialistsBox">
-                <div className="boxImg">
-                  <img src={el.image} alt="doctor" className="specialistsBoxImg" />
-                </div>
-                <div className="recommmend">
-                  <h6>{el.firstName}</h6>
-                  <p>{el.position}</p>
-                  {/* <div className="startCon">
+        <div className="" key={i}>
+          {/* <Link to={el.link}> */}
+          <div className="specialistsBox">
+            <div className="boxImg">
+              <img src={el.image} alt="doctor" className="specialistsBoxImg" />
+            </div>
+            <div className="recommmend">
+              <h6>{el.firstName}</h6>
+              <p>{el.position}</p>
+              {/* <div className="startCon">
                     <span>{el.rating}</span>
                     <StarIcon />
                   </div> */}
-                </div>
-              </div>
-            {/* </Link> */}
+            </div>
           </div>
-        ))
+          {/* </Link> */}
+        </div>
+      ))
       : "";
 
   return (
@@ -93,10 +93,10 @@ const SpecialistsListSqaure = () => {
       <Swiper spaceBetween={0} slidesPerView={1}>
         {slides.length > 0
           ? slides.map((slideContent, index) => (
-              <SwiperSlide key={index} virtualIndex={index}>
-                {slideContent}
-              </SwiperSlide>
-            ))
+            <SwiperSlide key={index} virtualIndex={index}>
+              {slideContent}
+            </SwiperSlide>
+          ))
           : ""}
       </Swiper>
     </>

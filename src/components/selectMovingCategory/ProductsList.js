@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import Footer from "../repeats/footer/Footer";
-import Head from "../../repeats/head/Head";
-import kitchen from "../../../assets/images/getMoving/kitchen.jpg";
-import closet2 from "../../../assets/images/getMoving/closet2.jpg";
-import closet3 from "../../../assets/images/getMoving/closet3.jpg";
-import closet4 from "../../../assets/images/getMoving/closet4.jpg";
-import closet5 from "../../../assets/images/getMoving/closet5.jpg";
-import closet6 from "../../../assets/images/getMoving/closet6.jpg";
+import Head from "../repeats/head/Head";
+import kitchen from "../../assets/images/moving/kitchen.jpg";
+import closet2 from "../../assets/images/moving/closet2.jpg";
+import closet3 from "../../assets/images/moving/closet3.jpg";
+import closet4 from "../../assets/images/moving/closet4.jpg";
+import closet5 from "../../assets/images/moving/closet5.jpg";
+import closet6 from "../../assets/images/moving/closet6.jpg";
 import ChosenItem from "../pickItem/ChosenItem";
 import PersonalDetails from "../PersonalDetails";
 import MovingTime from "../MovingTime";
 import "./ProductsList.css"
-import PersonalInfo from "../../storing/generalComponents/PersonalInfo";
+import PersonalInfo from "../storing/generalComponents/PersonalInfo";
 
 //Adding newest products as background image
 function ProductsList(props) {
@@ -70,13 +70,13 @@ function ProductsList(props) {
                 <div className="add_card_text_area">
                   <PersonalDetails movingType={"single"} />
                   <MovingTime isOnlyDate={true} />
-                    <div className="add_card_name desc">
-                      <h1 className="add_card_name_h1">תאור פריט </h1>
-                      <input
-                        type={"text"}
-                        className="descText"
-                        placeholder="ארון 2 מטר 4 דלתות שבור בחלקו הימני..."
-                      />
+                  <div className="add_card_name desc">
+                    <h1 className="add_card_name_h1">תאור פריט </h1>
+                    <input
+                      type={"text"}
+                      className="descText"
+                      placeholder="ארון 2 מטר 4 דלתות שבור בחלקו הימני..."
+                    />
                   </div>
                   <div className="add_card_name">
                     <h1 className="add_card_name_h1">העלאת תמונה/סרטון </h1>

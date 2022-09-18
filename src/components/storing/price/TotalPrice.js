@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Head from "../../repeats/head/Head";
 import { BsQuestionDiamondFill } from "react-icons/bs";
-import OrderMovingSummary from "../../getMoving/getOffer/OrderMovingSummary";
+import OrderMovingSummary from "../../getOffer/OrderMovingSummary";
 import OrderStoringSummary from "./OrderStoringSummary";
-import ChoosePayMethod from "../../getMoving/getOffer/ChoosePayMethod";
+import ChoosePayMethod from "../../getOffer/ChoosePayMethod";
 import "./TotalPrice.css"
 import "../howMany/HowMany.css";
 import Modal from "react-bootstrap/Modal";

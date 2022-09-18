@@ -149,11 +149,19 @@
   margin: auto;
 }
 
-.reviewsDiv .reviews .review .reviewText {}
+.reviewsDiv .reviews .review {}
 
-.reviewsDiv .reviews .review .reviewerDetails .name {
+.reviewsDiv .reviews .review .reviewer .reviewerDetails .name {
   font-size: 15px;
   font-weight: bold;
+}
+
+.reviewsDiv .reviews .review .reviewer .reviewerDetails .date {
+  font-size: 12px;
+}
+
+.reviewsDiv .reviews .review .reviewer img {
+  margin-left: 10px;
 }
 
 .reviewsDiv .reviews .review {

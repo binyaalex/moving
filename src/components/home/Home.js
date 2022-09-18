@@ -4,29 +4,29 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 //components
-import Head from '../../repeats/head/Head';
-import ServiceList from "../../repeats/serviceList/ServiceList";
-import Review from "../../repeats/review/Review";
-import MainBtn from '../../storing/generalComponents/MainBtn'
+import Head from '../repeats/head/Head';
+import ServiceList from "../repeats/serviceList/ServiceList";
+import Review from "../repeats/review/Review";
+import MainBtn from '../storing/generalComponents/MainBtn'
 import SpecialistsList from "../selectMovingCategory/specialistsList/SpecialistsList";
-import PersonalInfo from "../../storing/generalComponents/PersonalInfo";
-import Pros from "../../pros/Pros";
+import PersonalInfo from "../storing/generalComponents/PersonalInfo";
+import Pros from "../pros/Pros";
 
 //images
 import StarIcon from '@mui/icons-material/Star';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import microsoft from '../../../assets/images/getMoving/microsoft.jpg'
-import law from '../../../assets/images/getMoving/law.jpg'
-import review1 from "../../../assets/images/review/review1.jpg";
-import review2 from "../../../assets/images/review/review2.jpg";
-import review3 from "../../../assets/images/review/review3.jpg";
-import service1 from "../../../assets/images/getMoving/service1.jpg";
-import service2 from "../../../assets/images/getMoving/service2.jpg";
+import microsoft from '../../assets/images/moving/microsoft.jpg'
+import law from '../../assets/images/moving/law.jpg'
+import review1 from "../../assets/images/review/review1.jpg";
+import review2 from "../../assets/images/review/review2.jpg";
+import review3 from "../../assets/images/review/review3.jpg";
+import service1 from "../../assets/images/moving/service1.jpg";
+import service2 from "../../assets/images/moving/service2.jpg";
 import { BsTelephone } from "react-icons/bs";
-import moving from "../../../assets/images/moving.jpg";
-import storing from "../../../assets/images/storing.jpg";
-import clip from "../../../assets/images/magal/clip.mp4";
-import star from "../../../assets/images/icons/star.png";
+import moving from "../../assets/images/moving.jpg";
+import storing from "../../assets/images/storing.jpg";
+import clip from "../../assets/images/magal/clip.mp4";
+import star from "../../assets/images/icons/star.png";
 const Home = () => {
 
   const [isMoving, setIsMoving] = useState(false);

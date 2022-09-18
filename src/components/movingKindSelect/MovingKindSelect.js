@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import PregnancySquare from './pregnancySquare/PregnancySquare';
-import Head from '../../repeats/head/Head';
+import Head from '../repeats/head/Head';
 
-import oneRoomApartment from '../../../assets/images/getMoving/oneRoomApartment.jpg'
-import apartment from '../../../assets/images/getMoving/apartment.jpg'
-import office from '../../../assets/images/getMoving/office.jpg'
+import oneRoomApartment from '../../assets/images/moving/oneRoomApartment.jpg'
+import apartment from '../../assets/images/moving/apartment.jpg'
+import office from '../../assets/images/moving/office.jpg'
 
 const MovingKindSelect = () => {
 

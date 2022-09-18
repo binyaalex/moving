@@ -1,18 +1,18 @@
 import './FactoryOrOffice.css'
 import React from 'react';
 
-import desk from "../../../assets/images/factoryOrOffice/desk.jpg";
-import cabinet from "../../../assets/images/factoryOrOffice/cabinet.jpg";
-import it from "../../../assets/images/factoryOrOffice/it.jpg";
-import machine from "../../../assets/images/factoryOrOffice/machine.jpg";
-import vehicle from "../../../assets/images/factoryOrOffice/vehicle.jpg";
+import desk from "../../assets/images/factoryOrOffice/desk.jpg";
+import cabinet from "../../assets/images/factoryOrOffice/cabinet.jpg";
+import it from "../../assets/images/factoryOrOffice/it.jpg";
+import machine from "../../assets/images/factoryOrOffice/machine.jpg";
+import vehicle from "../../assets/images/factoryOrOffice/vehicle.jpg";
 import ChosenItem from "../pickItem/ChosenItem";
 import PersonalDetails from "../PersonalDetails";
 import { Link } from "react-router-dom";
-import Head from "../../repeats/head/Head";
+import Head from "../repeats/head/Head";
 import SpecialistsList from './specialistsList/SpecialistsList';
 import MovingTime from "../MovingTime"
-import PersonalInfo from '../../storing/generalComponents/PersonalInfo';
+import PersonalInfo from '../storing/generalComponents/PersonalInfo';
 
 function FactoryOrOffice(props) {
   const paidServiceArr = [

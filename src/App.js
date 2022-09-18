@@ -19,7 +19,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Confirm from "./components/confirm/Confirm";
 // import Bills from "./components/pay/bills/Bills";
 // import { Apartment } from "@mui/icons-material";
-// import OnlineOrOnphone from "./components/getMoving/onlineOrOnphone/OnlineOrOnphone";
+// import OnlineOrOnphone from "./components/onlineOrOnphone/OnlineOrOnphone";
 // import Settings from "./components/settingsPages/settings/Settings";
 // import Notifications from "./components/notificationsPages/notifications/Notifications";
 // import BuildingCommitteeAccount from "./components/buildingCommitteeAccount/BuildingCommitteeAccount";
@@ -28,15 +28,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Welcome from "./components/welcome/Welcome";
 // import Main from "./components/home/Main";
 
-import Apartments from "./components/getMoving/Apartments";
-import Providers from "./components/getMoving/Providers";
-import Store from "./components/getMoving/store/Store";
-import PickItem from "./components/getMoving/pickItem/PickItem";
-import GetOffer from "./components/getMoving/getOffer/GetOffer";
-import MovingKindSelect from "./components/getMoving/movingKindSelect/MovingKindSelect";
-import FactoryOrOffice from "./components/getMoving/selectMovingCategory/FactoryOrOffice";
-import ProductsList from "./components/getMoving/selectMovingCategory/ProductsList";
-import CallBack from "./components/getMoving/selectMovingCategory/CallBack";
+import Apartments from "./components/apartment/Apartments";
+import Providers from "./components/Providers";
+import Store from "./components/store/Store";
+import PickItem from "./components/pickItem/PickItem";
+import GetOffer from "./components/getOffer/GetOffer";
+import MovingKindSelect from "./components/movingKindSelect/MovingKindSelect";
+import FactoryOrOffice from "./components/selectMovingCategory/FactoryOrOffice";
+import ProductsList from "./components/selectMovingCategory/ProductsList";
+import CallBack from "./components/selectMovingCategory/CallBack";
 import PayAtTheEnd from "./components/pay/payAtTheEnd/PayAtTheEnd";
 import StoringKindSelect from "./components/storing/storingKindSelect/StoringKindSelect";
 import WhereStoring from "./components/storing/whereStoring/WhereStoring";
@@ -45,12 +45,12 @@ import Calculator from "./components/storing/calculator/Calculator";
 import CalculatorPickItem from "./components/storing/calculator/CalculatorPickItem";
 import BusinessStoring from "./components/storing/storingKindSelect/BusinessStoring";
 import TotalPrice from "./components/storing/price/TotalPrice";
-import Home from "./components/getMoving/home/Home";
-import DetailsBeforeCallBack from "./components/getMoving/getOffer/DetailsBeforeCallBack";
+import Home from "./components/home/Home";
+import DetailsBeforeCallBack from "./components/getOffer/DetailsBeforeCallBack";
 import PayNow from "./components/pay/payNow/PayNow";
 import AddCard from "./components/pay/addCard/AddCard";
 import PaymentSuccess from "./components/pay/paymentSuccess/PaymentSuccess";
-import GetMoving from "./components/getMoving/GetMoving";
+import Moving from "./components/moving/Moving";
 import Nav from "./components/nav/Nav"
 function App() {
   return (
@@ -66,7 +66,7 @@ function App() {
         <Route path="/addcard" element={<AddCard />} />
         <Route path="/paymentsuccess" element={<PaymentSuccess />} />
         <Route path="/singleproducts" element={<ProductsList />} />
-        <Route path="/moving" element={<GetMoving />} />
+        <Route path="/moving" element={<Moving />} />
         <Route path="/store" element={<Store />} />
         <Route path="/pickitem" element={<PickItem />} />
         <Route path="/providers" element={<Providers />} />

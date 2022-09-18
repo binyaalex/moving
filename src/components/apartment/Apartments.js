@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import "./GetMoving.css";
+import "../moving/Moving.css";
 import { BsTelephone } from "react-icons/bs";
 import { BsArrow90DegDown } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Head from '../repeats/head/Head';
-import AddressInput from "./addressSection/AddressInput";
-import MovingTime from "./MovingTime";
-import Input from "./addressSection/Input";
+import AddressInput from "../addressSection/AddressInput";
+import MovingTime from "../MovingTime";
+import Input from "../addressSection/Input";
 import { BsFillHouseFill } from "react-icons/bs";
 import { BsClockFill } from "react-icons/bs";
-import PersonalDetails from "./PersonalDetails";
+import PersonalDetails from "../PersonalDetails";
 import './Apartment.css';
 
 
@@ -21,7 +21,7 @@ function Apartments(props) {
         <Head text="פרטי לקוח" />
         <div className="add_card_pages rtl">
           <div className="add_card_area">
-            <PersonalDetails  />
+            <PersonalDetails />
           </div>
         </div>
         <div className="filter-btn-div apartment">

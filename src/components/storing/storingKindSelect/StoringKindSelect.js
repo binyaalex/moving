@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import PregnancySquare from '../../getMoving/movingKindSelect/pregnancySquare/PregnancySquare';
+import PregnancySquare from '../../movingKindSelect/pregnancySquare/PregnancySquare';
 import Head from '../../repeats/head/Head';
-import SpecialistsList from '../../getMoving/selectMovingCategory/specialistsList/SpecialistsList';
+import SpecialistsList from '../../selectMovingCategory/specialistsList/SpecialistsList';
 
-import oneRoomApartment from '../../../assets/images/getMoving/oneRoomApartment.jpg'
-import office from '../../../assets/images/getMoving/office.jpg'
+import oneRoomApartment from '../../../assets/images/moving/oneRoomApartment.jpg'
+import office from '../../../assets/images/moving/office.jpg'
 
 import insure from "../../../assets/images/storing/insure.jpg";
 import pest from "../../../assets/images/storing/pest.jpg";
@@ -13,7 +13,7 @@ import fire from "../../../assets/images/storing/fire.png";
 import secure from "../../../assets/images/storing/secure.jpg";
 import service from "../../../assets/images/storing/service.jpg";
 
-import ChosenItem from "../../getMoving/pickItem/ChosenItem";
+import ChosenItem from "../../pickItem/ChosenItem";
 
 const StoringKindSelect = () => {
 

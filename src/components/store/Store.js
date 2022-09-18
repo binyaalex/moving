@@ -1,8 +1,8 @@
 import './Store.css'
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Head from "../../repeats/head/Head";
-import PaidServiceSqaure from "../../oldHome/paidServiceSqaure/PaidServiceSqaure";
+import Head from "../repeats/head/Head";
+import PaidServiceSqaure from "../oldHome/paidServiceSqaure/PaidServiceSqaure";
 import Box from "./Box";
 
 

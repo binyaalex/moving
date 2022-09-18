@@ -1,16 +1,16 @@
 import "./PickItem.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Footer from "../../repeats/footer/Footer";
-import Head from "../../repeats/head/Head";
+import Footer from "../repeats/footer/Footer";
+import Head from "../repeats/head/Head";
 import Item from "./Item";
 
-import kitchen from '../../../assets/images/getMoving/kitchen.jpg'
-import closet2 from '../../../assets/images/getMoving/closet2.jpg'
-import closet3 from '../../../assets/images/getMoving/closet3.jpg'
-import closet4 from '../../../assets/images/getMoving/closet4.jpg'
-import closet5 from '../../../assets/images/getMoving/closet5.jpg'
-import closet6 from '../../../assets/images/getMoving/closet6.jpg'
+import kitchen from '../../assets/images/moving/kitchen.jpg'
+import closet2 from '../../assets/images/moving/closet2.jpg'
+import closet3 from '../../assets/images/moving/closet3.jpg'
+import closet4 from '../../assets/images/moving/closet4.jpg'
+import closet5 from '../../assets/images/moving/closet5.jpg'
+import closet6 from '../../assets/images/moving/closet6.jpg'
 
 
 const PickItem = () => {

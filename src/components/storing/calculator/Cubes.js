@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Head from "../../repeats/head/Head";
 import PaidServiceSqaure from "../../oldHome/paidServiceSqaure/PaidServiceSqaure";
 import { BsFillHouseFill } from "react-icons/bs";
-import AddressInput from '../../getMoving/addressSection/AddressInput';
+import AddressInput from '../../addressSection/AddressInput';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { EightK } from "@mui/icons-material";
