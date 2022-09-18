@@ -61,7 +61,7 @@ const Home = () => {
       {/* <div className="page"> */}
       {/* <div className="doctor_pages rtl aboutProvider"> */}
       {/* <Head text='א.א מובילים' /> */}
-      <div className="provider_banner">
+      <div className="home_banner">
         <img src='' />
         <div className="banner_content">
           <div className="banner_title">

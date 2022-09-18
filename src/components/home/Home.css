@@ -1,11 +1,11 @@
-.provider_banner {
+.home_banner {
   display: flex;
   width: 100vw;
   height: 70vh;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.provider_banner>img {
+.home_banner>img {
   background: transparent url('/public/images/home-flipped.jpg') 0% 0% no-repeat padding-box;
   filter: blur(3px);
   width: 100vw;
@@ -15,7 +15,7 @@
   overflow: clip !important;
 }
 
-.provider_banner .banner_content {
+.home_banner .banner_content {
   width: 70vw;
   height: 90%;
   opacity: 1;
@@ -32,7 +32,7 @@
   background-color: #fff;
 }
 
-.provider_banner .banner_content .banner_title h1 {
+.home_banner .banner_content .banner_title h1 {
   font-size: 58px;
   font-weight: bold;
   color: white;
@@ -70,29 +70,24 @@
 
 }
 
-.servicesDiv .services,
-.reviewsDiv .reviews {
+.servicesDiv .services {
   display: flex;
-  /* margin: auto; */
-  justify-content: space-between;
+  justify-content: space-around;
 
 }
 
-.servicesDiv .services .service,
-.reviewsDiv .reviews .review {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 25%;
+.servicesDiv .services .service {
+  padding: 0 20px;
+  width: 45%
 }
 
 .servicesDiv .services .service img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   cursor: pointer;
 }
 
 .servicesDiv .services .service img {
-  width: 34vw;
+  width: 33vw;
   height: 22vw;
   transition: all .2s ease-in-out;
 }
@@ -100,6 +95,20 @@
 .servicesDiv .services .service h1 {
   font-size: 25px;
   margin: 5vh 0;
+}
+
+.reviewsDiv .reviews {
+  /* display: flex; */
+  /* margin: auto; */
+  /* justify-content: space-between; */
+
+}
+
+.reviewsDiv .reviews .review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
 }
 
 .about {

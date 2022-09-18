@@ -1,18 +1,18 @@
 .provider_banner {
   display: flex;
   width: 100vw;
-  height: 70vh;
+  height: 40vh;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .provider_banner>img {
-  background: transparent url('/public/images/home-flipped.jpg') 0% 0% no-repeat padding-box;
+  background: transparent url('/public/images/storing.jpg')0% 50% no-repeat padding-box;
   filter: blur(3px);
   width: 100vw;
-  height: 70vh;
+  height: 40vh;
   position: absolute;
   z-index: -10;
-  overflow: clip !important;
+  overflow: cover !important;
 }
 
 .provider_banner .banner_content {
