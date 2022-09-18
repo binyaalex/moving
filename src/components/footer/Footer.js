@@ -6,10 +6,36 @@ import clock from "../../assets/images/icons/clock.png";
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+import bg from '../../assets/images/PS/912_0126.jpg';
+import { Link } from "react-router-dom";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const Footer = () => {
 
+  const mediaArr = [
+    {
+      header: 'אי-מייל',
+      par: 'moving@gmail.com',
+      icon: EmailIcon,
+    },
 
+    {
+      header: 'טלפון',
+      par: '1800-00-00-00',
+      icon: PhoneIcon,
+    },
+    {
+      header: 'תמיכה',
+      par: 'להסברים נוספים',
+      icon: SupportAgentIcon,
+    }
+  ]
   return (
     <>
       <div className="contact">
@@ -52,8 +78,46 @@ const Footer = () => {
             <div className="contact-btnDiv">
               <MainBtn text='יצירת קשר' link='#' />
             </div>
-
           </Form>
+        </div>
+      </div>
+
+      <div className="mediaDiv">
+        {mediaArr.map((el, i) => {
+          return (
+            <div className="media" key={i}>
+              <div className="iconWrapper">
+                <el.icon bg="grey" fontSize="large" color="warning" />
+              </div>
+              <h1>{el.header}</h1>
+              <p>{el.par}</p>
+            </div>
+          )
+        })}
+      </div>
+
+      <div className="foot">
+        <img src={bg} />
+        <div className="content">
+          <div className="right">
+            <h5>Moving & Storing Solutions</h5>
+            <p>כל פתרונות ההובלה והאחסנה מרוכזים במקום אחד</p>
+            <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
+          </div>
+          <div className="center">
+            <h5>קישורים</h5>
+            <Link to=""><p>אודות</p></Link>
+            <Link to=""><p>יצירת קשר</p></Link>
+          </div>
+          <div className="left">
+            <h5>עקבו אחרינו</h5>
+            <div className="social">
+              <FacebookIcon />
+              <TwitterIcon />
+              <  InstagramIcon />
+              <YouTubeIcon />
+            </div>
+          </div>
         </div>
       </div>
     </>

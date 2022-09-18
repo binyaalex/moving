@@ -19,6 +19,7 @@ import StarIcon from '@mui/icons-material/Star';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import microsoft from '../../assets/images/moving/microsoft.jpg'
 import law from '../../assets/images/moving/law.jpg'
+import bg from '../../assets/images/home-flipped.jpg'
 
 import service1 from "../../assets/images/moving/service1.jpg";
 import service2 from "../../assets/images/moving/service2.jpg";
@@ -61,7 +62,7 @@ const Home = () => {
       {/* <div className="doctor_pages rtl aboutProvider"> */}
       {/* <Head text='א.א מובילים' /> */}
       <div className="provider_banner">
-        <img />
+        <img src='' />
         <div className="banner_content">
           <div className="banner_title">
             <h1>א.א מובילים &</h1>
