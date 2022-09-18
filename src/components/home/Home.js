@@ -12,13 +12,13 @@ import SpecialistsList from "../selectMovingCategory/specialistsList/Specialists
 import PersonalInfo from "../storing/generalComponents/PersonalInfo";
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
+import Footer from "../footer/Footer";
 
 //images
 import StarIcon from '@mui/icons-material/Star';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import microsoft from '../../assets/images/moving/microsoft.jpg'
 import law from '../../assets/images/moving/law.jpg'
-
 
 import service1 from "../../assets/images/moving/service1.jpg";
 import service2 from "../../assets/images/moving/service2.jpg";
@@ -54,9 +54,6 @@ const Home = () => {
     },
   ]
 
-
-
-
   return (
     <>
       {/* <div className="PageDad"> */}
@@ -73,8 +70,8 @@ const Home = () => {
             <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='הובלה' link='#' isLight={true} />
-            <MainBtn text='אחסנה' link='#' />
+            <MainBtn text='הובלה' link='#' />
+            <MainBtn text='אחסנה' link='#' isLight={true} />
           </div>
         </div>
       </div>
@@ -103,7 +100,7 @@ const Home = () => {
       </div>
 
       <Reviews />
-
+      <Footer />
 
       {/* <div className="bannerRight">
             <div className="banner_content_phone">
@@ -127,17 +124,17 @@ const Home = () => {
             </div>
           </div> */}
 
-      {isMoving ? (
+      {/* {isMoving ? (
         <div className="about_area">
           <div className="about_text"> א.א מובילים חברת הובלות ואחסנה, מספקים שירותי הובלות לכל הארץ כולל הובלות קירור. </div>
         </div>
       ) : (
         ""
-      )}
+      )} */}
 
       {/* <ServiceList serviceListArr={serviceListArr} text='השירותים שלנו' /> */}
 
-      <div className="review_rating_sec office ">
+      {/* <div className="review_rating_sec office ">
 
         <SpecialistsList />
 
@@ -154,7 +151,7 @@ const Home = () => {
       </div>
       <div className="aboutProvidesMainBtnDiv" >
         <MainBtn text='אישור' link='#' />
-      </div>
+      </div> */}
       {/* </div> */}
       {/* </div> */}
       {/* </div> */}
