@@ -11,22 +11,21 @@ import MainBtn from '../storing/generalComponents/MainBtn'
 import SpecialistsList from "../selectMovingCategory/specialistsList/SpecialistsList";
 import PersonalInfo from "../storing/generalComponents/PersonalInfo";
 import Pros from "../pros/Pros";
+import Reviews from "../reviews/Reviews";
 
 //images
 import StarIcon from '@mui/icons-material/Star';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import microsoft from '../../assets/images/moving/microsoft.jpg'
 import law from '../../assets/images/moving/law.jpg'
-import review1 from "../../assets/images/review/review1.jpg";
-import review2 from "../../assets/images/review/review2.jpg";
-import review3 from "../../assets/images/review/review3.jpg";
+
+
 import service1 from "../../assets/images/moving/service1.jpg";
 import service2 from "../../assets/images/moving/service2.jpg";
 import { BsTelephone } from "react-icons/bs";
 import moving from "../../assets/images/moving.jpg";
 import storing from "../../assets/images/storing.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
-import star from "../../assets/images/icons/star.png";
 const Home = () => {
 
   const [isMoving, setIsMoving] = useState(false);
@@ -56,29 +55,7 @@ const Home = () => {
   ]
 
 
-  const reviewsArr = [
-    {
-      writerName: 'יובל לוי',
-      date: '11 מאי 2022',
-      rating: '5.0',
-      text: "עבדו באופן מקצועי ושמרו על הרהיטים",
-      img: review1,
-    },
-    {
-      writerName: 'ניסים בוסקילה',
-      date: '7 מאי 2022',
-      rating: '4.0',
-      text: "חוויה משנת חיים",
-      img: review2,
-    },
-    {
-      writerName: 'יונתן ספקטור',
-      date: '1 מאי 2022',
-      rating: '5.0',
-      text: "עבדו באופן מקצועי ושמרו על הרהיטים",
-      img: review3,
-    },
-  ]
+
 
   return (
     <>
@@ -125,34 +102,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="reviewsDiv">
-        <h1 className="homeTitle">ביקורות</h1>
-        <div className="reviews">
-          {reviewsArr.map((el, i) => {
-            return (
-              <div className="review" key={i}>
-                <div className="stars">
-                  <img src={star} />
-                  <img src={star} />
-                  <img src={star} />
-                  <img src={star} />
-                  <img src={star} />
-                </div>
-                <p className="reviewText">
-                  {el.text}
-                </p>
-                <div className="reviewer">
-                  <img src={el.img} />
-                  <div className="reviewerDetails">
-                    <h1 className="name">{el.writerName}</h1>
-                    <p className="date">{el.date}</p>
-                  </div>
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      </div>
+      <Reviews />
 
 
       {/* <div className="bannerRight">
