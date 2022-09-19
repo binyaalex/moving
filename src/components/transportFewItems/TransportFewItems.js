@@ -28,6 +28,7 @@ import galleryImg3 from "../../assets/images/TII/moving-company-insurance.jpg";
 import galleryImg4 from "../../assets/images/TII/moving-service-worker-sealing-cardboard-box-GRM5SEC.jpg";
 import galleryImg5 from "../../assets/images/TII/packing-furniture-moving-service.jpg";
 import galleryImg6 from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
+import ItemList from "../repeats/itemList/ItemList";
 
 const TransportFewItems = () => {
 
@@ -55,34 +56,40 @@ const TransportFewItems = () => {
 
     const itemsArr = [
         {
-            header: 'אי מטבח',
+            title: 'אי מטבח',
             price: 300,
             img: kitchen,
+            link: '#',
         },
         {
-            header: 'ארון 2 דלתות',
+            title: 'ארון 2 דלתות',
             price: 300,
             img: closet2,
+            link: '#',
         },
         {
-            header: 'ארון 3 דלתות',
+            title: 'ארון 3 דלתות',
             price: 300,
             img: closet3,
+            link: '#',
         },
         {
-            header: 'ארון 4 דלתות',
+            title: 'ארון 4 דלתות',
             price: 300,
             img: closet4,
+            link: '#',
         },
         {
-            header: 'ארון 5 דלתות',
+            title: 'ארון 5 דלתות',
             price: 300,
             img: closet5,
+            link: '#',
         },
         {
-            header: 'ארון 6 דלתות',
+            title: 'ארון 6 דלתות',
             price: 300,
             img: closet6,
+            link: '#',
         },
     ]
 
@@ -119,19 +126,12 @@ const TransportFewItems = () => {
 
             <div className="fewItemsFormSide">
                 <h5>רשימת מחירים (200 - 1000 ₪)</h5>
-                <div className="ItemsList">
-                    {itemsArr.map((el, i) => {
-                        return (
-                            <div className="item" key={i}>
-                                <img src={el.img} />
-                                <div className="itemText">
-                                    <div className="itemH">{el.header}</div>
-                                    <div className="itemPrice"><strong>מחיר:</strong> {el.price}₪</div>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
+                
+                <ItemList 
+                    itemsArr={itemsArr}
+                    withPrice={true} 
+                />
+                
                 
                 <Form className="formBox">
                     <Row className="mb-3 row">
