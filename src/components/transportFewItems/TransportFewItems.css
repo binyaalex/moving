@@ -1,3 +1,32 @@
-.transportFewItems .provider_banner>img {
-    background: transparent url('/public/images/moving.jpg')0% 50% no-repeat padding-box;
+.fewItemsDiv {
+    display: flex;
+    gap: 20px;
+}
+
+.fewItemsImagesSide {
+    width: 50%;
+}
+
+.fewItemsFormSide {
+    width: 50%;
+}
+
+.fewItemsFormSide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ItemsList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.item {
+    width: 30%;
+}
+
+.item > div {
+    font-size: 16px;
 }

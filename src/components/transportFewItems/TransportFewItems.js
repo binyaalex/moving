@@ -73,26 +73,28 @@ const TransportFewItems = () => {
 
       <div className="servicesDiv">
         <h1 className="homeTitle">הובלת פריטים בודדים</h1>
-        <div className="fewItemsImagesSide">
+        <div className="fewItemsDiv">
+            <div className="fewItemsImagesSide">
+                צד שני
+            </div>
 
-        </div>
+            <div className="fewItemsFormSide">
+                <h5>רשימת מחירים (200 - 1000 ₪)</h5>
+                <div className="ItemsList">
+                    {itemsArr.map((el, i) => {
+                        return (
+                            <div className="item" key={i}>
+                                <img src={el.img} />
+                                <div className="itemH">{el.header}</div>
+                                <div className="itemPrice"><strong>מחיר:</strong> {el.price}₪</div>
+                            </div>
+                        )
+                    })}
+                </div>
 
-        <div className="fewItemsFormSide">
-            <h5>רשימת מחירים (200 - 1000 ₪)</h5>
-            <div className="ItemsList">
-                {itemsArr.map((el, i) => {
-                    return (
-                        <div className="item" key={i}>
-                            <img src={el.img} />
-                            <h5>{el.header}</h5>
-                            <h5><strong>מחיר:</strong> {el.price}₪</h5>
-                        </div>
-                    )
-                })}
             </div>
 
         </div>
-
       </div>
 
       <Reviews />
