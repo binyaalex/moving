@@ -16,6 +16,7 @@ import storing from "../../assets/images/storing.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
 import privateStorage from "../../assets/images/PS/privateStorage.jpg";
 import businessStorage from "../../assets/images/PS/businessStorage.jpg";
+import online from "../../assets/images/PS/online.jpg";
 
 const OnlineStorage = () => {
 
@@ -36,7 +37,7 @@ const OnlineStorage = () => {
     <>
 
       <div className="page_banner">
-        <img src={privateStorage} />
+        <img src={online} />
         <div className="banner_content">
           <div className="banner_title">
             <h1>אחסנה פרטית</h1>
@@ -44,8 +45,8 @@ const OnlineStorage = () => {
             <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='הצעת מחיר אונליין' link='#' />
-            <MainBtn text='הזמנה בעזרת נציג' link='#' isLight={true} />
+            <MainBtn text='לדף אחסנה' link='#' />
+            <MainBtn text='להזמנה בעזרת נציג' link='#' isLight={true} />
           </div>
         </div>
       </div>
