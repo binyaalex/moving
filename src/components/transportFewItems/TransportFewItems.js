@@ -8,53 +8,73 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 //components
-
-import moving from "../../assets/images/moving.jpg";
 import MainBtn from '../storing/generalComponents/MainBtn'
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
+import SideGallery from "../repeats/sideGallery/SideGallery";
 
 //images
-
+import moving from "../../assets/images/moving.jpg";
 import kitchen from "../../assets/images/TI-price/kitchen.jpg";
+import galleryImg1 from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg";
 
 const TransportFewItems = () => {
 
+    const galleryArr = [
+        {
+            img: galleryImg1
+        },
+        {
+            img: galleryImg1
+        },
+        {
+            img: galleryImg1
+        },
+        {
+            img: galleryImg1
+        },
+        {
+            img: galleryImg1
+        },
+        {
+            img: galleryImg1
+        },
+    ]
 
 
-  const itemsArr = [
-    {
-        header: 'אי מטבח',
-        price: 300,
-        img: kitchen,
-    },
-    {
-        header: 'אי מטבח',
-        price: 300,
-        img: kitchen,
-    },
-    {
-        header: 'אי מטבח',
-        price: 300,
-        img: kitchen,
-    },
-    {
-        header: 'אי מטבח',
-        price: 300,
-        img: kitchen,
-    },
-    {
-        header: 'אי מטבח',
-        price: 300,
-        img: kitchen,
-    },
-    {
-        header: 'אי מטבח',
-        price: 300,
-        img: kitchen,
-    },
-  ]
+    const itemsArr = [
+        {
+            header: 'אי מטבח',
+            price: 300,
+            img: kitchen,
+        },
+        {
+            header: 'אי מטבח',
+            price: 300,
+            img: kitchen,
+        },
+        {
+            header: 'אי מטבח',
+            price: 300,
+            img: kitchen,
+        },
+        {
+            header: 'אי מטבח',
+            price: 300,
+            img: kitchen,
+        },
+        {
+            header: 'אי מטבח',
+            price: 300,
+            img: kitchen,
+        },
+        {
+            header: 'אי מטבח',
+            price: 300,
+            img: kitchen,
+        },
+    ]
 
   return (
     <div className="transportFewItems">
@@ -80,7 +100,11 @@ const TransportFewItems = () => {
         <h1 className="homeTitle">הובלת פריטים בודדים</h1>
         <div className="fewItemsDiv">
             <div className="fewItemsImagesSide">
-                צד שני
+                <SideGallery 
+                    mainImg={moving}
+                    header='שירותי הובלות'
+                    galleryArr={galleryArr}
+                />
             </div>
 
             <div className="fewItemsFormSide">
