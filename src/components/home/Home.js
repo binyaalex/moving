@@ -48,10 +48,12 @@ const Home = () => {
     {
       header: 'הובלה',
       img: moving,
+      link: ''
     },
     {
       header: 'אחסנה',
       img: storing,
+      link: '/storage'
     },
   ]
 
@@ -72,7 +74,7 @@ const Home = () => {
           </div>
           <div className="btnDiv">
             <MainBtn text='הובלה' link='#' />
-            <MainBtn text='אחסנה' link='#' isLight={true} />
+            <MainBtn text='אחסנה' link='/storage' isLight={true} />
           </div>
         </div>
       </div>
@@ -85,7 +87,9 @@ const Home = () => {
           {servicesArr.map((el, i) => {
             return (
               <div className="service" key={i}>
-                <img src={el.img} />
+                <Link to={el.link}>
+                  <img src={el.img} />
+                </Link>
                 <h1>{el.header}</h1>
               </div>
             )
