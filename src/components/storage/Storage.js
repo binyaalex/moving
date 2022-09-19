@@ -17,6 +17,7 @@ import clip from "../../assets/images/magal/clip.mp4";
 import privateStorage from "../../assets/images/PS/privateStorage.jpg";
 import businessStorage from "../../assets/images/PS/businessStorage.jpg";
 
+
 const Storage = () => {
 
 

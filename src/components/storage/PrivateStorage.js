@@ -16,21 +16,21 @@ import storing from "../../assets/images/storing.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
 import privateStorage from "../../assets/images/PS/privateStorage.jpg";
 import businessStorage from "../../assets/images/PS/businessStorage.jpg";
+import online from "../../assets/images/PS/online.jpg";
+import getback from "../../assets/images/PS/getback.jpg";
 
 const PrivateStorage = () => {
-
-
 
   const servicesArr = [
     {
       header: 'אונליין',
-      img: privateStorage,
-      link: ''
+      img: online,
+      link: '/onlinestorage'
     },
     {
       header: 'בעזרת נציג',
-      img: businessStorage,
-      link: ''
+      img: getback,
+      link: '/getbackStorage'
     },
   ]
 
@@ -46,8 +46,8 @@ const PrivateStorage = () => {
             <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='הצעת מחיר אונליין' link='#' />
-            <MainBtn text='הזמנה בעזרת נציג' link='#' isLight={true} />
+            <MainBtn text='הצעת מחיר אונליין' link='/onlinestorage' />
+            <MainBtn text='הזמנה בעזרת נציג' link='/getbackStorage' isLight={true} />
           </div>
         </div>
       </div>

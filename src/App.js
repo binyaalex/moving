@@ -68,6 +68,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/storage" element={<Storage />} />
+        <Route path="/privatestorage" element={<PrivateStorage />} />
+        <Route path="/onlinestorage" element={<OnlineStorage />} />
+
         <Route path="/paynow" element={<PayNow />} />
         <Route path="/addcard" element={<AddCard />} />
         <Route path="/paymentsuccess" element={<PaymentSuccess />} />
@@ -76,9 +80,7 @@ function App() {
         <Route path="/transport" element={<Transport />} />
         <Route path="/transportfewitems" element={<TransportFewItems />} />
         <Route path="/store" element={<Store />} />
-        <Route path="/storage" element={<Storage />} />
-        <Route path="/privatestorage" element={<PrivateStorage />} />
-        <Route path="/onlinestorage" element={<OnlineStorage />} />
+
         <Route path="/pickitem" element={<PickItem />} />
         <Route path="/providers" element={<Providers />} />
         <Route path="/apartment" element={<Apartments />} />
