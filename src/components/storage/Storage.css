@@ -184,3 +184,7 @@
 .aboutProvidesMainBtnDiv {
   padding: 0 10px;
 }
+
+.radio {
+  direction: ltr;
+}
