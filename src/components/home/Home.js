@@ -27,6 +27,8 @@ import { BsTelephone } from "react-icons/bs";
 import moving from "../../assets/images/moving.jpg";
 import storing from "../../assets/images/storing.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
+import home from "../../assets/images/home-flipped.jpg";
+
 const Home = () => {
 
   const [isMoving, setIsMoving] = useState(false);
@@ -64,7 +66,7 @@ const Home = () => {
       {/* <div className="doctor_pages rtl aboutProvider"> */}
       {/* <Head text='א.א מובילים' /> */}
       <div className="home_banner">
-        <img src='' />
+        <img src={home} />
         <div className="banner_content">
           <div className="banner_title">
             <h1>א.א מובילים &</h1>

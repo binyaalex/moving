@@ -37,8 +37,8 @@ const Storage = () => {
   return (
     <>
 
-      <div className="provider_banner">
-        <img src='' />
+      <div className="page_banner">
+        <img src={storing} />
         <div className="banner_content">
           <div className="banner_title">
             <h1>אחסנה</h1>
@@ -46,8 +46,8 @@ const Storage = () => {
             <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='הובלה' link='#' />
-            <MainBtn text='אחסנה' link='#' isLight={true} />
+            <MainBtn text='פרטית' link='#' />
+            <MainBtn text='עסקית' link='#' isLight={true} />
           </div>
         </div>
       </div>
