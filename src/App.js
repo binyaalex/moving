@@ -9,6 +9,7 @@ import Home from "./components/home/Home";
 import Transport from "./components/transport/Transport";
 import TransportFewItems from "./components/transportFewItems/TransportFewItems";
 import Nav from "./components/nav/Nav"
+import TransportFewItemsSuccess from "./components/transportFewItems/TransportFewItemsSuccess";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
         <Route path="/transport" element={<Transport />} />
         <Route path="/transportfewitems" element={<TransportFewItems />} />
+        <Route path="/transportfewitemsSuccess" element={<TransportFewItemsSuccess />} />
 
       </Routes>
     </BrowserRouter>

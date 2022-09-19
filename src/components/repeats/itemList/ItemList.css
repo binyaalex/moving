@@ -17,3 +17,11 @@
 .itemText {
     text-align: center;
 }
+
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}

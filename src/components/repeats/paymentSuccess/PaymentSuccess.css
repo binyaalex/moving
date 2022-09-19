@@ -1,0 +1,76 @@
+/* Create the Default Paragraphs */
+.payment_success_pages.rtl * {
+  text-align: center !important;
+}
+
+.payment_success_pages {
+  height: 100%;
+  max-width: 428px;
+  width: 100%;
+}
+
+.payment_success_pages .payment_success_div {
+  margin-top: 13vh;
+  position: relative;
+}
+
+.payment_success_pages .payment_success_div .payment_success_div_img {
+  margin-left: 20px;
+  object-fit: contain;
+}
+
+.payment_success_pages .payment_success_div svg {
+  position: absolute;
+  color: var(--primary);
+}
+
+.payment_success_pages .payment_success_div .payment_success_div_Check {
+  top: 0;
+  left: 22%;
+  font-size: 42px;
+}
+
+.payment_success_pages .payment_success_div .payment_success_div_circle_right {
+  bottom: 32%;
+  right: 12%;
+  font-size: 26px;
+  color: var(--secondry);
+}
+
+.payment_success_pages .payment_success_div .payment_success_div_circle_left {
+  bottom: 30%;
+  left: 12%;
+  font-size: 26px;
+  color: var(--secondry);
+}
+
+.payment_success_pages .payment_success_div .payment_success_div_h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10%;
+  direction: rtl;
+}
+
+.payment_success_pages .payment_success_pages_box_btn {
+  margin-top: 10%;
+}
+
+.payment_success_pages .payment_success_pages_box_btn .payment_success_pages_box_btn_area {
+  margin-top: 5%;
+  text-align: center !important;
+}
+
+.payment_success_pages .payment_success_pages_box_btn .payment_success_pages_box_btn_area .payment_success_pages_box_go_btn {
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  color: var(--White-color);
+  background: var(--primary);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 17px;
+  font-weight: 600;
+  height: 48px;
+  text-align: center !important;
+}
