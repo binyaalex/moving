@@ -13,6 +13,7 @@
   position: absolute;
   z-index: -10;
   overflow: cover !important;
+  object-fit: cover;
 }
 
 .page_banner .banner_content {

@@ -4,6 +4,7 @@ import "./TransportFewItems.css";
 
 //components
 
+import moving from "../../assets/images/moving.jpg";
 import MainBtn from '../storing/generalComponents/MainBtn'
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
@@ -53,8 +54,8 @@ const TransportFewItems = () => {
   return (
     <div className="transportFewItems">
 
-      <div className="provider_banner">
-        <img src='' />
+      <div className="page_banner">
+        <img src={moving} />
         <div className="banner_content">
           <div className="banner_title">
             <h1>הובלת פריטים בודדים</h1>
