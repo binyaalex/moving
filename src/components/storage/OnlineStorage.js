@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import "./Storage.css";
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import ToggleButton from 'react-bootstrap/ToggleButton';
+
 //components
 
 import MainBtn from '../storing/generalComponents/MainBtn'
@@ -21,6 +24,13 @@ import businessStorage from "../../assets/images/PS/businessStorage.jpg";
 import online from "../../assets/images/PS/online.jpg";
 
 const OnlineStorage = () => {
+  const [checked, setChecked] = useState(false);
+  const [radioValue, setRadioValue] = useState('1');
+
+  const radios = [
+    { name: 'Radio1', value: '2' },
+    { name: 'Radio', value: '3' },
+  ];
 
   return (
     <>
@@ -46,10 +56,10 @@ const OnlineStorage = () => {
         <h1 className="homeTitle">פרטי הזמנה</h1>
         <div className="contactDiv">
 
-          <Form className="formBox" variant="warning">
+          <Form className="formBox" >
             <Row className="mb-3 row">
 
-              <Form.Group as={Col} className="mb-3" variant="warning" controlId="formBasicName">
+              <Form.Group as={Col} className="mb-3" controlId="formBasicName">
                 <Form.Label>אזור</Form.Label>
                 <Form.Select aria-label="Default select example">
                   <option>. . .</option>
@@ -64,7 +74,7 @@ const OnlineStorage = () => {
 
               </Form.Group>
 
-              <Form.Group variant="warning" as={Col} className="mb-3 warning" controlId="formBasicEmail">
+              <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
                 <Form.Label>תאריך</Form.Label>
                 <Form.Control type="date" placeholder='01/01/2023' />
                 <Form.Check
@@ -77,28 +87,25 @@ const OnlineStorage = () => {
             </Row>
             <Row className="mb-3 row">
 
-              <Form.Group as={Col} className="mb-3" controlId="formBasicPhone">
-                <Form.Label>טלפון</Form.Label>
-                <Form.Control type="phone" placeholder="הטלפון שלי" />
-
-              </Form.Group>
-
-              <Form.Group as={Col} className="mb-3" controlId="formBasicity">
-                <Form.Label>עיר</Form.Label>
-                <Form.Control type="text" placeholder="העיר שלי" />
-              </Form.Group>
+              <ButtonGroup className="mb-3">
+                {radios.map((radio, idx) => (
+                  <ToggleButton
+                    key={idx}
+                    id={`radio-${idx}`}
+                    type="radio"
+                    variant={idx % 2 ? 'outline-warning' : 'outline-warning'}
+                    name="radio"
+                    value={radio.value}
+                    checked={radioValue === radio.value}
+                    onChange={(e) => setRadioValue(e.currentTarget.value)}
+                  >
+                    {radio.name}
+                  </ToggleButton>
+                ))}
+              </ButtonGroup>
             </Row>
-            <Row className="mb-3 row">
 
-              <Form.Group className="mb-3 text" controlId="formBasicEmail">
-                <Form.Label>פנייה</Form.Label>
-                <Form.Control
-                  // as="textarea"
-                  placeholder="הפנייה שלי"
-                  style={{ height: '100px', width: '100%' }}
-                />
-              </Form.Group>
-            </Row>
+
             <div className="contact-btnDiv row">
               <MainBtn text='יצירת קשר' link='#' />
             </div>

@@ -121,8 +121,10 @@
   margin: -3px 0 -7px 0;
 }
 
-
-
+.onlineStorageForm {
+  width: 70vW;
+  margin: auto;
+}
 
 .banner_content .bannerLeft {
   display: flex;
