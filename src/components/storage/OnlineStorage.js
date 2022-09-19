@@ -25,7 +25,7 @@ import online from "../../assets/images/PS/online.jpg";
 
 const OnlineStorage = () => {
   const [checked, setChecked] = useState(false);
-  const [radioValue, setRadioValue] = useState('2');
+  const [radioValue, setRadioValue] = useState('items');
 
   const radios = [
 
@@ -34,14 +34,100 @@ const OnlineStorage = () => {
       name: 'לפי קו"ב',
       desc: 'תמחור מיידי לאחסנה בלבד)',
       incl: '(תמחור הובלה בשיחה עם נציג)',
-      value: '1'
+      value: 'cubes'
     },
     {
       name: 'לפי פריטים',
       desc: 'תמחור מיידי לאחסנה והובלה',
       incl: '(כולל מחשבון קו"ב)',
-      value: '2'
+      value: 'items'
     },
+  ];
+  const cubesArr = [
+    {
+      cubes: '10 קו"ב',
+      desc: "דירת סטודיו קטנה"
+    },
+    {
+      cubes: '15 קו"ב',
+      desc: "דירת סטודיו בינונית"
+    },
+    {
+      cubes: '20 קו"ב',
+      desc: "דירת סטודיו גדולה"
+    },
+    {
+      cubes: '25 קו"ב',
+      desc: "דירת 2 חדרים קטנה"
+    },
+    {
+      cubes: '30 קו"ב',
+      desc: "דירת 2 חדרים בינונית"
+    },
+    {
+      cubes: '35 קו"ב',
+      desc: "דירת 2 חדרים גדולה"
+    },
+    {
+      cubes: '40 קו"ב',
+      desc: "דירת 3 חדרים קטנה"
+    },
+    {
+      cubes: '45 קו"ב',
+      desc: "דירת 3 חדרים בינונית"
+    },
+    {
+      cubes: '50 קו"ב',
+      desc: "דירת 3 חדרים גדולה"
+    },
+    {
+      cubes: '55 קו"ב',
+      desc: "דירת 4 חדרים קטנה"
+    },
+    {
+      cubes: '60 קו"ב',
+      desc: "דירת 4 חדרים בינונית"
+    },
+    {
+      cubes: '65 קו"ב',
+      desc: "דירת 4 חדרים גדולה"
+    },
+    {
+      cubes: '70 קו"ב',
+      desc: "דירת 5 חדרים קטנה"
+    },
+    {
+      cubes: '75 קו"ב',
+      desc: "דירת 5 חדרים בינונית"
+    },
+    {
+      cubes: '80 קו"ב',
+      desc: "דירת 5 חדרים גדולה"
+    },
+    {
+      cubes: '85 קו"ב',
+      desc: "דירת 6 חדרים קטנה"
+    },
+    {
+      cubes: '90 קו"ב',
+      desc: "דירת 6 חדרים בינונית"
+    },
+    {
+      cubes: '95 קו"ב',
+      desc: "דירת 6 חדרים גדולה"
+    },
+    {
+      cubes: '100 קו"ב',
+      desc: "וילה קטנה"
+    },
+    {
+      cubes: '100-200 קו"ב',
+      desc: "וילה גדולה"
+    },
+    {
+      cubes: '200+ קו"ב',
+      desc: ""
+    }
   ];
 
   return (
@@ -66,8 +152,7 @@ const OnlineStorage = () => {
 
       <div className="onlineStorageForm">
         <h1 className="homeTitle">פרטי הזמנה</h1>
-        <div className="contactDiv">
-
+        <div className="formDiv">
           <Form className="formBox" >
             <Row className="mb-3 row">
 
@@ -98,8 +183,10 @@ const OnlineStorage = () => {
               </Form.Group>
             </Row>
             <Row className="mb-3 row">
+              <Form.Label>נפח</Form.Label>
 
               <ButtonGroup className="mb-3 radio">
+
                 {radios.map((radio, i) => (
                   <ToggleButton
                     key={i}
@@ -118,10 +205,34 @@ const OnlineStorage = () => {
                 ))}
               </ButtonGroup>
             </Row>
-
+            {radioValue === 'items'
+              ?
+              ''
+              :
+              <Row className="mb-3 row">
+                <ButtonGroup className="mb-3 cubeButtons">
+                  {cubesArr.map((cube, i) => (
+                    <ToggleButton
+                      key={i}
+                      id={`cube-${i}`}
+                      type="cube"
+                      variant={i % 2 ? 'outline-secondary' : 'outline-secondary'}
+                      name={cube.name}
+                      value={cube.value}
+                      // checked={radioValue === cube.value}
+                      // onChange={(e) => setRadioValue(e.currentTarget.value)}
+                      className="cube"
+                    >
+                      <h5>{cube.cubes}</h5>
+                      <p>{cube.desc}</p>
+                    </ToggleButton>
+                  ))}
+                </ButtonGroup>
+              </Row>
+            }
 
             <div className="contact-btnDiv row">
-              <MainBtn text='יצירת קשר' link='#' />
+              <MainBtn text='שליחה' link='#' />
             </div>
           </Form>
         </div>

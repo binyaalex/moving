@@ -185,6 +185,20 @@
   padding: 0 10px;
 }
 
-.radio {
+.onlineStorageForm .formDiv .formBox .row .radio {
   direction: ltr;
+
+}
+
+.onlineStorageForm .formDiv .formBox .cubeButtons {
+  /* direction: ltr; */
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr !important;
+  /* column-gap: 10px !important; */
+  width: 100% !important;
+}
+
+.cube {
+  border-radius: 0 !important;
 }
