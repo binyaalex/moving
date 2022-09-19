@@ -14,6 +14,8 @@ import Footer from "../footer/Footer";
 import moving from "../../assets/images/moving.jpg";
 import storing from "../../assets/images/storing.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
+import privateStorage from "../../assets/images/PS/privateStorage.jpg";
+import businessStorage from "../../assets/images/PS/businessStorage.jpg";
 
 const Storage = () => {
 
@@ -22,11 +24,13 @@ const Storage = () => {
   const servicesArr = [
     {
       header: 'אחסנה פרטית',
-      img: moving,
+      img: privateStorage,
+      link: ''
     },
     {
       header: 'אחסנה עסקית',
-      img: storing,
+      img: businessStorage,
+      link: ''
     },
   ]
 
@@ -56,7 +60,9 @@ const Storage = () => {
           {servicesArr.map((el, i) => {
             return (
               <div className="service" key={i}>
-                <img src={el.img} />
+                <Link to={el.link}>
+                  <img src={el.img} />
+                </Link>
                 <h1>{el.header}</h1>
               </div>
             )
@@ -64,8 +70,8 @@ const Storage = () => {
         </div>
       </div>
 
-      <div className="about">
-        <h1 className="homeTitle">אודותינו</h1>
+      <div className="about blog">
+        <h1 className="homeTitle">איך לבחור שירות אחסנה</h1>
         <div className="clipWrapper">
           <video className="clip" src={clip} autoPlay={true} muted={true} controls />
         </div>
