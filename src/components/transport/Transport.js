@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import "./Storage.css";
+import "./Transport.css";
 
 //components
 
@@ -11,8 +11,10 @@ import Footer from "../footer/Footer";
 
 //images
 
-import moving from "../../assets/images/moving.jpg";
-import storing from "../../assets/images/storing.jpg";
+import home from "../../assets/images/home-flipped.jpg";
+import fewItems from "../../assets/images/moving.jpg";
+import apartments from "../../assets/images/MT/4.jpg";
+import office from "../../assets/images/MOF/shutterstock_313432601.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
 
 const Transport = () => {
@@ -21,23 +23,27 @@ const Transport = () => {
 
   const servicesArr = [
     {
-      header: 'אחסנה פרטית',
-      img: moving,
+      header: 'הובלת פריטים בודדים',
+      img: fewItems,
     },
     {
-      header: 'אחסנה עסקית',
-      img: storing,
+      header: 'הובלת דירות ובתים',
+      img: apartments,
+    },
+    {
+      header: 'הובלת משרדים/מפעלים',
+      img: office,
     },
   ]
 
   return (
-    <>
+    <div className="transport">
 
       <div className="page_banner">
-        <img src='' />
+        <img src={home} />
         <div className="banner_content">
           <div className="banner_title">
-            <h1>אחסנה</h1>
+            <h1>הובלה</h1>
             <p>בכל הארץ </p>
             <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
           </div>
@@ -51,7 +57,7 @@ const Transport = () => {
       <Pros />
 
       <div className="servicesDiv">
-        <h1 className="homeTitle">סוגי אחסנה</h1>
+        <h1 className="homeTitle">סוגי הובלה</h1>
         <div className="services">
           {servicesArr.map((el, i) => {
             return (
@@ -74,7 +80,7 @@ const Transport = () => {
       <Reviews />
       <Footer />
 
-    </>
+    </div>
   );
 };
 

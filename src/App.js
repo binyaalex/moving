@@ -55,6 +55,7 @@ import AddCard from "./components/pay/addCard/AddCard";
 import PaymentSuccess from "./components/pay/paymentSuccess/PaymentSuccess";
 import Moving from "./components/moving/Moving";
 import Transport from "./components/transport/Transport";
+import TransportFewItems from "./components/transportFewItems/TransportFewItems";
 import Nav from "./components/nav/Nav"
 
 function App() {
@@ -73,6 +74,7 @@ function App() {
         <Route path="/singleproducts" element={<ProductsList />} />
         <Route path="/moving" element={<Moving />} />
         <Route path="/transport" element={<Transport />} />
+        <Route path="/transportfewitems" element={<TransportFewItems />} />
         <Route path="/store" element={<Store />} />
         <Route path="/storage" element={<Storage />} />
         <Route path="/privatestorage" element={<PrivateStorage />} />
