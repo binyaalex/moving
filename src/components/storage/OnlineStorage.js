@@ -25,11 +25,23 @@ import online from "../../assets/images/PS/online.jpg";
 
 const OnlineStorage = () => {
   const [checked, setChecked] = useState(false);
-  const [radioValue, setRadioValue] = useState('1');
+  const [radioValue, setRadioValue] = useState('2');
 
   const radios = [
-    { name: 'Radio1', value: '2' },
-    { name: 'Radio', value: '3' },
+
+
+    {
+      name: 'לפי קו"ב',
+      desc: 'תמחור מיידי לאחסנה בלבד)',
+      incl: '(תמחור הובלה בשיחה עם נציג)',
+      value: '1'
+    },
+    {
+      name: 'לפי פריטים',
+      desc: 'תמחור מיידי לאחסנה והובלה',
+      incl: '(כולל מחשבון קו"ב)',
+      value: '2'
+    },
   ];
 
   return (
@@ -87,19 +99,21 @@ const OnlineStorage = () => {
             </Row>
             <Row className="mb-3 row">
 
-              <ButtonGroup className="mb-3">
-                {radios.map((radio, idx) => (
+              <ButtonGroup className="mb-3 radio">
+                {radios.map((radio, i) => (
                   <ToggleButton
-                    key={idx}
-                    id={`radio-${idx}`}
+                    key={i}
+                    id={`radio-${i}`}
                     type="radio"
-                    variant={idx % 2 ? 'outline-warning' : 'outline-warning'}
-                    name="radio"
+                    variant={i % 2 ? 'outline-warning' : 'outline-warning'}
+                    name={radio.name}
                     value={radio.value}
                     checked={radioValue === radio.value}
                     onChange={(e) => setRadioValue(e.currentTarget.value)}
                   >
-                    {radio.name}
+                    <h1>{radio.name}</h1>
+                    <p>{radio.desc}</p>
+                    <p>{radio.incl}</p>
                   </ToggleButton>
                 ))}
               </ButtonGroup>
