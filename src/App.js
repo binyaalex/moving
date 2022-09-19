@@ -33,6 +33,7 @@ import Providers from "./components/Providers";
 import Store from "./components/store/Store";
 import Storage from "./components/storage/Storage";
 import PrivateStorage from "./components/storage/PrivateStorage";
+import OnlineStorage from "./components/storage/OnlineStorage";
 import PickItem from "./components/pickItem/PickItem";
 import GetOffer from "./components/getOffer/GetOffer";
 import MovingKindSelect from "./components/movingKindSelect/MovingKindSelect";
@@ -75,6 +76,7 @@ function App() {
         <Route path="/store" element={<Store />} />
         <Route path="/storage" element={<Storage />} />
         <Route path="/privatestorage" element={<PrivateStorage />} />
+        <Route path="/onlinestorage" element={<OnlineStorage />} />
         <Route path="/pickitem" element={<PickItem />} />
         <Route path="/providers" element={<Providers />} />
         <Route path="/apartment" element={<Apartments />} />

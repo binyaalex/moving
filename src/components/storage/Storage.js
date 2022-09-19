@@ -23,14 +23,14 @@ const Storage = () => {
 
   const servicesArr = [
     {
-      header: 'אחסנה פרטית',
+      header: 'פרטית',
       img: privateStorage,
-      link: ''
+      link: '/privateStorage'
     },
     {
-      header: 'אחסנה עסקית',
+      header: 'עסקית',
       img: businessStorage,
-      link: ''
+      link: '/businessStorage'
     },
   ]
 
@@ -46,8 +46,8 @@ const Storage = () => {
             <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='פרטית' link='#' />
-            <MainBtn text='עסקית' link='#' isLight={true} />
+            <MainBtn text='פרטית' link='/privateStorage' />
+            <MainBtn text='עסקית' link='/businessStorage' isLight={true} />
           </div>
         </div>
       </div>
