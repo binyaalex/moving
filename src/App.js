@@ -32,6 +32,7 @@ import Apartments from "./components/apartment/Apartments";
 import Providers from "./components/Providers";
 import Store from "./components/store/Store";
 import Storage from "./components/storage/Storage";
+import PrivateStorage from "./components/storage/PrivateStorage";
 import PickItem from "./components/pickItem/PickItem";
 import GetOffer from "./components/getOffer/GetOffer";
 import MovingKindSelect from "./components/movingKindSelect/MovingKindSelect";
@@ -54,6 +55,7 @@ import PaymentSuccess from "./components/pay/paymentSuccess/PaymentSuccess";
 import Moving from "./components/moving/Moving";
 import Transport from "./components/transport/Transport";
 import Nav from "./components/nav/Nav"
+
 function App() {
   return (
     // <div className="PageDad">
@@ -72,6 +74,7 @@ function App() {
         <Route path="/transport" element={<Transport />} />
         <Route path="/store" element={<Store />} />
         <Route path="/storage" element={<Storage />} />
+        <Route path="/privatestorage" element={<PrivateStorage />} />
         <Route path="/pickitem" element={<PickItem />} />
         <Route path="/providers" element={<Providers />} />
         <Route path="/apartment" element={<Apartments />} />

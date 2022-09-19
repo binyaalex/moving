@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import "./Storage.css";
+import "./Storage.css";
 
 //components
 
@@ -14,19 +14,23 @@ import Footer from "../footer/Footer";
 import moving from "../../assets/images/moving.jpg";
 import storing from "../../assets/images/storing.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
+import privateStorage from "../../assets/images/PS/privateStorage.jpg";
+import businessStorage from "../../assets/images/PS/businessStorage.jpg";
 
-const Transport = () => {
+const PrivateStorage = () => {
 
 
 
   const servicesArr = [
     {
-      header: 'אחסנה פרטית',
-      img: moving,
+      header: 'הצעת מחיר מיידית',
+      img: privateStorage,
+      link: ''
     },
     {
-      header: 'אחסנה עסקית',
-      img: storing,
+      header: 'הזמנה בעזרת נציג',
+      img: businessStorage,
+      link: ''
     },
   ]
 
@@ -37,13 +41,13 @@ const Transport = () => {
         <img src='' />
         <div className="banner_content">
           <div className="banner_title">
-            <h1>אחסנה</h1>
+            <h1>אחסנה פרטית</h1>
             <p>בכל הארץ </p>
             <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='הובלה' link='#' />
-            <MainBtn text='אחסנה' link='#' isLight={true} />
+            <MainBtn text='הצעת מחיר מיידית' link='#' />
+            <MainBtn text='הזמנה בעזרת נציג' link='#' isLight={true} />
           </div>
         </div>
       </div>
@@ -56,7 +60,9 @@ const Transport = () => {
           {servicesArr.map((el, i) => {
             return (
               <div className="service" key={i}>
-                <img src={el.img} />
+                <Link to={el.link}>
+                  <img src={el.img} />
+                </Link>
                 <h1>{el.header}</h1>
               </div>
             )
@@ -64,8 +70,8 @@ const Transport = () => {
         </div>
       </div>
 
-      <div className="about">
-        <h1 className="homeTitle">אודותינו</h1>
+      <div className="about blog">
+        <h1 className="homeTitle">איך לארוז דירה</h1>
         <div className="clipWrapper">
           <video className="clip" src={clip} autoPlay={true} muted={true} controls />
         </div>
@@ -78,4 +84,4 @@ const Transport = () => {
   );
 };
 
-export default Transport;
+export default PrivateStorage;
