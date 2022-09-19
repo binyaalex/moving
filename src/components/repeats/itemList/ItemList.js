@@ -8,22 +8,13 @@ const ItemList = (props) => {
     <div className="ItemsList">
       {props.itemsArr.map((el, i) => {
         return (
-          props.withPrice ? (
-            <div className="item" key={i}>
-              <img src={el.img} />
-              <div className="itemText">
-                  <div className="itemH">{el.title}</div>
-                  <div className="itemPrice"><strong>מחיר:</strong> {el.price}₪</div>
-              </div>
+          <div className="item" key={i}>
+            <img src={el.img} />
+            <div className="itemText">
+              <strong className="itemH">{el.title}</strong>
+              {props.withPrice && <p className="itemPrice"> ₪ {el.price}</p>}
             </div>
-          ) : (
-            <div className="item" key={i}>
-              <img src={el.img} />
-              <div className="itemText">
-                  <div className="itemH">{el.title}</div>
-              </div>
-            </div>
-          )
+          </div>
         )
       })}
     </div>

@@ -13,7 +13,7 @@ import MainBtn from '../storing/generalComponents/MainBtn'
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
-
+import ItemList from "../repeats/itemList/ItemList";
 //images
 
 import moving from "../../assets/images/moving.jpg";
@@ -28,8 +28,6 @@ const OnlineStorage = () => {
   const [radioValue, setRadioValue] = useState('items');
 
   const radios = [
-
-
     {
       name: 'לפי קו"ב',
       desc: 'תמחור מיידי לאחסנה בלבד)',
@@ -44,90 +42,75 @@ const OnlineStorage = () => {
     },
   ];
   const cubesArr = [
+    { cubes: '10 קו"ב', desc: "דירת סטודיו קטנה" },
+    { cubes: '15 קו"ב', desc: "דירת סטודיו בינונית" },
+    { cubes: '20 קו"ב', desc: "דירת סטודיו גדולה" },
+    { cubes: '25 קו"ב', desc: "דירת 2 חדרים קטנה" },
+    { cubes: '30 קו"ב', desc: "דירת 2 חדרים בינונית" },
+    { cubes: '35 קו"ב', desc: "דירת 2 חדרים גדולה" },
+    { cubes: '40 קו"ב', desc: "דירת 3 חדרים קטנה" },
+    { cubes: '45 קו"ב', desc: "דירת 3 חדרים בינונית" },
+    { cubes: '50 קו"ב', desc: "דירת 3 חדרים גדולה" },
+    { cubes: '55 קו"ב', desc: "דירת 4 חדרים קטנה" },
+    { cubes: '60 קו"ב', desc: "דירת 4 חדרים בינונית" },
+    { cubes: '65 קו"ב', desc: "דירת 4 חדרים גדולה" },
+    { cubes: '70 קו"ב', desc: "דירת 5 חדרים קטנה" },
+    { cubes: '75 קו"ב', desc: "דירת 5 חדרים בינונית" },
+    { cubes: '80 קו"ב', desc: "דירת 5 חדרים גדולה" },
+    { cubes: '85 קו"ב', desc: "דירת 6 חדרים קטנה" },
+    { cubes: '90 קו"ב', desc: "דירת 6 חדרים בינונית" },
+    { cubes: '95 קו"ב', desc: "דירת 6 חדרים גדולה" },
+    { cubes: '100 קו"ב', desc: "וילה קטנה" },
+    { cubes: '100-200 קו"ב', desc: "וילה גדולה" },
+    { cubes: '200+ קו"ב', desc: "" }
+  ];
+
+  const categoryArr = [
     {
-      cubes: '10 קו"ב',
-      desc: "דירת סטודיו קטנה"
+      img: "/images/moving/closet.jpg",
+      title: "ארונות",
+      link: "/calculatorpickitem",
     },
     {
-      cubes: '15 קו"ב',
-      desc: "דירת סטודיו בינונית"
+      img: "/images/moving/sofa.jpg",
+      title: "ספות",
+      link: "/calculatorpickitem",
     },
     {
-      cubes: '20 קו"ב',
-      desc: "דירת סטודיו גדולה"
+      img: "/images/moving/bed.jpg",
+      title: "מיטות",
+      link: "/calculatorpickitem",
     },
     {
-      cubes: '25 קו"ב',
-      desc: "דירת 2 חדרים קטנה"
+      img: "/images/moving/wm.jpg",
+      title: "מכונות כביסה",
+      link: "/calculatorpickitem",
     },
     {
-      cubes: '30 קו"ב',
-      desc: "דירת 2 חדרים בינונית"
+      img: "/images/moving/table.jpg",
+      title: "שולחנות",
+      link: "/calculatorpickitem",
     },
     {
-      cubes: '35 קו"ב',
-      desc: "דירת 2 חדרים גדולה"
+      img: "/images/moving/chair.jpg",
+      title: "כסאות",
+      link: "/calculatorpickitem",
     },
     {
-      cubes: '40 קו"ב',
-      desc: "דירת 3 חדרים קטנה"
+      img: "/images/moving/tv.jpg",
+      title: "טלויזיות",
+      link: "/calculatorpickitem",
     },
     {
-      cubes: '45 קו"ב',
-      desc: "דירת 3 חדרים בינונית"
+      img: "/images/moving/dresser.jpg",
+      title: "שידות",
+      link: "/calculatorpickitem",
     },
     {
-      cubes: '50 קו"ב',
-      desc: "דירת 3 חדרים גדולה"
+      img: "/images/moving/stuff.jpg",
+      title: "שונות",
+      link: "/calculatorpickitem",
     },
-    {
-      cubes: '55 קו"ב',
-      desc: "דירת 4 חדרים קטנה"
-    },
-    {
-      cubes: '60 קו"ב',
-      desc: "דירת 4 חדרים בינונית"
-    },
-    {
-      cubes: '65 קו"ב',
-      desc: "דירת 4 חדרים גדולה"
-    },
-    {
-      cubes: '70 קו"ב',
-      desc: "דירת 5 חדרים קטנה"
-    },
-    {
-      cubes: '75 קו"ב',
-      desc: "דירת 5 חדרים בינונית"
-    },
-    {
-      cubes: '80 קו"ב',
-      desc: "דירת 5 חדרים גדולה"
-    },
-    {
-      cubes: '85 קו"ב',
-      desc: "דירת 6 חדרים קטנה"
-    },
-    {
-      cubes: '90 קו"ב',
-      desc: "דירת 6 חדרים בינונית"
-    },
-    {
-      cubes: '95 קו"ב',
-      desc: "דירת 6 חדרים גדולה"
-    },
-    {
-      cubes: '100 קו"ב',
-      desc: "וילה קטנה"
-    },
-    {
-      cubes: '100-200 קו"ב',
-      desc: "וילה גדולה"
-    },
-    {
-      cubes: '200+ קו"ב',
-      desc: ""
-    }
   ];
 
   return (
@@ -207,7 +190,10 @@ const OnlineStorage = () => {
             </Row>
             {radioValue === 'items'
               ?
-              ''
+              <ItemList
+                itemsArr={categoryArr}
+                withPrice={false}
+              />
               :
               <Row className="mb-3 row">
                 <ButtonGroup className="mb-3 cubeButtons">
