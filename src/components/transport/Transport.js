@@ -25,14 +25,17 @@ const Transport = () => {
     {
       header: 'הובלת פריטים בודדים',
       img: fewItems,
+      link: '/transportfewitems',
     },
     {
       header: 'הובלת דירות ובתים',
       img: apartments,
+      link: '#',
     },
     {
       header: 'הובלת משרדים/מפעלים',
       img: office,
+      link: '#',
     },
   ]
 
@@ -62,7 +65,9 @@ const Transport = () => {
           {servicesArr.map((el, i) => {
             return (
               <div className="service" key={i}>
-                <img src={el.img} />
+                <Link to={el.link}>
+                  <img src={el.img} />
+                </Link>
                 <h1>{el.header}</h1>
               </div>
             )

@@ -50,7 +50,7 @@ const Home = () => {
     {
       header: 'הובלה',
       img: moving,
-      link: ''
+      link: '/transport'
     },
     {
       header: 'אחסנה',
