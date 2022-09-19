@@ -136,21 +136,21 @@ const TransportFewItems = () => {
                 <Form className="formBox">
                     <Row className="mb-3 row">
                         <Form.Group as={Col} className="mb-3" controlId="formBasicFrom">
-                            <Form.Label>מהיכן אתה עובר?</Form.Label>
+                            <Form.Label>מהיכן?</Form.Label>
                             <Form.Control type="text" placeholder="באר שבע" />
                         </Form.Group>
                     </Row>
 
                     <Row className="mb-3 row">
                         <Form.Group as={Col} className="mb-3" controlId="formBasicDestination">
-                            <Form.Label>להיכן אתה עובר?</Form.Label>
+                            <Form.Label>להיכן?</Form.Label>
                             <Form.Control type="text" placeholder="נתניה" />
                         </Form.Group>
                     </Row>
 
                     <Row className="mb-3 row">
                         <Form.Group as={Col} className="mb-3" controlId="formBasicDate">
-                            <Form.Label>מתי אתה עובר?</Form.Label>
+                            <Form.Label>מתי?</Form.Label>
                             <Form.Control type="date" placeholder="" />
                         </Form.Group>
                     </Row>
@@ -186,7 +186,7 @@ const TransportFewItems = () => {
 
                     <div className="contact-btnDiv row">
                         <MainBtn 
-                            text='שלח' 
+                            text='שליחה' 
                             link='#' 
                             style={{ padding: '5px 25px' }}
                         />
