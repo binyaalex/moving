@@ -42,8 +42,8 @@ const Footer = () => {
         <h1 className="homeTitle">יצירת קשר</h1>
         <div className="contactDiv">
 
-          <Form className="formBox warning" currentColor="">
-            <Row className="mb-3">
+          <Form className="formBox">
+            <Row className="mb-3 row">
 
               <Form.Group as={Col} className="mb-3" controlId="formBasicName">
                 <Form.Label>שם</Form.Label>
@@ -55,7 +55,7 @@ const Footer = () => {
                 <Form.Control type="email" placeholder="האימייל שלי" />
               </Form.Group>
             </Row>
-            <Row className="mb-3">
+            <Row className="mb-3 row">
 
               <Form.Group as={Col} className="mb-3" controlId="formBasicPhone">
                 <Form.Label>טלפון</Form.Label>
@@ -67,15 +67,18 @@ const Footer = () => {
                 <Form.Control type="text" placeholder="העיר שלי" />
               </Form.Group>
             </Row>
-            <Form.Group className="mb-3 text" controlId="formBasicEmail">
-              <Form.Label>פנייה</Form.Label>
-              <Form.Control
-                // as="textarea"
-                placeholder="הפנייה שלי"
-                style={{ height: '100px', width: '100%' }}
-              />
-            </Form.Group>
-            <div className="contact-btnDiv">
+            <Row className="mb-3 row">
+
+              <Form.Group className="mb-3 text" controlId="formBasicEmail">
+                <Form.Label>פנייה</Form.Label>
+                <Form.Control
+                  // as="textarea"
+                  placeholder="הפנייה שלי"
+                  style={{ height: '100px', width: '100%' }}
+                />
+              </Form.Group>
+            </Row>
+            <div className="contact-btnDiv row">
               <MainBtn text='יצירת קשר' link='#' />
             </div>
           </Form>
