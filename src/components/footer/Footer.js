@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
-import bg from '../../assets/images/PS/912_0126.jpg';
+import bg from '../../assets/images/footer.jpg';
 import { Link } from "react-router-dom";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
