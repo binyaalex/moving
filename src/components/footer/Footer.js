@@ -67,12 +67,12 @@ const Footer = () => {
                 <Form.Control type="text" placeholder="העיר שלי" />
               </Form.Group>
             </Row>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3 text" controlId="formBasicEmail">
               <Form.Label>פנייה</Form.Label>
               <Form.Control
                 // as="textarea"
                 placeholder="הפנייה שלי"
-                style={{ height: '100px', width: '300px' }}
+                style={{ height: '100px', width: '100%' }}
               />
             </Form.Group>
             <div className="contact-btnDiv">
