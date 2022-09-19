@@ -12,7 +12,7 @@ import Footer from "../footer/Footer";
 
 //images
 
-import kitchen from "../../assets/images/TI - price/kitchen.jpg";
+import kitchen from "../../assets/images/TI-price/kitchen.jpg";
 
 const TransportFewItems = () => {
 
@@ -85,8 +85,10 @@ const TransportFewItems = () => {
                         return (
                             <div className="item" key={i}>
                                 <img src={el.img} />
-                                <div className="itemH">{el.header}</div>
-                                <div className="itemPrice"><strong>מחיר:</strong> {el.price}₪</div>
+                                <div className="itemText">
+                                    <div className="itemH">{el.header}</div>
+                                    <div className="itemPrice"><strong>מחיר:</strong> {el.price}₪</div>
+                                </div>
                             </div>
                         )
                     })}
