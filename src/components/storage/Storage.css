@@ -17,7 +17,7 @@
 }
 
 .page_banner .banner_content {
-  width: 70vw;
+  width: 70%;
   height: 90%;
   opacity: 1;
   margin: auto;
@@ -28,7 +28,6 @@
   font-size: larger;
   filter: none !important;
   padding-top: 50px;
-
 }
 
 .service_list_sec {
@@ -36,7 +35,7 @@
 }
 
 .provider_banner .banner_content .banner_title h1 {
-  font-size: 58px;
+  font-size: 50px;
   font-weight: bold;
   color: white;
   text-align: right;
@@ -211,5 +210,14 @@
 
 .subTitle {
   text-align: center;
+}
 
+.form-label,
+.form-check-label {
+  color: #5A7184 !important;
+}
+
+.form-control,
+.form-select {
+  color: #959EAD !important;
 }
