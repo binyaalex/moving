@@ -202,3 +202,7 @@
 .cube {
   border-radius: 0 !important;
 }
+
+.onlineStorageForm {
+  width: 33%;
+}
