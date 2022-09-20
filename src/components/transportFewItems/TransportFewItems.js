@@ -125,7 +125,7 @@ const TransportFewItems = () => {
                     </div>
 
                     <div className="fewItemsFormSide">
-                        <h5>רשימת מחירים (200 - 1000 ₪)</h5>
+                        <h5 className="subTitle"> פריטים לדוגמה (200 - 1000 ₪)</h5>
 
                         <ItemList
                             itemsArr={itemsArr}
