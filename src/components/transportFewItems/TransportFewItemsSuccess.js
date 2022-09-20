@@ -93,53 +93,53 @@ const TransportFewItemsSuccess = () => {
         },
     ]
 
-  return (
-    <div className="transportFewItems">
+    return (
+        <div className="transportFewItems">
 
-      <div className="page_banner">
-        <img src={moving} />
-        <div className="banner_content">
-          <div className="banner_title">
-            <h1>הובלת פריטים בודדים</h1>
-            <p>בכל הארץ </p>
-            <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
-          </div>
-          <div className="btnDiv">
-            <MainBtn text='הובלה' link='#' />
-            <MainBtn text='אחסנה' link='#' isLight={true} />
-          </div>
-        </div>
-      </div>
-
-      <Pros />
-
-      <div className="servicesDiv">
-        <h1 className="homeTitle">הובלת פריטים בודדים</h1>
-        <div className="fewItemsDiv">
-            <div className="fewItemsImagesSide">
-                <SideGallery 
-                    mainImg={moving}
-                    header='שירותי הובלות'
-                    galleryArr={galleryArr}
-                />
+            <div className="page_banner">
+                <img src={moving} />
+                <div className="banner_content">
+                    <div className="banner_title">
+                        <h1>הובלת פריטים בודדים</h1>
+                        <p>בכל הארץ </p>
+                        <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
+                    </div>
+                    <div className="btnDiv">
+                        <MainBtn text='הובלה' link='#' />
+                        <MainBtn text='אחסנה' link='#' isLight={true} />
+                    </div>
+                </div>
             </div>
 
-            <div className="fewItemsFormSide">
-                <PaymentSuccess 
-                    text1="תודה שבחרת בנו!"
-                    text2="נציג יחזור אליך בהקדם"
-                />
+            <Pros />
 
+            <div className="servicesDiv">
+                <h1 className="homeTitle">הובלת פריטים בודדים</h1>
+                <div className="splitDiv">
+                    <div className="fewItemsImagesSide">
+                        <SideGallery
+                            mainImg={moving}
+                            header='שירותי הובלות'
+                            galleryArr={galleryArr}
+                        />
+                    </div>
+
+                    <div className="fewItemsFormSide">
+                        <PaymentSuccess
+                            text1="תודה שבחרת בנו!"
+                            text2="נציג יחזור אליך בהקדם"
+                        />
+
+                    </div>
+
+                </div>
             </div>
 
+            <Reviews />
+            <Footer />
+
         </div>
-      </div>
-
-      <Reviews />
-      <Footer />
-
-    </div>
-  );
+    );
 };
 
 export default TransportFewItemsSuccess;

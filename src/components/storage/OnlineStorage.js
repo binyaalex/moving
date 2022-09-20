@@ -14,6 +14,8 @@ import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 import ItemList from "../repeats/itemList/ItemList";
+import SideGallery from "../repeats/sideGallery/SideGallery";
+
 //images
 
 import moving from "../../assets/images/moving.jpg";
@@ -21,8 +23,35 @@ import storing from "../../assets/images/storing.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
 import privateStorage from "../../assets/images/PS/privateStorage.jpg";
 import businessStorage from "../../assets/images/PS/businessStorage.jpg";
+import galleryImg1 from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg";
+import galleryImg2 from "../../assets/images/TII/iStock-467917955.jpg";
+import galleryImg3 from "../../assets/images/TII/moving-company-insurance.jpg";
+import galleryImg4 from "../../assets/images/TII/moving-service-worker-sealing-cardboard-box-GRM5SEC.jpg";
+import galleryImg5 from "../../assets/images/TII/packing-furniture-moving-service.jpg";
+import galleryImg6 from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
+
 import online from "../../assets/images/PS/online.jpg";
 
+const galleryArr = [
+  {
+    img: galleryImg1
+  },
+  {
+    img: galleryImg2
+  },
+  {
+    img: galleryImg3
+  },
+  {
+    img: galleryImg4
+  },
+  {
+    img: galleryImg5
+  },
+  {
+    img: galleryImg6
+  },
+]
 const radios = [
   {
     name: 'לפי קו"ב',
@@ -112,7 +141,7 @@ const categoryArr = [
 
 const OnlineStorage = () => {
   const [checked, setChecked] = useState(false);
-  const [moving, setMoving] = useState(false);
+  const [isMoving, setIsMoving] = useState(false);
   const [radioValue, setRadioValue] = useState('items');
   return (
     <>
@@ -133,126 +162,137 @@ const OnlineStorage = () => {
 
       <Pros />
 
-      <div className="onlineStorageForm">
+      <div className="servicesDiv">
         <h1 className="homeTitle">פרטי הזמנה</h1>
-        <div className="formDiv">
-          <Form className="formBox" >
-            <Row className="mb-3 row">
+        <div className='splitDiv'>
+          <div className="fewItemsImagesSide">
+            <SideGallery
+              mainImg={moving}
+              header='שירותי אחסנה'
+              galleryArr={galleryArr}
+            />
+          </div>
 
-              <Form.Group as={Col} className="mb-3" controlId="formBasicName">
-                <Form.Label>אזור</Form.Label>
-                <Form.Select aria-label="Default select example">
-                  <option>. . .</option>
-                  <option value="center">מרכז</option>
-                  <option value="sharon">שרון</option>
-                  <option value="north sharon">צפון השרון</option>
-                  <option value="north">צפון</option>
-                  <option value="shfela">שפלה</option>
-                  <option value="south">דרום</option>
-                  <option value="jerusalem">ירושלים והסביבה</option>
-                </Form.Select>
+          <div className="fewItemsFormSide">
 
-              </Form.Group>
-
-              <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
-                <Form.Label>תאריך</Form.Label>
-                <Form.Control type="date" placeholder='01/01/2023' />
-                <Form.Check
-                  reverse
-                  type='checkbox'
-                  label='גמיש'
-                  variant="warning"
-                />
-              </Form.Group>
-            </Row>
-            <Row className="mb-3 row">
-              <Form.Label>נפח</Form.Label>
-
-              <ButtonGroup className="mb-3 radio">
-
-                {radios.map((radio, i) => (
-                  <ToggleButton
-                    key={i}
-                    id={`radio-${i}`}
-                    type="radio"
-                    variant={i % 2 ? 'outline-warning' : 'outline-warning'}
-                    name={radio.name}
-                    value={radio.value}
-                    checked={radioValue === radio.value}
-                    onChange={(e) => setRadioValue(e.currentTarget.value)}
-                  >
-                    <h1>{radio.name}</h1>
-                    <p>{radio.desc}</p>
-                    <p>{radio.incl}</p>
-                  </ToggleButton>
-                ))}
-              </ButtonGroup>
-            </Row>
-            {radioValue === 'items'
-              ?
-              <ItemList
-                itemsArr={categoryArr}
-                withPrice={false}
-              />
-              :
+            <Form className="formBox" >
               <Row className="mb-3 row">
-                <ButtonGroup className="mb-3 cubeButtons">
-                  {cubesArr.map((cube, i) => (
+
+                <Form.Group as={Col} className="mb-3" controlId="formBasicName">
+                  <Form.Label>אזור</Form.Label>
+                  <Form.Select aria-label="Default select example">
+                    <option>. . .</option>
+                    <option value="center">מרכז</option>
+                    <option value="sharon">שרון</option>
+                    <option value="north sharon">צפון השרון</option>
+                    <option value="north">צפון</option>
+                    <option value="shfela">שפלה</option>
+                    <option value="south">דרום</option>
+                    <option value="jerusalem">ירושלים והסביבה</option>
+                  </Form.Select>
+
+                </Form.Group>
+
+                <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                  <Form.Label>תאריך</Form.Label>
+                  <Form.Control type="date" placeholder='01/01/2023' />
+                  <Form.Check
+                    reverse
+                    type='checkbox'
+                    label='גמיש'
+                    variant="warning"
+                  />
+                </Form.Group>
+              </Row>
+              <Row className="mb-3 row">
+                <Form.Label>נפח</Form.Label>
+
+                <ButtonGroup className="mb-3 radio">
+
+                  {radios.map((radio, i) => (
                     <ToggleButton
                       key={i}
-                      id={`cube-${i}`}
-                      type="cube"
-                      variant={i % 2 ? 'outline-secondary' : 'outline-secondary'}
-                      name={cube.name}
-                      value={cube.value}
-                      // checked={radioValue === cube.value}
-                      // onChange={(e) => setRadioValue(e.currentTarget.value)}
-                      className="cube"
+                      id={`radio-${i}`}
+                      type="radio"
+                      variant={i % 2 ? 'outline-warning' : 'outline-warning'}
+                      name={radio.name}
+                      value={radio.value}
+                      checked={radioValue === radio.value}
+                      onChange={(e) => setRadioValue(e.currentTarget.value)}
                     >
-                      <h5>{cube.cubes}</h5>
-                      <p>{cube.desc}</p>
+                      <h1>{radio.name}</h1>
+                      <p>{radio.desc}</p>
+                      <p>{radio.incl}</p>
                     </ToggleButton>
                   ))}
                 </ButtonGroup>
               </Row>
-            }
-            <Row className="mb-3 row">
-              <Form.Group as={Col} className="mb-3" controlId="formBasicMoving">
-                <Form.Check
-                  reverse
-                  type='checkbox'
-                  label='הוספת שירותי הובלה'
-                  variant="warning"
-                  onChange={() => setMoving(!moving)}
+              {radioValue === 'items'
+                ?
+                <ItemList
+                  itemsArr={categoryArr}
+                  withPrice={false}
                 />
+                :
+                <Row className="mb-3 row">
+                  <ButtonGroup className="mb-3 cubeButtons">
+                    {cubesArr.map((cube, i) => (
+                      <ToggleButton
+                        key={i}
+                        id={`cube-${i}`}
+                        type="cube"
+                        variant={i % 2 ? 'outline-secondary' : 'outline-secondary'}
+                        name={cube.name}
+                        value={cube.value}
+                        // checked={radioValue === cube.value}
+                        // onChange={(e) => setRadioValue(e.currentTarget.value)}
+                        className="cube"
+                      >
+                        <h5>{cube.cubes}</h5>
+                        <p>{cube.desc}</p>
+                      </ToggleButton>
+                    ))}
+                  </ButtonGroup>
+                </Row>
+              }
+              <Row className="mb-3 row">
+                <Form.Group as={Col} className="mb-3" controlId="formBasicMoving">
+                  <Form.Check
+                    reverse
+                    type='checkbox'
+                    label='הוספת שירותי הובלה'
+                    variant="warning"
+                    onChange={() => setIsMoving(!isMoving)}
+                  />
+                </Form.Group>
+              </Row>
+
+              {isMoving && <AddMoving />}
+
+              <h3 className="subTitle">פרטים אישיים</h3>
+              <Form.Group as={Col} className="mb-3" controlId="formBasicName">
+                <Form.Label>שם</Form.Label>
+                <Form.Control type="text" placeholder="השם שלי" />
               </Form.Group>
-            </Row>
 
-            {moving && <AddMoving />}
-
-            <h3 className="subTitle">פרטים אישיים</h3>
-            <Form.Group as={Col} className="mb-3" controlId="formBasicName">
-              <Form.Label>שם</Form.Label>
-              <Form.Control type="text" placeholder="השם שלי" />
-            </Form.Group>
-
-            <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
-              <Form.Label>אי-מייל</Form.Label>
-              <Form.Control type="email" placeholder="האימייל שלי" />
-            </Form.Group>
+              <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                <Form.Label>אי-מייל</Form.Label>
+                <Form.Control type="email" placeholder="האימייל שלי" />
+              </Form.Group>
 
 
-            <Form.Group as={Col} className="mb-3" controlId="formBasicPhone">
-              <Form.Label>טלפון</Form.Label>
-              <Form.Control type="phone" placeholder="הטלפון שלי" />
-            </Form.Group>
+              <Form.Group as={Col} className="mb-3" controlId="formBasicPhone">
+                <Form.Label>טלפון</Form.Label>
+                <Form.Control type="phone" placeholder="הטלפון שלי" />
+              </Form.Group>
 
-            <div className="contact-btnDiv send">
-              <MainBtn text='שליחה' link='#' />
-            </div>
+              <div className="contact-btnDiv send">
+                <MainBtn text='שליחה' link='#' />
+              </div>
 
 
-          </Form>
+            </Form>
+          </div>
         </div>
       </div>
 
@@ -260,7 +300,6 @@ const OnlineStorage = () => {
 
       <Reviews />
       <Footer />
-
     </>
   );
 };
