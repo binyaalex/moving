@@ -4,20 +4,21 @@ const BtnsList = (props) => {
   const btnsListArr = [
     {
       link: "/",
+      text: "בית",
+    },
+    {
+      link: "#",
       text: "יצירת קשר",
     },
     {
       link: "/transport",
-      text: "אודות",
-    },
-    {
-      link: "/dining",
       text: "הובלה",
     },
     {
-      link: "#",
+      link: "/storage",
       text: "אחסנה",
     },
+
 
   ];
 

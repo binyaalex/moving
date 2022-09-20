@@ -24,12 +24,14 @@ import businessStorage from "../../assets/images/PS/businessStorage.jpg";
 import getback from "../../assets/images/PS/getback.jpg";
 
 
-import galleryImg1 from "../../assets/images/PS/912_0126.jpg";
-import galleryImg2 from "../../assets/images/PS/Boost_18_1101_149.jpg";
-import galleryImg3 from "../../assets/images/PS/Stokado_Self_Storage1lr-768x512-jpg.jpg";
-import galleryImg4 from "../../assets/images/PS/businessStorage.jpg";
-import galleryImg5 from "../../assets/images/PS/maxresdefault.jpg";
-import galleryImg6 from "../../assets/images/PS/privateStorage.jpg";
+import galleryImg1 from "../../assets/images/BS/50_off_banner_2-bg.jpeg";
+import galleryImg2 from "../../assets/images/BS/BUSINESS PARK-1.jpg";
+import galleryImg3 from "../../assets/images/BS/Chapman_Final-17-of-75.jpeg";
+import galleryImg4 from "../../assets/images/BS/stockage24-box-louer-box-location-depot-louer-garage-location-Stockage_1.jpg";
+import galleryImg5 from "../../assets/images/BS/small1.jpg";
+import galleryImg6 from "../../assets/images/BS/Professional-removals-and-storage-services-in-Bozeat-Wollaston-Irchester-Northamptonshire.jpg";
+import { Business } from "@mui/icons-material";
+
 const galleryArr = [
   {
     img: galleryImg1
@@ -50,7 +52,7 @@ const galleryArr = [
     img: galleryImg6
   },
 ]
-const GetBack = () => {
+const BusinessStorage = () => {
 
 
 
@@ -71,15 +73,15 @@ const GetBack = () => {
     <>
 
       <div className="page_banner">
-        <img src={getback} />
+        <img src={businessStorage} />
         <div className="banner_content">
           <div className="banner_title">
-            <h1>הזמנת אחסנה בעזרת נציג</h1>
-            <p>נחזור אליכם בהקדם לאחר השארת פרטים</p>
+            <h1> אחסנה עסקית</h1>
+            <p>אחסנת ציוד מפעלים ומשרדים</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='חזרה' link='/privatestorage' />
-            <MainBtn text='הזמנה אונליין' link='/onlinestorage' isLight={true} />
+            <MainBtn text='חזרה' link='/storage' />
+            <MainBtn text='אחסנה פרטית' link='/privatestorage' isLight={true} />
           </div>
         </div>
       </div>
@@ -91,7 +93,7 @@ const GetBack = () => {
           <div className="imagesSide">
             <SideGallery
               mainImg={storing}
-              header='אחסנה פרטית'
+              header='אחסנה עסקית'
               galleryArr={galleryArr}
             />
           </div>
@@ -147,4 +149,4 @@ const GetBack = () => {
   );
 };
 
-export default GetBack;
+export default BusinessStorage;
