@@ -79,7 +79,7 @@ const Storage = () => {
       </div>
 
       <Reviews />
-      <Footer />
+      <Footer isContact={true} />
 
     </>
   );

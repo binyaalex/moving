@@ -107,7 +107,7 @@ const Home = () => {
       </div>
 
       <Reviews />
-      <Footer />
+      <Footer isContact={true} />
 
       {/* <div className="bannerRight">
             <div className="banner_content_phone">

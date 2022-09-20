@@ -78,7 +78,7 @@ const PrivateStorage = () => {
       </div>
 
       <Reviews />
-      <Footer />
+      <Footer isContact={true} />
 
     </>
   );
