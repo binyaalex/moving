@@ -23,12 +23,12 @@ import storing from "../../assets/images/storing.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
 import privateStorage from "../../assets/images/PS/privateStorage.jpg";
 import businessStorage from "../../assets/images/PS/businessStorage.jpg";
-import galleryImg1 from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg";
-import galleryImg2 from "../../assets/images/TII/iStock-467917955.jpg";
-import galleryImg3 from "../../assets/images/TII/moving-company-insurance.jpg";
-import galleryImg4 from "../../assets/images/TII/moving-service-worker-sealing-cardboard-box-GRM5SEC.jpg";
-import galleryImg5 from "../../assets/images/TII/packing-furniture-moving-service.jpg";
-import galleryImg6 from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
+import galleryImg1 from "../../assets/images/PS/912_0126.jpg";
+import galleryImg2 from "../../assets/images/PS/Boost_18_1101_149.jpg";
+import galleryImg3 from "../../assets/images/PS/Stokado_Self_Storage1lr-768x512-jpg.jpg";
+import galleryImg4 from "../../assets/images/PS/businessStorage.jpg";
+import galleryImg5 from "../../assets/images/PS/maxresdefault.jpg";
+import galleryImg6 from "../../assets/images/PS/privateStorage.jpg";
 
 import online from "../../assets/images/PS/online.jpg";
 
@@ -150,12 +150,12 @@ const OnlineStorage = () => {
         <img src={online} />
         <div className="banner_content">
           <div className="banner_title">
-            <h1>אחסנה פרטית</h1>
-            <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
+            <h1>הזמנת אחסנה אונליין</h1>
+            <p>רק למלא פרטים ולשלוח</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='לדף אחסנה' link='#' />
-            <MainBtn text='להזמנה בעזרת נציג' link='#' isLight={true} />
+            <MainBtn text='חזרה' link='/privatestorage' />
+            <MainBtn text='הזמנה בעזרת נציג' link='/getbackstorage' isLight={true} />
           </div>
         </div>
       </div>
@@ -167,8 +167,8 @@ const OnlineStorage = () => {
         <div className='splitDiv'>
           <div className="imagesSide">
             <SideGallery
-              mainImg={moving}
-              header='שירותי אחסנה'
+              mainImg={storing}
+              header='אחסנה פרטית'
               galleryArr={galleryArr}
             />
           </div>
