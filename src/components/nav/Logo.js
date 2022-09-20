@@ -1,7 +1,10 @@
+import logo from "../../assets/images/logo.png";
+
 const Logo = () => {
   return (
     <div className="navLogoDiv">
-      <img alt="" className="navLogo" src="/images/bhdmifkada.a17b93f0.svg" />
+      <img alt="" className="navLogo" src={logo} />
+      <div className="logoText">אחסנה והובלה</div>
     </div>
   );
 };
