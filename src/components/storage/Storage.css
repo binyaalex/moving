@@ -186,12 +186,12 @@
   padding: 0 10px;
 }
 
-.onlineStorageForm .formDiv .formBox .row .radio {
+.formSide .formBox .row .radio {
   direction: ltr;
 
 }
 
-.onlineStorageForm .formDiv .formBox .cubeButtons {
+.formSide .formBox .cubeButtons {
   /* direction: ltr; */
   display: grid !important;
   grid-template-columns: 1fr 1fr 1fr !important;

@@ -165,7 +165,7 @@ const OnlineStorage = () => {
       <div className="servicesDiv">
         <h1 className="homeTitle">פרטי הזמנה</h1>
         <div className='splitDiv'>
-          <div className="fewItemsImagesSide">
+          <div className="imagesSide">
             <SideGallery
               mainImg={moving}
               header='שירותי אחסנה'
@@ -173,7 +173,7 @@ const OnlineStorage = () => {
             />
           </div>
 
-          <div className="fewItemsFormSide">
+          <div className="formSide">
 
             <Form className="formBox" >
               <Row className="mb-3 row">
