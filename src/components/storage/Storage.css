@@ -222,3 +222,10 @@
 .form-select {
   color: #959EAD !important;
 }
+
+textarea.form-control {
+  width: 100% !important;
+  height: 100px !important;
+  resize: none;
+
+}

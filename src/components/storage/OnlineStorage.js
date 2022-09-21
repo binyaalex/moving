@@ -209,9 +209,8 @@ const OnlineStorage = () => {
                 <Form.Group className="mb-3 text" controlId="formBasicList">
                   <Form.Label>הערות</Form.Label>
                   <Form.Control
-                    // as="textarea"
+                    as="textarea"
                     placeholder="הוספת פריט שאינו ברשימה או עצירה בדרך"
-                    style={{ height: '100px', width: '100%' }}
                   />
                 </Form.Group>
               </Row>
