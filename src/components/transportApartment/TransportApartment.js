@@ -11,7 +11,7 @@ import Footer from "../footer/Footer";
 //images
 
 import clip from "../../assets/images/magal/clip.mp4";
-import privateStorage from "../../assets/images/PS/privateStorage.jpg";
+import apartments from "../../assets/images/MT/4.jpg";
 import online from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg";
 import getback from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
 
@@ -34,7 +34,7 @@ const TransportApartment = () => {
     <>
 
       <div className="page_banner">
-        <img src={privateStorage} />
+        <img src={apartments} />
         <div className="banner_content">
           <div className="banner_title">
             <h1>הובלת דירות ובתים</h1>
