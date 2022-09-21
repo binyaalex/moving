@@ -83,7 +83,7 @@ const Transport = () => {
       </div>
 
       <Reviews />
-      <Footer />
+      <Footer isContact={true} />
 
     </div>
   );
