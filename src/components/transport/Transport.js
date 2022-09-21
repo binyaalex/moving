@@ -50,8 +50,9 @@ const Transport = () => {
             <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='הובלה' link='#' />
-            <MainBtn text='אחסנה' link='#' isLight={true} />
+            <MainBtn text='פרטים בודדים' link='/transportfewitems' />
+            <MainBtn text='דירות ובתים' link='#' isLight={true} />
+            <MainBtn text='משרדים/מפעלים' link='#' />
           </div>
         </div>
       </div>
