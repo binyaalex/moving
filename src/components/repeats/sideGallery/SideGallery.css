@@ -17,4 +17,5 @@
 .gallery > img {
     width: 46%;
     margin-bottom: 20px;
+    object-fit: cover;
 }
