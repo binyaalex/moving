@@ -115,7 +115,7 @@ const TransportFewItemsSuccess = () => {
             <div className="servicesDiv">
                 <h1 className="homeTitle">הובלת פריטים בודדים</h1>
                 <div className="splitDiv">
-                    <div className="fewItemsImagesSide">
+                    <div className="imagesSide">
                         <SideGallery
                             mainImg={moving}
                             header='שירותי הובלות'
@@ -123,7 +123,7 @@ const TransportFewItemsSuccess = () => {
                         />
                     </div>
 
-                    <div className="fewItemsFormSide">
+                    <div className="formSide">
                         <PaymentSuccess
                             text1="תודה שבחרת בנו!"
                             text2="נציג יחזור אליך בהקדם"
