@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Transport.css";
 
 //components
 
@@ -11,48 +10,41 @@ import Footer from "../footer/Footer";
 
 //images
 
-import home from "../../assets/images/home-flipped.jpg";
-import fewItems from "../../assets/images/moving.jpg";
-import apartments from "../../assets/images/MT/4.jpg";
-import office from "../../assets/images/MOF/shutterstock_313432601.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
+import privateStorage from "../../assets/images/PS/privateStorage.jpg";
+import online from "../../assets/images/PS/online.jpg";
+import getback from "../../assets/images/PS/getback.jpg";
+import galleryImg1 from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg";
+import galleryImg6 from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
 
-const Transport = () => {
-
-
+const TransportApartment = () => {
 
   const servicesArr = [
     {
-      header: 'הובלת פריטים בודדים',
-      img: fewItems,
-      link: '/transportfewitems',
+      header: 'אונליין',
+      img: galleryImg1,
+      link: '#'
     },
     {
-      header: 'הובלת דירות ובתים',
-      img: apartments,
-      link: '/transportapartment',
-    },
-    {
-      header: 'הובלת משרדים/מפעלים',
-      img: office,
-      link: '#',
+      header: 'בעזרת נציג',
+      img: galleryImg6,
+      link: '#'
     },
   ]
 
   return (
-    <div className="transport">
+    <>
 
       <div className="page_banner">
-        <img src={home} />
+        <img src={privateStorage} />
         <div className="banner_content">
           <div className="banner_title">
-            <h1>הובלה</h1>
+            <h1>הובלת דירות ובתים</h1>
             <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='פרטים בודדים' link='/transportfewitems' />
-            <MainBtn text='דירות ובתים' link='/transportapartment' isLight={true} />
-            <MainBtn text='משרדים/מפעלים' link='#' />
+            <MainBtn text='הצעת מחיר אונליין' link='#' />
+            <MainBtn text='הזמנה בעזרת נציג' link='#' isLight={true} />
           </div>
         </div>
       </div>
@@ -60,7 +52,7 @@ const Transport = () => {
       <Pros />
 
       <div className="servicesDiv">
-        <h1 className="homeTitle">סוגי הובלה</h1>
+        <h1 className="homeTitle">דרכי הזמנה</h1>
         <div className="services">
           {servicesArr.map((el, i) => {
             return (
@@ -75,18 +67,18 @@ const Transport = () => {
         </div>
       </div>
 
-      <div className="about">
-        <h1 className="homeTitle">אודותינו</h1>
+      <div className="about blog">
+        <h1 className="homeTitle">איך לארוז דירה</h1>
         <div className="clipWrapper">
           <video className="clip" src={clip} autoPlay={true} muted={true} controls />
         </div>
       </div>
 
       <Reviews />
-      <Footer />
+      <Footer isContact={true} />
 
-    </div>
+    </>
   );
 };
 
-export default Transport;
+export default TransportApartment;

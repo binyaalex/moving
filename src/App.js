@@ -13,6 +13,7 @@ import Transport from "./components/transport/Transport";
 import TransportFewItems from "./components/transportFewItems/TransportFewItems";
 import Nav from "./components/nav/Nav"
 import TransportFewItemsSuccess from "./components/transportFewItems/TransportFewItemsSuccess";
+import TransportApartment from "./components/transportApartment/TransportApartment";
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
 
         <Route path="/transport" element={<Transport />} />
         <Route path="/transportfewitems" element={<TransportFewItems />} />
-        <Route path="/transportfewitemsSuccess" element={<TransportFewItemsSuccess />} />
+        <Route path="/transportfewitemssuccess" element={<TransportFewItemsSuccess />} />
+        <Route path="/transportapartment" element={<TransportApartment />} />
 
       </Routes>
     </BrowserRouter>
