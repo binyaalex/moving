@@ -12,19 +12,47 @@ import table from "../../../assets/images/moving/table.jpg"
 import tv from "../../../assets/images/moving/tv.jpg"
 import dresser from "../../../assets/images/moving/dresser.jpg"
 import stuff from "../../../assets/images/moving/stuff.jpg"
-const boxArr = [
-  { a: 'a', b: 'b' }
-]
-const categoryArr = [
+
+import kitchen from '../../../assets/images/moving/kitchen.jpg'
+import closet2 from '../../../assets/images/moving/closet2.jpg'
+import closet3 from '../../../assets/images/moving/closet3.jpg'
+import closet4 from '../../../assets/images/moving/closet4.jpg'
+import closet5 from '../../../assets/images/moving/closet5.jpg'
+import closet6 from '../../../assets/images/moving/closet6.jpg'
+
+const closetArr = [
   {
-    img: box,
-    title: "קרטונים",
-    modal: 'Box',
-    modalArr: boxArr
+    img: kitchen,
+    title: "אי מטבח",
   },
+  {
+    img: closet2,
+    title: "ארון 2 דלתות",
+  },
+  {
+    img: closet3,
+    title: "ארון 3 דלתות",
+  },
+  {
+    img: closet4,
+    title: "ארון 4 דלתות",
+  },
+  {
+    img: closet5,
+    title: "ארון 5 דלתות",
+  },
+  {
+    img: closet6,
+    title: "ארון 6 דלתות",
+  },
+];
+
+const categoryArr = [
+
   {
     img: closet,
     title: "ארונות",
+    modalArr: closetArr
   },
   {
     img: sofa,
@@ -42,7 +70,10 @@ const categoryArr = [
     img: table,
     title: "שולחנות",
   },
-
+  {
+    img: "/images/moving/chair.jpg",
+    title: "כסאות",
+  },
   {
     img: tv,
     title: "טלויזיות",
@@ -55,10 +86,7 @@ const categoryArr = [
     img: stuff,
     title: "שונות",
   },
-  // {
-  //   img: "/images/moving/chair.jpg",
-  //   title: "כסאות",
-  // },
+
 ];
 
 const ItemList = (props) => {

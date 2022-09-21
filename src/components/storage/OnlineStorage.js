@@ -18,6 +18,7 @@ import Footer from "../footer/Footer";
 import ItemList from "../repeats/itemList/ItemList";
 import SideGallery from "../repeats/sideGallery/SideGallery";
 import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
+import Box from './Box';
 import Cubes from './Cubes';
 import Item from './Item';
 //images
@@ -171,21 +172,33 @@ const OnlineStorage = () => {
               </Row>
               {radioValue === 'items'
                 ?
-                <ItemList withPrice={false} handleShow={handleShow} />
+                <>
+                  <Box />
+                  <ItemList withPrice={false} handleShow={handleShow} />
+                </>
                 :
                 <Cubes />
               }
               <Modal show={show} onHide={handleClose}>
                 <h1 className=''>{modal}  </h1>
-                {modalArr && modalArr.map((el, i) => {
-                  return (
-                    <Item
-                      img={el.img}
-                      title={el.title}
-                      key={i}
-                    />
-                  );
-                })}
+                <main className="pickItem">
+
+                  <section className="paidServicesArea">
+
+                    <div className="paidServiceSqaureList">
+
+                      {modalArr && modalArr.map((el, i) => {
+                        return (
+                          <Item
+                            img={el.img}
+                            title={el.title}
+                            key={i}
+                          />
+                        );
+                      })}
+                    </div>
+                  </section>
+                </main>
                 {/* <Modal.Header closeButton>
                   <Modal.Title>{modal}</Modal.Title>
                 </Modal.Header>
