@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 // bootstrap
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
@@ -21,6 +19,7 @@ import galleryImg3 from "../../assets/images/MT/moving-checklist-2000-6ec63f4c4a
 import galleryImg4 from "../../assets/images/MT/6-Common-Mistakes-to-Avoid-When-Hiring-a-Moving-Company.jpeg";
 import galleryImg5 from "../../assets/images/MT/AdobeStock_300477109-min_a23ba322c2da1cd76ade9dd3d3983ed1_2000.jpeg";
 import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
+import WhereAndWhen from '../repeats/whereAndWhen/WhereAndWhen';
 
 const TransportGetBack = () => {
 
@@ -78,43 +77,25 @@ const TransportGetBack = () => {
                     <div className="formSide">
 
                         <Form className="formBox">
-                            <Row className="mb-3 row">
-                                <Form.Group as={Col} className="mb-3" controlId="formBasicFrom">
-                                    <Form.Label>מהיכן?</Form.Label>
-                                    <Form.Control type="text" placeholder="באר שבע" />
-                                </Form.Group>
-                            </Row>
+                            
+                            <WhereAndWhen />
 
                             <Row className="mb-3 row">
-                                <Form.Group as={Col} className="mb-3" controlId="formBasicDestination">
-                                    <Form.Label>להיכן?</Form.Label>
-                                    <Form.Control type="text" placeholder="נתניה" />
-                                </Form.Group>
-                            </Row>
-
-                            <Row className="mb-3 row">
-                                <Form.Group as={Col} className="mb-3" controlId="formBasicDate">
-                                    <Form.Label>מתי?</Form.Label>
-                                    <Form.Control type="date" placeholder="" />
-                                </Form.Group>
-                            </Row>
-
-                            <Row className="mb-3 row">
-                                <Form.Group className="mb-3 text" controlId="formBasicList">
-                                    <Form.Label>רשימת פריטים</Form.Label>
-                                    <Form.Control
-                                        // as="textarea"
-                                        placeholder="4 מיטות 3 ארונות..."
-                                        style={{ height: '100px', width: '100%' }}
-                                    />
-                                </Form.Group>
-                            </Row>
-
-                            <Row className="mb-3 row">
-                                <Form.Group as={Col} className="mb-3" controlId="formBasicFile">
-                                    <Form.Label>העלאת תמונות או וידאו (לא חובה)</Form.Label>
-                                    <Form.Control type="file" placeholder="בחר קובץ" />
-                                </Form.Group>
+                                <Form.Label>סוג הובלה</Form.Label>
+                                <Form.Select 
+                                    aria-label="Default select example"
+                                    style={{marginRight: '12px', width: '32.2vw'}}
+                                >
+                                    <option>. . .</option>
+                                    <option value="2">2 חדרים</option>
+                                    <option value="3">3 חדרים</option>
+                                    <option value="4">4 חדרים</option>
+                                    <option value="5">5 חדרים</option>
+                                    <option value="6">6 חדרים</option>
+                                    <option value="7">7 חדרים</option>
+                                    <option value="penthouse">פנטהאוז</option>
+                                    <option value="privet home">בית פרטי</option>
+                                </Form.Select>
                             </Row>
 
                             <Form.Group as={Col} className="mb-3" controlId="formBasicName">

@@ -42,7 +42,7 @@ const TransportApartment = () => {
           </div>
           <div className="btnDiv">
             <MainBtn text='הצעת מחיר אונליין' link='#' />
-            <MainBtn text='הזמנה בעזרת נציג' link='transportgetback' isLight={true} />
+            <MainBtn text='הזמנה בעזרת נציג' link='/transportgetback' isLight={true} />
           </div>
         </div>
       </div>
