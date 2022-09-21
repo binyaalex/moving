@@ -6,6 +6,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
 //components
 import AddMoving from './AddMoving';
@@ -16,6 +18,7 @@ import Footer from "../footer/Footer";
 import ItemList from "../repeats/itemList/ItemList";
 import SideGallery from "../repeats/sideGallery/SideGallery";
 import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
+import Cubes from './Cubes';
 
 //images
 import moving from "../../assets/images/moving.jpg";
@@ -67,38 +70,17 @@ const radios = [
   },
 ];
 
-const cubesArr = [
-  { cubes: '10 קו"ב', desc: "דירת סטודיו קטנה" },
-  { cubes: '15 קו"ב', desc: "דירת סטודיו בינונית" },
-  { cubes: '20 קו"ב', desc: "דירת סטודיו גדולה" },
-  { cubes: '25 קו"ב', desc: "דירת 2 חדרים קטנה" },
-  { cubes: '30 קו"ב', desc: "דירת 2 חדרים בינונית" },
-  { cubes: '35 קו"ב', desc: "דירת 2 חדרים גדולה" },
-  { cubes: '40 קו"ב', desc: "דירת 3 חדרים קטנה" },
-  { cubes: '45 קו"ב', desc: "דירת 3 חדרים בינונית" },
-  { cubes: '50 קו"ב', desc: "דירת 3 חדרים גדולה" },
-  { cubes: '55 קו"ב', desc: "דירת 4 חדרים קטנה" },
-  { cubes: '60 קו"ב', desc: "דירת 4 חדרים בינונית" },
-  { cubes: '65 קו"ב', desc: "דירת 4 חדרים גדולה" },
-  { cubes: '70 קו"ב', desc: "דירת 5 חדרים קטנה" },
-  { cubes: '75 קו"ב', desc: "דירת 5 חדרים בינונית" },
-  { cubes: '80 קו"ב', desc: "דירת 5 חדרים גדולה" },
-  { cubes: '85 קו"ב', desc: "דירת 6 חדרים קטנה" },
-  { cubes: '90 קו"ב', desc: "דירת 6 חדרים בינונית" },
-  { cubes: '95 קו"ב', desc: "דירת 6 חדרים גדולה" },
-  { cubes: '100 קו"ב', desc: "וילה קטנה" },
-  { cubes: '100-200 קו"ב', desc: "וילה גדולה" },
-  { cubes: '200+ קו"ב', desc: "" }
-];
-
-
 const OnlineStorage = () => {
   const [checked, setChecked] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
   const [radioValue, setRadioValue] = useState('items');
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
-
       <div className="page_banner">
         <img src={online} />
         <div className="banner_content">
@@ -182,29 +164,34 @@ const OnlineStorage = () => {
               </Row>
               {radioValue === 'items'
                 ?
-                <ItemList withPrice={false} />
+                <ItemList withPrice={false} handleShow={handleShow} />
                 :
-                <Row className="mb-3 row">
-                  <ButtonGroup className="mb-3 cubeButtons">
-                    {cubesArr.map((cube, i) => (
-                      <ToggleButton
-                        key={i}
-                        id={`cube-${i}`}
-                        // type="cube"
-                        variant={i % 2 ? 'outline-secondary' : 'outline-secondary'}
-                        name={cube.name}
-                        value={cube.value}
-                        // checked={radioValue === cube.value}
-                        // onChange={(e) => setRadioValue(e.currentTarget.value)}
-                        className="cube"
-                      >
-                        <h5>{cube.cubes}</h5>
-                        <p>{cube.desc}</p>
-                      </ToggleButton>
-                    ))}
-                  </ButtonGroup>
-                </Row>
+                <Cubes />
               }
+              <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>Modal heading</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Close
+                  </Button>
+                  <Button variant="primary" onClick={handleClose}>
+                    Save Changes
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+
+              <Row className="mb-3 row" >
+                <Form.Group className="mb-3 text" controlId="formBasicList">
+                  <Form.Label>הערות</Form.Label>
+                  <Form.Control
+                    as="textarea"
+                    placeholder="הוספת פריט שאינו ברשימה או עצירה בדרך"
+                  />
+                </Form.Group>
+              </Row>
               <Row className="mb-3 row">
                 <Form.Group as={Col} className="mb-3" controlId="formBasicMoving">
                   <Form.Check

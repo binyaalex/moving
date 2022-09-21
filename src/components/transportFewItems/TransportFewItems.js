@@ -158,9 +158,8 @@ const TransportFewItems = () => {
                                 <Form.Group className="mb-3 text" controlId="formBasicList">
                                     <Form.Label>רשימת פריטים</Form.Label>
                                     <Form.Control
-                                        // as="textarea"
+                                        as="textarea"
                                         placeholder="4 מיטות 3 ארונות..."
-                                        style={{ height: '100px', width: '100%' }}
                                     />
                                 </Form.Group>
                             </Row>
