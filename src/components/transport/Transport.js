@@ -34,7 +34,7 @@ const Transport = () => {
     {
       header: 'הובלת משרדים/מפעלים',
       img: office,
-      link: '#',
+      link: '/transportoffice',
     },
   ]
 
@@ -51,7 +51,7 @@ const Transport = () => {
           <div className="btnDiv">
             <MainBtn text='פרטים בודדים' link='/transportfewitems' />
             <MainBtn text='דירות ובתים' link='/transportapartment' isLight={true} />
-            <MainBtn text='משרדים/מפעלים' link='#' />
+            <MainBtn text='משרדים/מפעלים' link='/transportoffice' />
           </div>
         </div>
       </div>
