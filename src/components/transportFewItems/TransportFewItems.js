@@ -104,8 +104,8 @@ const TransportFewItems = () => {
                         <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
                     </div>
                     <div className="btnDiv">
-                        <MainBtn text='הובלה' link='#' />
-                        <MainBtn text='אחסנה' link='#' isLight={true} />
+                        <MainBtn text='חזרה' link='/transport' />
+                        <MainBtn text='דירות ובתים' link='#' isLight={true} />
                     </div>
                 </div>
             </div>
@@ -115,7 +115,7 @@ const TransportFewItems = () => {
             <div className="servicesDiv">
                 <h1 className="homeTitle">הובלת פריטים בודדים</h1>
                 <div className="splitDiv">
-                    <div className="fewItemsImagesSide">
+                    <div className="imagesSide">
                         <SideGallery
                             mainImg={moving}
                             header='שירותי הובלות'
@@ -123,7 +123,7 @@ const TransportFewItems = () => {
                         />
                     </div>
 
-                    <div className="fewItemsFormSide">
+                    <div className="formSide">
                         <h5 className="subTitle"> פריטים לדוגמה (200 - 1000 ₪)</h5>
 
                         <ItemList
