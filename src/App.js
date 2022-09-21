@@ -14,6 +14,7 @@ import TransportFewItems from "./components/transportFewItems/TransportFewItems"
 import Nav from "./components/nav/Nav"
 import TransportFewItemsSuccess from "./components/transportFewItems/TransportFewItemsSuccess";
 import TransportApartment from "./components/transportApartment/TransportApartment";
+import TransportGetBack from "./components/transportGetBack/TransportGetBack";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/transportfewitems" element={<TransportFewItems />} />
         <Route path="/transportfewitemssuccess" element={<TransportFewItemsSuccess />} />
         <Route path="/transportapartment" element={<TransportApartment />} />
+        <Route path="/transportgetback" element={<TransportGetBack />} />
 
       </Routes>
     </BrowserRouter>
