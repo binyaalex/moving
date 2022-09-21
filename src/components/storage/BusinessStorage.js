@@ -6,24 +6,22 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
-//components
 
+//components
 import MainBtn from '../storing/generalComponents/MainBtn'
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 import SideGallery from "../repeats/sideGallery/SideGallery";
+import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 
 //images
-
 import moving from "../../assets/images/moving.jpg";
 import storing from "../../assets/images/storing.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
 import privateStorage from "../../assets/images/PS/privateStorage.jpg";
 import businessStorage from "../../assets/images/PS/businessStorage.jpg";
 import getback from "../../assets/images/PS/getback.jpg";
-
-
 import galleryImg1 from "../../assets/images/BS/50_off_banner_2-bg.jpeg";
 import galleryImg2 from "../../assets/images/BS/BUSINESS PARK-1.jpg";
 import galleryImg3 from "../../assets/images/BS/Chapman_Final-17-of-75.jpeg";
@@ -118,22 +116,7 @@ const BusinessStorage = () => {
 
                 </Form.Group>
               </Row>
-              <h3 className="subTitle">פרטים אישיים</h3>
-              <Form.Group as={Col} className="mb-3" controlId="formBasicName">
-                <Form.Label>שם</Form.Label>
-                <Form.Control type="text" placeholder="השם שלי" />
-              </Form.Group>
-
-              <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
-                <Form.Label>אי-מייל</Form.Label>
-                <Form.Control type="email" placeholder="האימייל שלי" />
-              </Form.Group>
-
-
-              <Form.Group as={Col} className="mb-3" controlId="formBasicPhone">
-                <Form.Label>טלפון</Form.Label>
-                <Form.Control type="phone" placeholder="הטלפון שלי" />
-              </Form.Group>
+              <PersonalDetails />
 
               <div className="contact-btnDiv send">
                 <MainBtn text='שליחה' link='#' />
