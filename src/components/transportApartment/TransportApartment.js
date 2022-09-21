@@ -26,7 +26,7 @@ const TransportApartment = () => {
     {
       header: 'בעזרת נציג',
       img: getback,
-      link: '#'
+      link: '/transportgetback'
     },
   ]
 
@@ -42,7 +42,7 @@ const TransportApartment = () => {
           </div>
           <div className="btnDiv">
             <MainBtn text='הצעת מחיר אונליין' link='#' />
-            <MainBtn text='הזמנה בעזרת נציג' link='#' isLight={true} />
+            <MainBtn text='הזמנה בעזרת נציג' link='transportgetback' isLight={true} />
           </div>
         </div>
       </div>

@@ -13,19 +13,14 @@ import Footer from "../footer/Footer";
 import SideGallery from "../repeats/sideGallery/SideGallery";
 
 //images
-import moving from "../../assets/images/moving.jpg";
-import kitchen from "../../assets/images/TI-price/kitchen.jpg";
-import closet2 from "../../assets/images/TI-price/Modern-MDF-Wooden-Bedroom-Clothes-Storage-2-Door-Wardrobe-HF-WB44-.jpg";
-import closet3 from "../../assets/images/TI-price/wardrobe00021-03eee9cf-ba75-4a4b-b5a4-44bbc88e0862-809x809.jpg";
-import closet4 from "../../assets/images/TI-price/spacewood-apex-engineered-wood-4-door-wardrobe-flipkart-img_cf71727f0d2ed4c0_9-0900-1-c8e2295.jpg";
-import closet5 from "../../assets/images/TI-price/5023_AD174_G038_Bellezza.jpg";
-import closet6 from "../../assets/images/TI-price/wardrobes-shown-in-pictures-are-all-300-cm-wardrobes-version-with-exterior-drawers.jpeg";
-import galleryImg1 from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg";
-import galleryImg2 from "../../assets/images/TII/iStock-467917955.jpg";
-import galleryImg3 from "../../assets/images/TII/moving-company-insurance.jpg";
-import galleryImg4 from "../../assets/images/TII/moving-service-worker-sealing-cardboard-box-GRM5SEC.jpg";
-import galleryImg5 from "../../assets/images/TII/packing-furniture-moving-service.jpg";
-import galleryImg6 from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
+import banneImg from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
+import mainImg from "../../assets/images/MT/4.jpg";
+import galleryImg1 from "../../assets/images/MT/6.jpg";
+import galleryImg2 from "../../assets/images/MT/GettyImages-135385164_pczbmr.jpg";
+import galleryImg3 from "../../assets/images/MT/moving-checklist-2000-6ec63f4c4aa94bf9b9cb32f80bfd97a7.jpg";
+import galleryImg4 from "../../assets/images/MT/6-Common-Mistakes-to-Avoid-When-Hiring-a-Moving-Company.jpeg";
+import galleryImg5 from "../../assets/images/MT/AdobeStock_300477109-min_a23ba322c2da1cd76ade9dd3d3983ed1_2000.jpeg";
+import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
 
 const TransportGetBack = () => {
 
@@ -54,11 +49,11 @@ const TransportGetBack = () => {
         <div className="transportFewItems">
 
             <div className="page_banner">
-                <img src={moving} />
+                <img src={banneImg} />
                 <div className="banner_content">
                     <div className="banner_title">
-                        <h1>הובלת דירות ובתים</h1>
-                        <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
+                        <h1>הזמנת הובלה בעזרת נציג</h1>
+                        <p>נחזור אליכם בהקדם לאחר השארת פרטים</p>
                     </div>
                     <div className="btnDiv">
                         <MainBtn text='חזרה' link='/transportapartment' />
@@ -70,11 +65,11 @@ const TransportGetBack = () => {
             <Pros />
 
             <div className="servicesDiv">
-                <h1 className="homeTitle">הובלת דירות ובתים</h1>
+                <h1 className="homeTitle">פרטים לחזרה</h1>
                 <div className="splitDiv">
                     <div className="imagesSide">
                         <SideGallery
-                            mainImg={moving}
+                            mainImg={mainImg}
                             header='שירותי הובלות'
                             galleryArr={galleryArr}
                         />
