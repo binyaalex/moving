@@ -15,9 +15,9 @@ import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 import ItemList from "../repeats/itemList/ItemList";
 import SideGallery from "../repeats/sideGallery/SideGallery";
+import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 
 //images
-
 import moving from "../../assets/images/moving.jpg";
 import storing from "../../assets/images/storing.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
@@ -269,34 +269,16 @@ const OnlineStorage = () => {
 
               {isMoving && <AddMoving />}
 
-              <h3 className="subTitle">פרטים אישיים</h3>
-              <Form.Group as={Col} className="mb-3" controlId="formBasicName">
-                <Form.Label>שם</Form.Label>
-                <Form.Control type="text" placeholder="השם שלי" />
-              </Form.Group>
-
-              <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
-                <Form.Label>אי-מייל</Form.Label>
-                <Form.Control type="email" placeholder="האימייל שלי" />
-              </Form.Group>
-
-
-              <Form.Group as={Col} className="mb-3" controlId="formBasicPhone">
-                <Form.Label>טלפון</Form.Label>
-                <Form.Control type="phone" placeholder="הטלפון שלי" />
-              </Form.Group>
+              <PersonalDetails />
 
               <div className="contact-btnDiv send">
                 <MainBtn text='שליחה' link='#' />
               </div>
 
-
             </Form>
           </div>
         </div>
       </div>
-
-
 
       <Reviews />
       <Footer />
