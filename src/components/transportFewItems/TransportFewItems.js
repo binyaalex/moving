@@ -186,7 +186,7 @@ const TransportFewItems = () => {
                             <div className="contact-btnDiv row">
                                 <MainBtn
                                     text='שליחה'
-                                    link='#'
+                                    link='/transportfewitemsSuccess'
                                     style={{ padding: '5px 25px' }}
                                 />
                             </div>
