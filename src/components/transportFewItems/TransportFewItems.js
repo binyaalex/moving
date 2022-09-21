@@ -13,6 +13,9 @@ import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 import SideGallery from "../repeats/sideGallery/SideGallery";
+import ItemList from "../repeats/itemList/ItemList";
+import WhereAndWhen from "../repeats/whereAndWhen/WhereAndWhen";
+import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 
 //images
 import moving from "../../assets/images/moving.jpg";
@@ -28,7 +31,6 @@ import galleryImg3 from "../../assets/images/TII/moving-company-insurance.jpg";
 import galleryImg4 from "../../assets/images/TII/moving-service-worker-sealing-cardboard-box-GRM5SEC.jpg";
 import galleryImg5 from "../../assets/images/TII/packing-furniture-moving-service.jpg";
 import galleryImg6 from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
-import ItemList from "../repeats/itemList/ItemList";
 
 const TransportFewItems = () => {
 
@@ -105,7 +107,7 @@ const TransportFewItems = () => {
                     </div>
                     <div className="btnDiv">
                         <MainBtn text='חזרה' link='/transport' />
-                        <MainBtn text='דירות ובתים' link='#' isLight={true} />
+                        <MainBtn text='דירות ובתים' link='/transportapartment' isLight={true} />
                     </div>
                 </div>
             </div>
@@ -133,26 +135,8 @@ const TransportFewItems = () => {
 
 
                         <Form className="formBox">
-                            <Row className="mb-3 row">
-                                <Form.Group as={Col} className="mb-3" controlId="formBasicFrom">
-                                    <Form.Label>מהיכן?</Form.Label>
-                                    <Form.Control type="text" placeholder="באר שבע" />
-                                </Form.Group>
-                            </Row>
-
-                            <Row className="mb-3 row">
-                                <Form.Group as={Col} className="mb-3" controlId="formBasicDestination">
-                                    <Form.Label>להיכן?</Form.Label>
-                                    <Form.Control type="text" placeholder="נתניה" />
-                                </Form.Group>
-                            </Row>
-
-                            <Row className="mb-3 row">
-                                <Form.Group as={Col} className="mb-3" controlId="formBasicDate">
-                                    <Form.Label>מתי?</Form.Label>
-                                    <Form.Control type="date" placeholder="" />
-                                </Form.Group>
-                            </Row>
+                            
+                            <WhereAndWhen />
 
                             <Row className="mb-3 row">
                                 <Form.Group className="mb-3 text" controlId="formBasicList">
@@ -171,16 +155,7 @@ const TransportFewItems = () => {
                                 </Form.Group>
                             </Row>
 
-                            <Form.Group as={Col} className="mb-3" controlId="formBasicName">
-                                <Form.Label>פרטים ליצירת קשר</Form.Label>
-                                <Form.Control type="text" placeholder="שם מלא" />
-                                <Form.Control
-                                    type="email"
-                                    placeholder="אימייל"
-                                    style={{ margin: '10px 0' }}
-                                />
-                                <Form.Control type="phone" placeholder="טלפון" />
-                            </Form.Group>
+                            <PersonalDetails />
 
                             <div className="contact-btnDiv row">
                                 <MainBtn

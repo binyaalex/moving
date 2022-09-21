@@ -17,6 +17,7 @@ import TransportApartment from "./components/transportApartment/TransportApartme
 import TransportGetBack from "./components/transportGetBack/TransportGetBack";
 import TransportOnlineAddress from "./components/transportOnline/TransportOnlineAddress";
 import TransportOffice from "./components/transportOffice/TransportOffice";
+import TransportOfficeSuccess from "./components/transportOffice/TransportOfficeSuccess";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="/transportgetback" element={<TransportGetBack />} />
         <Route path="/transportonlineaddress" element={<TransportOnlineAddress />} />
         <Route path="/transportoffice" element={<TransportOffice />} />
+        <Route path="/transportofficesuccess" element={<TransportOfficeSuccess />} />
 
       </Routes>
     </BrowserRouter>
