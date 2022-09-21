@@ -12,11 +12,15 @@ import table from "../../../assets/images/moving/table.jpg"
 import tv from "../../../assets/images/moving/tv.jpg"
 import dresser from "../../../assets/images/moving/dresser.jpg"
 import stuff from "../../../assets/images/moving/stuff.jpg"
-
+const boxArr = [
+  { a: 'a', b: 'b' }
+]
 const categoryArr = [
   {
     img: box,
     title: "קרטונים",
+    modal: 'Box',
+    modalArr: boxArr
   },
   {
     img: closet,
@@ -64,7 +68,7 @@ const ItemList = (props) => {
       {/* <Box /> */}
       {(props.itemsArr || categoryArr).map((el, i) => {
         return (
-          <div className="item" key={i}>
+          <div className="item" key={i} onClick={() => props.handleShow(el)}>
             <img src={el.img} />
             <div className="itemText">
               <strong className="itemH">{el.title}</strong>

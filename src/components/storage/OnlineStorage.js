@@ -19,7 +19,7 @@ import ItemList from "../repeats/itemList/ItemList";
 import SideGallery from "../repeats/sideGallery/SideGallery";
 import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 import Cubes from './Cubes';
-
+import Item from './Item';
 //images
 import moving from "../../assets/images/moving.jpg";
 import storing from "../../assets/images/storing.jpg";
@@ -75,9 +75,16 @@ const OnlineStorage = () => {
   const [isMoving, setIsMoving] = useState(false);
   const [radioValue, setRadioValue] = useState('items');
   const [show, setShow] = useState(false);
+  const [modal, setModal] = useState();
+  const [modalArr, setModalArr] = useState();
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = (el) => {
+    console.log(el.modal);
+    setModal(el.title);
+    setModalArr(el.modalArr);
+    setShow(true);
+  }
 
   return (
     <>
@@ -169,8 +176,18 @@ const OnlineStorage = () => {
                 <Cubes />
               }
               <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                  <Modal.Title>Modal heading</Modal.Title>
+                <h1 className=''>{modal}  </h1>
+                {modalArr && modalArr.map((el, i) => {
+                  return (
+                    <Item
+                      img={el.img}
+                      title={el.title}
+                      key={i}
+                    />
+                  );
+                })}
+                {/* <Modal.Header closeButton>
+                  <Modal.Title>{modal}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
                 <Modal.Footer>
@@ -180,7 +197,7 @@ const OnlineStorage = () => {
                   <Button variant="primary" onClick={handleClose}>
                     Save Changes
                   </Button>
-                </Modal.Footer>
+                </Modal.Footer> */}
               </Modal>
 
               <Row className="mb-3 row" >
