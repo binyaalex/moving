@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 // bootstrap
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
@@ -11,6 +9,9 @@ import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 import SideGallery from "../repeats/sideGallery/SideGallery";
+import ItemList from "../repeats/itemList/ItemList";
+import WhereAndWhen from "../repeats/whereAndWhen/WhereAndWhen";
+import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 
 //images
 import bannerImg from "../../assets/images/MOF/shutterstock_313432601.jpg";
@@ -20,13 +21,11 @@ import office3 from "../../assets/images/MOF/Fireman_movers-e1504247450706.jpg";
 import office4 from "../../assets/images/MOF/The-Benefits-Of-Using-A-Moving-Company-When-Relocating-Your-Business-1280x720.jpeg";
 import office5 from "../../assets/images/MOF/office.jpg";
 import office6 from "../../assets/images/MOF/What-mistakes-should-I-avoid-when-moving-my-office.jpg";
-import kitchen from "../../assets/images/TI-price/kitchen.jpg";
-import closet2 from "../../assets/images/TI-price/Modern-MDF-Wooden-Bedroom-Clothes-Storage-2-Door-Wardrobe-HF-WB44-.jpg";
-import closet3 from "../../assets/images/TI-price/wardrobe00021-03eee9cf-ba75-4a4b-b5a4-44bbc88e0862-809x809.jpg";
-import closet4 from "../../assets/images/TI-price/spacewood-apex-engineered-wood-4-door-wardrobe-flipkart-img_cf71727f0d2ed4c0_9-0900-1-c8e2295.jpg";
-import closet5 from "../../assets/images/TI-price/5023_AD174_G038_Bellezza.jpg";
-import closet6 from "../../assets/images/TI-price/wardrobes-shown-in-pictures-are-all-300-cm-wardrobes-version-with-exterior-drawers.jpeg";
-import ItemList from "../repeats/itemList/ItemList";
+import table from "../../assets/images/MFO-price/Eco-1-Kaleidoscope-scaled.jpg";
+import closet from "../../assets/images/MFO-price/Shkaf-ofis-1100x619.jpg";
+import computers from "../../assets/images/MFO-price/CORP5-min-800x480.jpg";
+import machines from "../../assets/images/MFO-price/pishevoe-oborudovanie.jpeg";
+import vehicles from "../../assets/images/MFO-price/15_03_02-tekhnologicheskie-mashiny-i-oborudovanie.jpg";
 
 const TransportOffice = () => {
 
@@ -54,39 +53,33 @@ const TransportOffice = () => {
 
     const itemsArr = [
         {
-            title: 'אי מטבח',
+            title: 'שולחן',
             price: 300,
-            img: kitchen,
+            img: table,
             link: '#',
         },
         {
-            title: 'ארון 2 דלתות',
+            title: 'ארון',
             price: 400,
-            img: closet2,
+            img: closet,
             link: '#',
         },
         {
-            title: 'ארון 3 דלתות',
+            title: 'מחשוב',
             price: 500,
-            img: closet3,
+            img: computers,
             link: '#',
         },
         {
-            title: 'ארון 4 דלתות',
+            title: 'מיכון',
             price: 600,
-            img: closet4,
+            img: machines,
             link: '#',
         },
         {
-            title: 'ארון 5 דלתות',
+            title: 'רכבים',
             price: 700,
-            img: closet5,
-            link: '#',
-        },
-        {
-            title: 'ארון 6 דלתות',
-            price: 800,
-            img: closet6,
+            img: vehicles,
             link: '#',
         },
     ]
@@ -131,54 +124,29 @@ const TransportOffice = () => {
 
 
                         <Form className="formBox">
-                            <Row className="mb-3 row">
-                                <Form.Group as={Col} className="mb-3" controlId="formBasicFrom">
-                                    <Form.Label>מהיכן?</Form.Label>
-                                    <Form.Control type="text" placeholder="באר שבע" />
-                                </Form.Group>
-                            </Row>
+                            
+                            <WhereAndWhen />
 
                             <Row className="mb-3 row">
-                                <Form.Group as={Col} className="mb-3" controlId="formBasicDestination">
-                                    <Form.Label>להיכן?</Form.Label>
-                                    <Form.Control type="text" placeholder="נתניה" />
-                                </Form.Group>
+                                <Form.Label>סוג הובלה</Form.Label>
+                                <Form.Select
+                                aria-label="Default select example"
+                                style={{ marginRight: '12px', width: '32.2vw' }}
+                                >
+                                    <option>. . .</option>
+                                    <option value="office">משרד</option>
+                                    <option value="factory">מפעל</option>
+                                </Form.Select>
                             </Row>
 
-                            <Row className="mb-3 row">
-                                <Form.Group as={Col} className="mb-3" controlId="formBasicDate">
-                                    <Form.Label>מתי?</Form.Label>
-                                    <Form.Control type="date" placeholder="" />
-                                </Form.Group>
-                            </Row>
-
-                            <Row className="mb-3 row">
-                                <Form.Group className="mb-3 text" controlId="formBasicList">
-                                    <Form.Label>רשימת פריטים</Form.Label>
-                                    <Form.Control
-                                        as="textarea"
-                                        placeholder="4 מיטות 3 ארונות..."
-                                    />
-                                </Form.Group>
-                            </Row>
-
-                            <Row className="mb-3 row">
+                            {/* <Row className="mb-3 row">
                                 <Form.Group as={Col} className="mb-3" controlId="formBasicFile">
                                     <Form.Label>העלאת תמונות או וידאו (לא חובה)</Form.Label>
                                     <Form.Control type="file" placeholder="בחר קובץ" />
                                 </Form.Group>
-                            </Row>
+                            </Row> */}
 
-                            <Form.Group as={Col} className="mb-3" controlId="formBasicName">
-                                <Form.Label>פרטים ליצירת קשר</Form.Label>
-                                <Form.Control type="text" placeholder="שם מלא" />
-                                <Form.Control
-                                    type="email"
-                                    placeholder="אימייל"
-                                    style={{ margin: '10px 0' }}
-                                />
-                                <Form.Control type="phone" placeholder="טלפון" />
-                            </Form.Group>
+                            <PersonalDetails />
 
                             <div className="contact-btnDiv row">
                                 <MainBtn
