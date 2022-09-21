@@ -20,6 +20,7 @@ import galleryImg4 from "../../assets/images/MT/6-Common-Mistakes-to-Avoid-When-
 import galleryImg5 from "../../assets/images/MT/AdobeStock_300477109-min_a23ba322c2da1cd76ade9dd3d3983ed1_2000.jpeg";
 import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
 import WhereAndWhen from '../repeats/whereAndWhen/WhereAndWhen';
+import PersonalDetails from '../repeats/personalDetails/PersonalDetails';
 
 const TransportGetBack = () => {
 
@@ -98,16 +99,7 @@ const TransportGetBack = () => {
                                 </Form.Select>
                             </Row>
 
-                            <Form.Group as={Col} className="mb-3" controlId="formBasicName">
-                                <Form.Label>פרטים ליצירת קשר</Form.Label>
-                                <Form.Control type="text" placeholder="שם מלא" />
-                                <Form.Control
-                                    type="email"
-                                    placeholder="אימייל"
-                                    style={{ margin: '10px 0' }}
-                                />
-                                <Form.Control type="phone" placeholder="טלפון" />
-                            </Form.Group>
+                            <PersonalDetails />
 
                             <div className="contact-btnDiv row">
                                 <MainBtn
