@@ -22,7 +22,7 @@ import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
 import WhereAndWhen from '../repeats/whereAndWhen/WhereAndWhen';
 import PersonalDetails from '../repeats/personalDetails/PersonalDetails';
 
-const TransportGetBack = () => {
+const TransportOnlineAddress = () => {
 
     const galleryArr = [
         {
@@ -52,12 +52,12 @@ const TransportGetBack = () => {
                 <img src={bannerImg} />
                 <div className="banner_content">
                     <div className="banner_title">
-                        <h1>הזמנת הובלה בעזרת נציג</h1>
-                        <p>נחזור אליכם בהקדם לאחר השארת פרטים</p>
+                        <h1>הזמנת הובלה אונליין</h1>
+                        <p>רק למלא פרטים ולשלוח</p>
                     </div>
                     <div className="btnDiv">
                         <MainBtn text='חזרה' link='/transportapartment' />
-                        <MainBtn text='הזמנה אונליין' link='/transportonlineaddress' isLight={true} />
+                        <MainBtn text='הזמנה בעזרת נציג' link='/transportgetback' isLight={true} />
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@ const TransportGetBack = () => {
             <Pros />
 
             <div className="servicesDiv">
-                <h1 className="homeTitle">פרטים לחזרה</h1>
+                <h1 className="homeTitle">פרטי הובלה</h1>
                 <div className="splitDiv">
                     <div className="imagesSide">
                         <SideGallery
@@ -122,4 +122,4 @@ const TransportGetBack = () => {
     );
 };
 
-export default TransportGetBack;
+export default TransportOnlineAddress;

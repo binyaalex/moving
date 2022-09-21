@@ -11,7 +11,6 @@ import Footer from "../footer/Footer";
 
 //images
 
-import home from "../../assets/images/home-flipped.jpg";
 import fewItems from "../../assets/images/moving.jpg";
 import apartments from "../../assets/images/MT/4.jpg";
 import office from "../../assets/images/MOF/shutterstock_313432601.jpg";
@@ -43,7 +42,7 @@ const Transport = () => {
     <div className="transport">
 
       <div className="page_banner">
-        <img src={home} />
+        <img src={fewItems} />
         <div className="banner_content">
           <div className="banner_title">
             <h1>הובלה</h1>
