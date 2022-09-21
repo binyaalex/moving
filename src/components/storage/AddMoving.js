@@ -10,23 +10,28 @@ const AddMoving = (props) => {
   return (
     <>
       <h3 className="subTitle">{props.header}</h3>
-      <Row className="mb-3 row">
-        <Form.Label>סוג הובלה</Form.Label>
-        <Form.Select
-          aria-label="Default select example"
-          style={{ marginRight: '12px', width: '32.2vw' }}
-        >
-          <option>. . .</option>
-          <option value="2">2 חדרים</option>
-          <option value="3">3 חדרים</option>
-          <option value="4">4 חדרים</option>
-          <option value="5">5 חדרים</option>
-          <option value="6">6 חדרים</option>
-          <option value="7">7 חדרים</option>
-          <option value="penthouse">פנטהאוז</option>
-          <option value="privet home">בית פרטי</option>
-        </Form.Select>
-      </Row>
+      {
+        props.withKindOfMoving ? (
+          <Row className="mb-3 row">
+            <Form.Label>סוג הובלה</Form.Label>
+            <Form.Select
+              aria-label="Default select example"
+              style={{ marginRight: '12px', width: '32.2vw' }}
+            >
+              <option>. . .</option>
+              <option value="2">2 חדרים</option>
+              <option value="3">3 חדרים</option>
+              <option value="4">4 חדרים</option>
+              <option value="5">5 חדרים</option>
+              <option value="6">6 חדרים</option>
+              <option value="7">7 חדרים</option>
+              <option value="penthouse">פנטהאוז</option>
+              <option value="privet home">בית פרטי</option>
+            </Form.Select>
+          </Row>
+        )  : ("")
+      }
+      
       <Row className="mb-3 row">
         <Form.Group as={Col} className="mb-3" controlId="formBasicFrom">
           <Form.Label>עיר</Form.Label>

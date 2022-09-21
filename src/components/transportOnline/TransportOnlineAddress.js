@@ -19,6 +19,7 @@ import galleryImg3 from "../../assets/images/MT/moving-checklist-2000-6ec63f4c4a
 import galleryImg4 from "../../assets/images/MT/6-Common-Mistakes-to-Avoid-When-Hiring-a-Moving-Company.jpeg";
 import galleryImg5 from "../../assets/images/MT/AdobeStock_300477109-min_a23ba322c2da1cd76ade9dd3d3983ed1_2000.jpeg";
 import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
+import AddMoving from '../storage/AddMoving';
 
 const TransportOnlineAddress = () => {
 
@@ -77,6 +78,42 @@ const TransportOnlineAddress = () => {
 
                         <Form className="formBox">
                             
+                            <AddMoving header='מהיכן?' withKindOfMoving={true} />
+                            
+                            <AddMoving header='להיכן?' withKindOfMoving={false} />
+
+                            <h3 className="subTitle">מתי?</h3>
+
+                            <Row className="mb-3 row">
+                                <Form.Group as={Col} className="mb-3" controlId="formBasicDate">
+                                    <Form.Label>תאריך</Form.Label>
+                                    <Form.Control type="date" placeholder="" />
+                                </Form.Group>
+                            </Row>
+                            <Row className="mb-3 row">
+                                <Form.Group as={Col} className="mb-3" controlId="formBasicName">
+                                    <Form.Label>שעת תחילת הובלה</Form.Label>
+                                    <Form.Select aria-label="Default select example">
+                                    <option value="1" selected>
+                                        06:00-09:00
+                                    </option>
+                                    <option value="2">09:00-12:00</option>
+                                    <option value="3">12:00-15:00</option>
+                                    <option value="4">15:00-18:00</option>
+                                    <option value="5">18:00-21:00</option>
+                                    </Form.Select>
+                                    <Form.Check
+                                        reverse
+                                        type='checkbox'
+                                        label='גמיש'
+                                        variant="warning"
+                                    />
+                                </Form.Group>
+                            </Row>
+
+                            <div className="contact-btnDiv send">
+                                <MainBtn text='שליחה' link='#' />
+                            </div>
                             
                         </Form>
 
