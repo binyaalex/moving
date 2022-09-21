@@ -101,7 +101,6 @@ const TransportFewItemsSuccess = () => {
                 <div className="banner_content">
                     <div className="banner_title">
                         <h1>הובלת פריטים בודדים</h1>
-                        <p>בכל הארץ </p>
                         <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
                     </div>
                     <div className="btnDiv">

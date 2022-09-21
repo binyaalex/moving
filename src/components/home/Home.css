@@ -30,6 +30,7 @@
   color: white;
   font-size: larger;
   filter: none !important;
+  position: relative;
 }
 
 .service_list_sec {
