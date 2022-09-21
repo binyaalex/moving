@@ -28,6 +28,7 @@
   font-size: larger;
   filter: none !important;
   padding-top: 50px;
+  position: relative;
 }
 
 .service_list_sec {
