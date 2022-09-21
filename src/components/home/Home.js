@@ -75,7 +75,7 @@ const Home = () => {
             <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='הובלה' link='#' />
+            <MainBtn text='הובלה' link='/transport' />
             <MainBtn text='אחסנה' link='/storage' isLight={true} />
           </div>
         </div>
