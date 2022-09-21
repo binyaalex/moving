@@ -227,7 +227,7 @@ const OnlineStorage = () => {
                 </Form.Group>
               </Row>
 
-              {isMoving && <AddMoving />}
+              {isMoving && <AddMoving header='כתובת' withKindOfMoving={true} />}
 
               <PersonalDetails />
 

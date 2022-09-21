@@ -5,11 +5,11 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const AddMoving = () => {
+const AddMoving = (props) => {
 
   return (
     <>
-      <h3 className="subTitle">כתובת</h3>
+      <h3 className="subTitle">{props.header}</h3>
       <Row className="mb-3 row">
         <Form.Label>סוג הובלה</Form.Label>
         <Form.Select
@@ -27,9 +27,8 @@ const AddMoving = () => {
           <option value="privet home">בית פרטי</option>
         </Form.Select>
       </Row>
-
       <Row className="mb-3 row">
-        <Form.Group as={Col} className="mb-3" controlId="formBasicCity">
+        <Form.Group as={Col} className="mb-3" controlId="formBasicFrom">
           <Form.Label>עיר</Form.Label>
           <Form.Control type="text" placeholder="נתניה" />
         </Form.Group>
@@ -100,17 +99,6 @@ const AddMoving = () => {
             <option value="yes">לא</option>
             <option value="unknown">לא ידוע</option>
           </Form.Select>
-        </Form.Group>
-      </Row>
-      <Row className="mb-3 row">
-        <Form.Group as={Col} className="mb-3" controlId="formBasicMoving">
-          <Form.Check
-            reverse
-            type='checkbox'
-            label='הוספת שירותי אריזה'
-            variant="warning"
-          // onChange={() => setIsMoving(!isMoving)}
-          />
         </Form.Group>
       </Row>
     </>
