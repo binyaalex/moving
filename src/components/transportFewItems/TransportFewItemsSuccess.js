@@ -104,8 +104,8 @@ const TransportFewItemsSuccess = () => {
                         <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
                     </div>
                     <div className="btnDiv">
-                        <MainBtn text='הובלה' link='#' />
-                        <MainBtn text='אחסנה' link='#' isLight={true} />
+                        <MainBtn text='חזרה לדף הבית' link='/' />
+                        {/* <MainBtn text='אחסנה' link='#' isLight={true} /> */}
                     </div>
                 </div>
             </div>
