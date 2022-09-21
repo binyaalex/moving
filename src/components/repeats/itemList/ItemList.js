@@ -1,50 +1,67 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import './ItemList.css'
+// import Box from "./Box";
+//images
+import box from "../../../assets/images/moving/box.jpg"
+import closet from "../../../assets/images/moving/closet.jpg"
+import sofa from "../../../assets/images/moving/sofa.jpg"
+import bed from "../../../assets/images/moving/bed.jpg"
+import wm from "../../../assets/images/moving/wm.jpg"
+import table from "../../../assets/images/moving/table.jpg"
+import tv from "../../../assets/images/moving/tv.jpg"
+import dresser from "../../../assets/images/moving/dresser.jpg"
+import stuff from "../../../assets/images/moving/stuff.jpg"
 
 const categoryArr = [
   {
-    img: "/images/moving/closet.jpg",
+    img: box,
+    title: "קרטונים",
+  },
+  {
+    img: closet,
     title: "ארונות",
   },
   {
-    img: "/images/moving/sofa.jpg",
+    img: sofa,
     title: "ספות",
   },
   {
-    img: "/images/moving/bed.jpg",
+    img: bed,
     title: "מיטות",
   },
   {
-    img: "/images/moving/wm.jpg",
+    img: wm,
     title: "מכונות כביסה",
   },
   {
-    img: "/images/moving/table.jpg",
+    img: table,
     title: "שולחנות",
   },
+
   {
-    img: "/images/moving/chair.jpg",
-    title: "כסאות",
-  },
-  {
-    img: "/images/moving/tv.jpg",
+    img: tv,
     title: "טלויזיות",
   },
   {
-    img: "/images/moving/dresser.jpg",
+    img: dresser,
     title: "שידות",
   },
   {
-    img: "/images/moving/stuff.jpg",
+    img: stuff,
     title: "שונות",
   },
+  // {
+  //   img: "/images/moving/chair.jpg",
+  //   title: "כסאות",
+  // },
 ];
 
 const ItemList = (props) => {
 
   return (
     <div className="ItemsList">
+      {/* <Box /> */}
       {(props.itemsArr || categoryArr).map((el, i) => {
         return (
           <div className="item" key={i}>
