@@ -151,7 +151,7 @@ const TransportOffice = () => {
                             <div className="contact-btnDiv row">
                                 <MainBtn
                                     text='שליחה'
-                                    link='/transportfewitemsSuccess'
+                                    link='/transportofficesuccess'
                                     style={{ padding: '5px 25px' }}
                                 />
                             </div>
