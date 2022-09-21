@@ -50,8 +50,8 @@
   /* margin-top: 20px; */
   display: flex;
   flex-direction: row;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  top: -3%;
 }
 
 .btnDiv>* {
