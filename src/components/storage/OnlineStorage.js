@@ -206,6 +206,16 @@ const OnlineStorage = () => {
                 </Row>
               }
               <Row className="mb-3 row">
+                <Form.Group className="mb-3 text" controlId="formBasicList">
+                  <Form.Label>הערות</Form.Label>
+                  <Form.Control
+                    // as="textarea"
+                    placeholder="הוספת פריט שאינו ברשימה או עצירה בדרך"
+                    style={{ height: '100px', width: '100%' }}
+                  />
+                </Form.Group>
+              </Row>
+              <Row className="mb-3 row">
                 <Form.Group as={Col} className="mb-3" controlId="formBasicMoving">
                   <Form.Check
                     reverse
