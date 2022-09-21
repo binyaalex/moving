@@ -11,7 +11,7 @@ import Footer from "../footer/Footer";
 import SideGallery from "../repeats/sideGallery/SideGallery";
 
 //images
-import bannerImg from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
+import bannerImg from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg";
 import mainImg from "../../assets/images/MT/4.jpg";
 import galleryImg1 from "../../assets/images/MT/6.jpg";
 import galleryImg2 from "../../assets/images/MT/GettyImages-135385164_pczbmr.jpg";
@@ -19,8 +19,6 @@ import galleryImg3 from "../../assets/images/MT/moving-checklist-2000-6ec63f4c4a
 import galleryImg4 from "../../assets/images/MT/6-Common-Mistakes-to-Avoid-When-Hiring-a-Moving-Company.jpeg";
 import galleryImg5 from "../../assets/images/MT/AdobeStock_300477109-min_a23ba322c2da1cd76ade9dd3d3983ed1_2000.jpeg";
 import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
-import WhereAndWhen from '../repeats/whereAndWhen/WhereAndWhen';
-import PersonalDetails from '../repeats/personalDetails/PersonalDetails';
 
 const TransportOnlineAddress = () => {
 
@@ -79,35 +77,7 @@ const TransportOnlineAddress = () => {
 
                         <Form className="formBox">
                             
-                            <WhereAndWhen />
-
-                            <Row className="mb-3 row">
-                                <Form.Label>סוג הובלה</Form.Label>
-                                <Form.Select 
-                                    aria-label="Default select example"
-                                    style={{marginRight: '12px', width: '32.2vw'}}
-                                >
-                                    <option>. . .</option>
-                                    <option value="2">2 חדרים</option>
-                                    <option value="3">3 חדרים</option>
-                                    <option value="4">4 חדרים</option>
-                                    <option value="5">5 חדרים</option>
-                                    <option value="6">6 חדרים</option>
-                                    <option value="7">7 חדרים</option>
-                                    <option value="penthouse">פנטהאוז</option>
-                                    <option value="privet home">בית פרטי</option>
-                                </Form.Select>
-                            </Row>
-
-                            <PersonalDetails />
-
-                            <div className="contact-btnDiv row">
-                                <MainBtn
-                                    text='שליחה'
-                                    link='/transportfewitemsSuccess'
-                                    style={{ padding: '5px 25px' }}
-                                />
-                            </div>
+                            
                         </Form>
 
                     </div>
