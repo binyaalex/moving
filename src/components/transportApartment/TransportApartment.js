@@ -12,22 +12,20 @@ import Footer from "../footer/Footer";
 
 import clip from "../../assets/images/magal/clip.mp4";
 import privateStorage from "../../assets/images/PS/privateStorage.jpg";
-import online from "../../assets/images/PS/online.jpg";
-import getback from "../../assets/images/PS/getback.jpg";
-import galleryImg1 from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg";
-import galleryImg6 from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
+import online from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg";
+import getback from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
 
 const TransportApartment = () => {
 
   const servicesArr = [
     {
       header: 'אונליין',
-      img: galleryImg1,
+      img: online,
       link: '#'
     },
     {
       header: 'בעזרת נציג',
-      img: galleryImg6,
+      img: getback,
       link: '#'
     },
   ]
