@@ -91,53 +91,6 @@ const cubesArr = [
   { cubes: '200+ קו"ב', desc: "" }
 ];
 
-const categoryArr = [
-  {
-    img: "/images/moving/closet.jpg",
-    title: "ארונות",
-    link: "/calculatorpickitem",
-  },
-  {
-    img: "/images/moving/sofa.jpg",
-    title: "ספות",
-    link: "/calculatorpickitem",
-  },
-  {
-    img: "/images/moving/bed.jpg",
-    title: "מיטות",
-    link: "/calculatorpickitem",
-  },
-  {
-    img: "/images/moving/wm.jpg",
-    title: "מכונות כביסה",
-    link: "/calculatorpickitem",
-  },
-  {
-    img: "/images/moving/table.jpg",
-    title: "שולחנות",
-    link: "/calculatorpickitem",
-  },
-  {
-    img: "/images/moving/chair.jpg",
-    title: "כסאות",
-    link: "/calculatorpickitem",
-  },
-  {
-    img: "/images/moving/tv.jpg",
-    title: "טלויזיות",
-    link: "/calculatorpickitem",
-  },
-  {
-    img: "/images/moving/dresser.jpg",
-    title: "שידות",
-    link: "/calculatorpickitem",
-  },
-  {
-    img: "/images/moving/stuff.jpg",
-    title: "שונות",
-    link: "/calculatorpickitem",
-  },
-];
 
 const OnlineStorage = () => {
   const [checked, setChecked] = useState(false);
@@ -229,10 +182,7 @@ const OnlineStorage = () => {
               </Row>
               {radioValue === 'items'
                 ?
-                <ItemList
-                  itemsArr={categoryArr}
-                  withPrice={false}
-                />
+                <ItemList withPrice={false} />
                 :
                 <Row className="mb-3 row">
                   <ButtonGroup className="mb-3 cubeButtons">
@@ -240,7 +190,7 @@ const OnlineStorage = () => {
                       <ToggleButton
                         key={i}
                         id={`cube-${i}`}
-                        type="cube"
+                        // type="cube"
                         variant={i % 2 ? 'outline-secondary' : 'outline-secondary'}
                         name={cube.name}
                         value={cube.value}
