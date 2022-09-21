@@ -179,26 +179,20 @@ const OnlineStorage = () => {
                 :
                 <Cubes />
               }
-              <Modal show={show} onHide={handleClose}>
+              <Modal show={show} onHide={handleClose} className="modal">
                 <h1 className=''>{modal}  </h1>
-                <main className="pickItem">
+                <div className="modalItems">
+                  {modalArr && modalArr.map((el, i) => {
+                    return (
+                      <Item
+                        img={el.img}
+                        title={el.title}
+                        key={i}
+                      />
+                    );
+                  })}
+                </div>
 
-                  <section className="paidServicesArea">
-
-                    <div className="paidServiceSqaureList">
-
-                      {modalArr && modalArr.map((el, i) => {
-                        return (
-                          <Item
-                            img={el.img}
-                            title={el.title}
-                            key={i}
-                          />
-                        );
-                      })}
-                    </div>
-                  </section>
-                </main>
                 {/* <Modal.Header closeButton>
                   <Modal.Title>{modal}</Modal.Title>
                 </Modal.Header>

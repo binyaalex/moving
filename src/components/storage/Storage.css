@@ -230,53 +230,83 @@ textarea.form-control {
 }
 
 
-.pickItem .paidServicesArea .paidServiceSqaureList {
+.modal h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.modal .modalItems {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 10px;
-}
-
-.pickItem .paidServicesArea .paidServiceSqaureList .paidServiceSquareDiv {
-  height: 210px;
-  width: 50% !important;
-  padding: 10px;
-}
-
-.pickItem .paidServicesArea .paidServiceSqaureList .paidServiceSquareDiv .paidServiceSquareImg {
-  border-radius: 15px;
-  height: 120px;
-  object-fit: cover;
   width: 100%;
 }
 
-.pickItem .addItemDiv {
+.modal .modalItems .paidServiceSquareDiv {
+  /* height: 250px; */
+  width: 33% !important;
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal .modalItems .paidServiceSquareDiv .paidServiceSquareImg {
+  border-radius: 15px;
+  /* height: 120px; */
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: solid 10px white;
+}
+
+.modal .modalItems .paidServiceSquareDivActive .paidServiceSquareImg {
+  border-color: rgb(251, 100, 0);
+}
+
+.modal .modalItems .paidServiceSquareDiv .plusMinus {
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.itemDetails {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  align-items: center;
 }
 
-.pickItem .disassembly {
+.addItemDiv {
+  display: flex;
+  flex-direction: column;
+  /* width: 30%; */
+  justify-content: space-between;
+}
+
+.disassembly {
   display: flex;
 }
 
-.pickItem .disassembly input {
-  width: 20px;
-  margin-left: 2px;
+.disassembly input {
+  width: 15px;
+  /* margin-right: 2px; */
   cursor: pointer;
 }
 
-.pickItem .disassembly label {
+.disassembly label {
   font-size: 15px;
   margin-right: 5px;
 }
 
-.pickItem .filter-btn-div {
+.filter-btn-div {
   margin-top: 15px;
 }
 
-.pickItem .filter-btn-div .filter-btn {
+.filter-btn-div .filter-btn {
   background: var(--primary);
   color: #fff;
   padding: 10px 0;
@@ -287,7 +317,12 @@ textarea.form-control {
   font-weight: 600;
 }
 
-.homePage .paidServicesArea .paidServiceSqaureList .paidServiceSquareDivActive #paidServiceSquareTitle {
-  color: var(--primary);
-  font-size: 20px;
+.modalItems #paidServiceSquareTitle {
+  font-weight: bold;
+}
+
+input[type='checkbox'] {
+  accent-color: rgb(251, 100, 0);
+  color: white !important;
+
 }
