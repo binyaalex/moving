@@ -1,5 +1,6 @@
 import './TransportSummery.css'
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 // bootstrap
 import Form from 'react-bootstrap/Form';
@@ -22,10 +23,12 @@ import galleryImg5 from "../../assets/images/MT/AdobeStock_300477109-min_a23ba32
 import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
 
 const TransportSummery = () => {
+    const [totalPrice, setTotalPrice] = useState(2000);
+    const [checked, setChecked] = React.useState(false);
 
-  const items = ['מקרר', 'מכונת כביסה', 'ארון בגדים', 'מקרר']
+    const items = ['מקרר', 'מכונת כביסה', 'ארון בגדים', 'מקרר']
 
-  const galleryArr = [
+    const galleryArr = [
         {
             img: galleryImg1
         },
@@ -45,6 +48,21 @@ const TransportSummery = () => {
             img: galleryImg6
         },
     ]
+
+    
+    const handleChange = (event) => {
+        setChecked(event.target.checked)
+        if (checked) {
+            setTotalPrice(totalPrice - 1000);
+        } else {
+            setTotalPrice(totalPrice
+            + 1000);
+        }
+        };
+
+    const handleShow1 = () => {
+        console.log(1);
+    }
 
     return (
         <div className="transportFewItems">
@@ -120,8 +138,47 @@ const TransportSummery = () => {
                                 </div>
 
                                 <strong className="moving-total-price">
-                                מחיר הובלה כולל מע''מ: 2000 ש''ח
+                                מחיר הובלה כולל מע''מ: {totalPrice} ש''ח
                                 </strong>
+                            </div>
+
+                            
+                            <div className="terms-container">
+
+                                <div className="filter-btn-div">
+                                    {/* <BsQuestionDiamondFill
+                                        onClick={handleShow}
+                                        className="question-mark-icon"
+                                    /> */}
+                                    <label className="add-package" htmlFor="addPackage">
+                                        הוספת שירותי אריזה ב-1000 ש''ח בלבד
+                                    </label>
+                                    {/* <div className="filter-btn-div"> */}
+                                    <input onChange={handleChange} type="checkbox" id="addPackage" />
+                                    {/* </div> */}
+                                </div>
+
+                                <div className="filter-btn-div">
+                                    <label htmlFor="terms">
+                                        {" "}
+                                        קראתי ואני מאשר את{" "}
+                                        <div onClick={handleShow1} className="terms">
+                                        התקנון
+                                        </div>
+                                    </label>
+                                    <input type="checkbox" id="terms" />
+                                </div>
+                            </div>
+
+                            <div className="transportSummeryBtn">
+                                <Link to='#' className="">
+                                    <div>
+                                    מחיר סופי כולל מע"מ: {totalPrice}
+                                    </div>
+                                    <div className='transportSummeryBtnApprove'>
+                                    אישור
+                                    </div>
+                                </Link>
                             </div>
                         </Form>
 

@@ -67,3 +67,90 @@ p {
 .order-summary-container .filter-btn-div {
     margin: 0 0 10px;
 }
+
+.total {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: right;
+}
+
+#addPackage {
+    margin-left: 15px;
+    width: 15px;
+}
+
+#terms {
+    margin-left: 15px;
+    width: 15px;
+}
+
+.question-mark-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    fill: var(--primary);
+    cursor: pointer;
+    /* margin-top: 10px; */
+}
+
+.terms-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-btn {
+    margin: auto;
+}
+
+.terms {
+    /* color: var(--primary); */
+    /* cursor: pointer; */
+    display: inline;
+}
+
+.terms:hover {
+    color: var(--secondry);
+}
+
+.MuiButtonBase-root {
+    text-align: center !important;
+}
+
+.total-price {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.terms-container .filter-btn-div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    padding: 0 40px 0;
+}
+
+.transportSummeryBtn {
+    background: var(--primary);
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+    /* font-size: 20px; */
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.transportSummeryBtn a {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.transportSummeryBtnApprove {
+    font-size: 22px;
+}
