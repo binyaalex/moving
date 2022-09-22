@@ -18,6 +18,8 @@ import ItemList from "../repeats/itemList/ItemList";
 import SideGallery from "../repeats/sideGallery/SideGallery";
 import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 import Cubes from './Cubes';
+import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
+
 //images
 import moving from "../../assets/images/moving.jpg";
 import storing from "../../assets/images/storing.jpg";
@@ -72,7 +74,11 @@ const OnlineStorage = () => {
   const [checked, setChecked] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
   const [radioValue, setRadioValue] = useState('items');
+  const [send, setSend] = useState(false);
 
+  const handleSend = () => {
+    setSend(true)
+  }
 
   return (
     <>
@@ -104,92 +110,103 @@ const OnlineStorage = () => {
           </div>
 
           <div className="formSide">
+            {send
+              ?
+              <PaymentSuccess
+                text1="תודה שבחרת בנו!"
+                text2="אישור ההזמנה נשלח אליך למייל"
+              />
+              :
+              <>
+                <Form className="formBox" >
+                  <Row className="mb-3 row">
 
-            <Form className="formBox" >
-              <Row className="mb-3 row">
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicName">
+                      <Form.Label>אזור</Form.Label>
+                      <Form.Select aria-label="Default select example">
+                        <option>. . .</option>
+                        <option value="center">מרכז</option>
+                        <option value="sharon">שרון</option>
+                        <option value="north sharon">צפון השרון</option>
+                        <option value="north">צפון</option>
+                        <option value="shfela">שפלה</option>
+                        <option value="south">דרום</option>
+                        <option value="jerusalem">ירושלים והסביבה</option>
+                      </Form.Select>
 
-                <Form.Group as={Col} className="mb-3" controlId="formBasicName">
-                  <Form.Label>אזור</Form.Label>
-                  <Form.Select aria-label="Default select example">
-                    <option>. . .</option>
-                    <option value="center">מרכז</option>
-                    <option value="sharon">שרון</option>
-                    <option value="north sharon">צפון השרון</option>
-                    <option value="north">צפון</option>
-                    <option value="shfela">שפלה</option>
-                    <option value="south">דרום</option>
-                    <option value="jerusalem">ירושלים והסביבה</option>
-                  </Form.Select>
+                    </Form.Group>
 
-                </Form.Group>
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                      <Form.Label>תאריך</Form.Label>
+                      <Form.Control type="date" placeholder='01/01/2023' />
+                      <Form.Check
+                        reverse
+                        type='checkbox'
+                        label='גמיש'
+                        variant="warning"
+                      />
+                    </Form.Group>
+                  </Row>
+                  <Row className="mb-3 row">
+                    <Form.Label>נפח</Form.Label>
 
-                <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>תאריך</Form.Label>
-                  <Form.Control type="date" placeholder='01/01/2023' />
-                  <Form.Check
-                    reverse
-                    type='checkbox'
-                    label='גמיש'
-                    variant="warning"
-                  />
-                </Form.Group>
-              </Row>
-              <Row className="mb-3 row">
-                <Form.Label>נפח</Form.Label>
+                    <ButtonGroup className="mb-3 radio">
 
-                <ButtonGroup className="mb-3 radio">
+                      {radios.map((radio, i) => (
+                        <ToggleButton
+                          key={i}
+                          id={`radio-${i}`}
+                          type="radio"
+                          variant={i % 2 ? 'outline-warning' : 'outline-warning'}
+                          name={radio.name}
+                          value={radio.value}
+                          checked={radioValue === radio.value}
+                          onChange={(e) => setRadioValue(e.currentTarget.value)}
+                        >
+                          <h1>{radio.name}</h1>
+                          <p>{radio.desc}</p>
+                          <p>{radio.incl}</p>
+                        </ToggleButton>
+                      ))}
+                    </ButtonGroup>
+                  </Row>
 
-                  {radios.map((radio, i) => (
-                    <ToggleButton
-                      key={i}
-                      id={`radio-${i}`}
-                      type="radio"
-                      variant={i % 2 ? 'outline-warning' : 'outline-warning'}
-                      name={radio.name}
-                      value={radio.value}
-                      checked={radioValue === radio.value}
-                      onChange={(e) => setRadioValue(e.currentTarget.value)}
-                    >
-                      <h1>{radio.name}</h1>
-                      <p>{radio.desc}</p>
-                      <p>{radio.incl}</p>
-                    </ToggleButton>
-                  ))}
-                </ButtonGroup>
-              </Row>
+                  {radioValue === 'items' ? <ItemList /> : <Cubes />}
 
-              {radioValue === 'items' ? <ItemList /> : <Cubes />}
+                  <Row className="mb-3 row" >
+                    <Form.Group className="mb-3 text" controlId="formBasicList">
+                      <Form.Label>הערות</Form.Label>
+                      <Form.Control
+                        as="textarea"
+                        placeholder="הוספת פריט שאינו ברשימה או עצירה בדרך"
+                      />
+                    </Form.Group>
+                  </Row>
+                  <Row className="mb-3 row">
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicMoving">
+                      <Form.Check
+                        reverse
+                        type='checkbox'
+                        label='הוספת שירותי הובלה'
+                        variant="warning"
+                        onChange={() => setIsMoving(!isMoving)}
+                      />
+                    </Form.Group>
+                  </Row>
 
-              <Row className="mb-3 row" >
-                <Form.Group className="mb-3 text" controlId="formBasicList">
-                  <Form.Label>הערות</Form.Label>
-                  <Form.Control
-                    as="textarea"
-                    placeholder="הוספת פריט שאינו ברשימה או עצירה בדרך"
-                  />
-                </Form.Group>
-              </Row>
-              <Row className="mb-3 row">
-                <Form.Group as={Col} className="mb-3" controlId="formBasicMoving">
-                  <Form.Check
-                    reverse
-                    type='checkbox'
-                    label='הוספת שירותי הובלה'
-                    variant="warning"
-                    onChange={() => setIsMoving(!isMoving)}
-                  />
-                </Form.Group>
-              </Row>
+                  {isMoving && <AddMoving header='כתובת' withKindOfMoving={true} />}
 
-              {isMoving && <AddMoving header='כתובת' withKindOfMoving={true} />}
+                  <PersonalDetails />
 
-              <PersonalDetails />
+                  <div className="contact-btnDiv send">
+                    <MainBtn
+                      text='שליחה'
+                      handleSend={handleSend}
+                    />              </div>
 
-              <div className="contact-btnDiv send">
-                <MainBtn text='שליחה' link='#' />
-              </div>
-
-            </Form>
+                </Form>
+              </>
+            }
           </div>
         </div>
       </div>

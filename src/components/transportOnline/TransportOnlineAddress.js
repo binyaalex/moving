@@ -112,7 +112,7 @@ const TransportOnlineAddress = () => {
                             </Row>
 
                             <div className="contact-btnDiv send">
-                                <MainBtn text='לבחירת פריטים' link='#' />
+                                <MainBtn text='לבחירת פריטים' link='/transportonlineitems' />
                             </div>
 
                         </Form>
