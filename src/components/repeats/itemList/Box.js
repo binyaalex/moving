@@ -1,8 +1,10 @@
 import './Box.css'
 import React from "react";
 import { Link } from "react-router-dom";
-
-import boxImg from '../../assets/images/moving/box.jpg'
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import boxImg from '../../../assets/images/moving/box2.jpg'
 
 const Box = () => {
 
@@ -18,22 +20,13 @@ const Box = () => {
   }
 
   return (
-    <div className="paidServiceSquareDiv" >
-      <div>
-        <img className="paidServiceSquareImg" src={boxImg} alt="aa" />
-        <div className="cardboardExplain">אם לא ידוע לכם כמה קרטונים יש לכם להוביל, תוכלו לראות המלצה על פי מספר חדרי הבית. (במקרה של חריגה מהטווח שנקבתם, תחול תוספת בעלות של 15 ש"ח לקרטון). חשוב לדעת! גודל קרטון מקסימלי המותר הינו 65*50*50 ס"מ.
-        </div>
-        <div id="paidServiceSquareTitle"  >
-          <div className="boxPick">
-            <select
-              placeholder=""
-              className="boxSelect"
-              name="floor"
-              id="floatingSelect"
-              aria-label="Floating label select example"
-              onClick={displayExplain}
-            >
-              <option selected>בחר</option>
+    <div>
+      <div className="boxPick">
+        <Row className="row">
+          <Form.Group as={Col} className="mb-3" controlId="formBasicBox">
+            <Form.Label>מספר קרטונים</Form.Label>
+            <Form.Select aria-label="Default select example">
+              <option selected>. . .</option>
               <option value="0">0 - אין לי קרטונים</option>
               <option value="10">1-10 דירת חדר</option>
               <option value="20">11-20 דירת חדר</option>
@@ -47,12 +40,15 @@ const Box = () => {
               <option value="120">101-120 דירת 4-5 חד'</option>
               <option value="140">121-140 דירת 5 חד'</option>
               <option value="160">141-160 דירת 6 חד'</option>
-            </select>
-            <label className="boxLable" for="floatingSelect">
-              כמות קרטונים
-            </label>
+            </Form.Select>
+          </Form.Group>
+          <div className="boxes col">
+            <img className="boxImg" src={boxImg} alt="aa" />
+            <img className="boxImg" src={boxImg} alt="aa" />
           </div>
-        </div>
+        </Row>
+        <div>*גודל קרטון מקסימלי: 50/50/65 ס"מ</div>
+        <div className='mb-3'>*עלות כל קרטון נוסף מעבר למספר הנבחר: ₪15 </div>
       </div>
     </div>
   );

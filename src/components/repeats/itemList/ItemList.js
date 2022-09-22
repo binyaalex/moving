@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import './ItemList.css'
-// import Box from "./Box";
+import Box from './Box';
+import Modal from 'react-bootstrap/Modal';
+import Item from './Item';
+
 //images
-import box from "../../../assets/images/moving/box.jpg"
 import closet from "../../../assets/images/moving/closet.jpg"
 import sofa from "../../../assets/images/moving/sofa.jpg"
 import bed from "../../../assets/images/moving/bed.jpg"
@@ -57,55 +59,90 @@ const categoryArr = [
   {
     img: sofa,
     title: "ספות",
+    modalArr: closetArr
+
   },
   {
     img: bed,
     title: "מיטות",
+    modalArr: closetArr
   },
   {
     img: wm,
     title: "מכונות כביסה",
+    modalArr: closetArr
   },
   {
     img: table,
     title: "שולחנות",
+    modalArr: closetArr
   },
   {
     img: "/images/moving/chair.jpg",
     title: "כסאות",
+    modalArr: closetArr
   },
   {
     img: tv,
     title: "טלויזיות",
+    modalArr: closetArr
   },
   {
     img: dresser,
     title: "שידות",
+    modalArr: closetArr
   },
   {
     img: stuff,
     title: "שונות",
+    modalArr: closetArr
   },
 
 ];
 
 const ItemList = (props) => {
+  const [show, setShow] = useState(false);
+  const [modal, setModal] = useState();
+  const [modalArr, setModalArr] = useState();
 
+  const handleClose = () => setShow(false);
+  const handleShow = (el) => {
+    console.log(el.modal);
+    setModal(el.title);
+    setModalArr(el.modalArr);
+    setShow(true);
+  }
   return (
-    <div className="ItemsList">
-      {/* <Box /> */}
-      {(props.itemsArr || categoryArr).map((el, i) => {
-        return (
-          <div className="item" key={i} onClick={() => props.handleShow(el)}>
-            <img src={el.img} />
-            <div className="itemText">
-              <strong className="itemH">{el.title}</strong>
-              {props.withPrice && <p className="itemPrice"> ₪ {el.price}</p>}
+    <>
+      <div className="ItemsList">
+        <Box />
+        {(props.itemsArr || categoryArr).map((el, i) => {
+          return (
+            <div className="item" key={i} onClick={() => handleShow(el)}>
+              <img src={el.img} />
+              <div className="itemText">
+                <strong className="itemH">{el.title}</strong>
+                {props.withPrice && <p className="itemPrice"> ₪ {el.price}</p>}
+              </div>
             </div>
-          </div>
-        )
-      })}
-    </div>
+          )
+        })}
+      </div>
+      <Modal show={show} onHide={handleClose} className="modal">
+        <h1 className=''>{modal}  </h1>
+        <div className="modalItems">
+          {modalArr && modalArr.map((el, i) => {
+            return (
+              <Item
+                img={el.img}
+                title={el.title}
+                key={i}
+              />
+            );
+          })}
+        </div>
+      </Modal>
+    </>
   );
 };
 
