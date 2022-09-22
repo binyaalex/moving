@@ -11,7 +11,6 @@ import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 import SideGallery from "../repeats/sideGallery/SideGallery";
 import ItemList from "../repeats/itemList/ItemList";
-import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 
 //images
@@ -26,10 +25,7 @@ import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
 import AddMoving from '../storage/AddMoving';
 
 const TransportOnlineItems = () => {
-  const [send, setSend] = useState(false);
-  const handleSend = () => {
-    setSend(true)
-  }
+
   const galleryArr = [
     {
       img: galleryImg1
@@ -82,29 +78,22 @@ const TransportOnlineItems = () => {
           </div>
 
           <div className="formSide">
-            {send
-              ?
-              <PaymentSuccess
-                text1="תודה שבחרת בנו!"
-                text2="אישור ההזמנה נשלח אליך למייל"
-              />
-              :
-              <>
 
-                <Form className="formBox">
 
-                  <ItemList />
-                  <PersonalDetails />
+            <Form className="formBox">
 
-                  <div className="contact-btnDiv send">
-                    <MainBtn
-                      text='שליחה'
-                      handleSend={handleSend}
-                    />              </div>
+              <ItemList />
+              <PersonalDetails />
 
-                </Form>
-              </>
-            }
+              <div className="contact-btnDiv send">
+                <MainBtn
+                  text='שליחה'
+                  link="/transportsummery"
+                />
+              </div>
+
+            </Form>
+
 
           </div>
 

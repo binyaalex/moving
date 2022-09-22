@@ -134,12 +134,21 @@
     padding: 0 40px 0;
 }
 
+.send .filter-btn-div .filter-btn {
+    width: 200px !important;
+}
+
+.send .filter-btn {
+    width: 100% !important;
+}
+
+/* 
 .transportSummeryBtn {
     background: var(--primary);
     color: #fff;
     padding: 10px 0;
     border-radius: 10px;
-    /* font-size: 20px; */
+    font-size: 20px;
     width: 100%;
     text-align: center;
     font-weight: 600;
@@ -153,4 +162,4 @@
 
 .transportSummeryBtnApprove {
     font-size: 22px;
-}
+} */
