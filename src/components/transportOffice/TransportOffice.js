@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 // bootstrap
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
@@ -12,6 +13,7 @@ import SideGallery from "../repeats/sideGallery/SideGallery";
 import SimpleItemList from "../repeats/itemList/SimpleItemList";
 import WhereAndWhen from "../repeats/whereAndWhen/WhereAndWhen";
 import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
+import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 
 //images
 import bannerImg from "../../assets/images/MOF/shutterstock_313432601.jpg";
@@ -28,7 +30,10 @@ import machines from "../../assets/images/MFO-price/pishevoe-oborudovanie.jpeg";
 import vehicles from "../../assets/images/MFO-price/15_03_02-tekhnologicheskie-mashiny-i-oborudovanie.jpg";
 
 const TransportOffice = () => {
-
+    const [send, setSend] = useState(false);
+    const handleSend = () => {
+        setSend(true)
+    }
     const galleryArr = [
         {
             img: office1
@@ -115,50 +120,59 @@ const TransportOffice = () => {
                     </div>
 
                     <div className="formSide">
-                        <h5 className="subTitle"> פריטים לדוגמה (200 - 1000 ₪)</h5>
+                        {send
+                            ?
+                            <PaymentSuccess
+                                text1="תודה שבחרת בנו!"
+                                text2="נציג יחזור אליך בהקדם"
+                            />
+                            :
+                            <>
+                                <h5 className="subTitle"> פריטים לדוגמה (200 - 1000 ₪)</h5>
 
-                        <SimpleItemList
-                            itemsArr={itemsArr}
-                            withPrice={true}
-                        />
+                                <SimpleItemList
+                                    itemsArr={itemsArr}
+                                    withPrice={true}
+                                />
 
 
-                        <Form className="formBox">
-                            
-                            <WhereAndWhen />
+                                <Form className="formBox">
 
-                            <Row className="mb-3 row">
-                                <Form.Label>סוג הובלה</Form.Label>
-                                <Form.Select
-                                aria-label="Default select example"
-                                style={{ marginRight: '12px', width: '32.2vw' }}
-                                >
-                                    <option>. . .</option>
-                                    <option value="office">משרד</option>
-                                    <option value="factory">מפעל</option>
-                                </Form.Select>
-                            </Row>
+                                    <WhereAndWhen />
 
-                            {/* <Row className="mb-3 row">
+                                    <Row className="mb-3 row">
+                                        <Form.Label>סוג הובלה</Form.Label>
+                                        <Form.Select
+                                            aria-label="Default select example"
+                                            style={{ marginRight: '12px', width: '32.2vw' }}
+                                        >
+                                            <option>. . .</option>
+                                            <option value="office">משרד</option>
+                                            <option value="factory">מפעל</option>
+                                        </Form.Select>
+                                    </Row>
+
+                                    {/* <Row className="mb-3 row">
                                 <Form.Group as={Col} className="mb-3" controlId="formBasicFile">
                                     <Form.Label>העלאת תמונות או וידאו (לא חובה)</Form.Label>
                                     <Form.Control type="file" placeholder="בחר קובץ" />
                                 </Form.Group>
                             </Row> */}
 
-                            <PersonalDetails />
+                                    <PersonalDetails />
 
-                            <div className="contact-btnDiv row">
-                                <MainBtn
-                                    text='שליחה'
-                                    link='/transportofficesuccess'
-                                    style={{ padding: '5px 25px' }}
-                                />
-                            </div>
-                        </Form>
+                                    <div className="contact-btnDiv row">
+                                        <MainBtn
+                                            text='שליחה'
+                                            handleSend={handleSend}
+                                        />
+                                    </div>
+                                </Form>
+                            </>
+                        }
+
 
                     </div>
-
                 </div>
             </div>
 

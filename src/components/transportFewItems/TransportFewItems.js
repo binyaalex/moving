@@ -175,8 +175,6 @@ const TransportFewItems = () => {
                                         <MainBtn
                                             text='שליחה'
                                             handleSend={handleSend}
-                                            // link='/transportfewitemsSuccess'
-                                            style={{ padding: '5px 25px' }}
                                         />
                                     </div>
                                 </Form>
