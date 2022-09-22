@@ -8,7 +8,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 
 //components
-import MainBtn from '../storing/generalComponents/MainBtn'
+import MainBtn from '../repeats/mainBtn/MainBtn'
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";

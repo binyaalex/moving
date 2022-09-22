@@ -4,7 +4,7 @@ import "./Storage.css";
 
 //components
 
-import MainBtn from '../storing/generalComponents/MainBtn'
+import MainBtn from '../repeats/mainBtn/MainBtn'
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";

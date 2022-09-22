@@ -6,19 +6,17 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
-import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 //components
 import AddMoving from './AddMoving';
-import MainBtn from '../storing/generalComponents/MainBtn'
+import MainBtn from '../repeats/mainBtn/MainBtn'
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 import ItemList from "../repeats/itemList/ItemList";
 import SideGallery from "../repeats/sideGallery/SideGallery";
 import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
-// import Box from './Box';
 import Cubes from './Cubes';
 //images
 import moving from "../../assets/images/moving.jpg";
@@ -159,17 +157,8 @@ const OnlineStorage = () => {
                   ))}
                 </ButtonGroup>
               </Row>
-              {radioValue === 'items'
-                ?
-                <>
-                  {/* <Box /> */}
-                  <ItemList />
 
-                </>
-                :
-                <Cubes />
-              }
-
+              {radioValue === 'items' ? <ItemList /> : <Cubes />}
 
               <Row className="mb-3 row" >
                 <Form.Group className="mb-3 text" controlId="formBasicList">

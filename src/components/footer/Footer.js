@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Footer.css";
-import MainBtn from '../storing/generalComponents/MainBtn'
+import MainBtn from '../repeats/mainBtn/MainBtn'
 
 import clock from "../../assets/images/icons/clock.png";
 import Form from 'react-bootstrap/Form';
