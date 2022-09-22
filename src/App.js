@@ -10,6 +10,7 @@ import PrivateStorage from "./components/storage/PrivateStorage";
 import OnlineStorage from "./components/storage/OnlineStorage";
 import GetBack from "./components/storage/GetBack";
 import BusinessStorage from "./components/storage/BusinessStorage";
+import StorageSummery from "./components/storage/StorageSummery";
 
 import Transport from "./components/transport/Transport";
 import TransportFewItems from "./components/transportFewItems/TransportFewItems";
@@ -32,6 +33,7 @@ function App() {
         <Route path="/onlinestorage" element={<OnlineStorage />} />
         <Route path="/getbackstorage" element={<GetBack />} />
         <Route path="/businessStorage" element={<BusinessStorage />} />
+        <Route path="/storageSummery" element={<StorageSummery />} />
 
         <Route path="/transport" element={<Transport />} />
         <Route path="/transportfewitems" element={<TransportFewItems />} />

@@ -18,7 +18,6 @@ import ItemList from "../repeats/itemList/ItemList";
 import SideGallery from "../repeats/sideGallery/SideGallery";
 import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 import Cubes from './Cubes';
-import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 
 //images
 import moving from "../../assets/images/moving.jpg";
@@ -74,11 +73,6 @@ const OnlineStorage = () => {
   const [checked, setChecked] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
   const [radioValue, setRadioValue] = useState('items');
-  const [send, setSend] = useState(false);
-
-  const handleSend = () => {
-    setSend(true)
-  }
 
   return (
     <>
@@ -110,103 +104,95 @@ const OnlineStorage = () => {
           </div>
 
           <div className="formSide">
-            {send
-              ?
-              <PaymentSuccess
-                text1="תודה שבחרת בנו!"
-                text2="אישור ההזמנה נשלח אליך למייל"
-              />
-              :
-              <>
-                <Form className="formBox" >
-                  <Row className="mb-3 row">
 
-                    <Form.Group as={Col} className="mb-3" controlId="formBasicName">
-                      <Form.Label>אזור</Form.Label>
-                      <Form.Select aria-label="Default select example">
-                        <option>. . .</option>
-                        <option value="center">מרכז</option>
-                        <option value="sharon">שרון</option>
-                        <option value="north sharon">צפון השרון</option>
-                        <option value="north">צפון</option>
-                        <option value="shfela">שפלה</option>
-                        <option value="south">דרום</option>
-                        <option value="jerusalem">ירושלים והסביבה</option>
-                      </Form.Select>
+            <Form className="formBox" >
+              <Row className="mb-3 row">
 
-                    </Form.Group>
+                <Form.Group as={Col} className="mb-3" controlId="formBasicName">
+                  <Form.Label>אזור</Form.Label>
+                  <Form.Select aria-label="Default select example">
+                    <option>. . .</option>
+                    <option value="center">מרכז</option>
+                    <option value="sharon">שרון</option>
+                    <option value="north sharon">צפון השרון</option>
+                    <option value="north">צפון</option>
+                    <option value="shfela">שפלה</option>
+                    <option value="south">דרום</option>
+                    <option value="jerusalem">ירושלים והסביבה</option>
+                  </Form.Select>
 
-                    <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
-                      <Form.Label>תאריך</Form.Label>
-                      <Form.Control type="date" placeholder='01/01/2023' />
-                      <Form.Check
-                        reverse
-                        type='checkbox'
-                        label='גמיש'
-                        variant="warning"
-                      />
-                    </Form.Group>
-                  </Row>
-                  <Row className="mb-3 row">
-                    <Form.Label>נפח</Form.Label>
+                </Form.Group>
 
-                    <ButtonGroup className="mb-3 radio">
+                <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                  <Form.Label>תאריך</Form.Label>
+                  <Form.Control type="date" placeholder='01/01/2023' />
+                  <Form.Check
+                    reverse
+                    type='checkbox'
+                    label='גמיש'
+                    variant="warning"
+                  />
+                </Form.Group>
+              </Row>
+              <Row className="mb-3 row">
+                <Form.Label>נפח</Form.Label>
 
-                      {radios.map((radio, i) => (
-                        <ToggleButton
-                          key={i}
-                          id={`radio-${i}`}
-                          type="radio"
-                          variant={i % 2 ? 'outline-warning' : 'outline-warning'}
-                          name={radio.name}
-                          value={radio.value}
-                          checked={radioValue === radio.value}
-                          onChange={(e) => setRadioValue(e.currentTarget.value)}
-                        >
-                          <h1>{radio.name}</h1>
-                          <p>{radio.desc}</p>
-                          <p>{radio.incl}</p>
-                        </ToggleButton>
-                      ))}
-                    </ButtonGroup>
-                  </Row>
+                <ButtonGroup className="mb-3 radio">
 
-                  {radioValue === 'items' ? <ItemList /> : <Cubes />}
+                  {radios.map((radio, i) => (
+                    <ToggleButton
+                      key={i}
+                      id={`radio-${i}`}
+                      type="radio"
+                      variant={i % 2 ? 'outline-warning' : 'outline-warning'}
+                      name={radio.name}
+                      value={radio.value}
+                      checked={radioValue === radio.value}
+                      onChange={(e) => setRadioValue(e.currentTarget.value)}
+                    >
+                      <h1>{radio.name}</h1>
+                      <p>{radio.desc}</p>
+                      <p>{radio.incl}</p>
+                    </ToggleButton>
+                  ))}
+                </ButtonGroup>
+              </Row>
 
-                  <Row className="mb-3 row" >
-                    <Form.Group className="mb-3 text" controlId="formBasicList">
-                      <Form.Label>הערות</Form.Label>
-                      <Form.Control
-                        as="textarea"
-                        placeholder="הוספת פריט שאינו ברשימה או עצירה בדרך"
-                      />
-                    </Form.Group>
-                  </Row>
-                  <Row className="mb-3 row">
-                    <Form.Group as={Col} className="mb-3" controlId="formBasicMoving">
-                      <Form.Check
-                        reverse
-                        type='checkbox'
-                        label='הוספת שירותי הובלה'
-                        variant="warning"
-                        onChange={() => setIsMoving(!isMoving)}
-                      />
-                    </Form.Group>
-                  </Row>
+              {radioValue === 'items' ? <ItemList /> : <Cubes />}
 
-                  {isMoving && <AddMoving header='כתובת' withKindOfMoving={true} />}
+              <Row className="mb-3 row" >
+                <Form.Group className="mb-3 text" controlId="formBasicList">
+                  <Form.Label>הערות</Form.Label>
+                  <Form.Control
+                    as="textarea"
+                    placeholder="הוספת פריט שאינו ברשימה או עצירה בדרך"
+                  />
+                </Form.Group>
+              </Row>
+              <Row className="mb-3 row">
+                <Form.Group as={Col} className="mb-3" controlId="formBasicMoving">
+                  <Form.Check
+                    reverse
+                    type='checkbox'
+                    label='הוספת שירותי הובלה'
+                    variant="warning"
+                    onChange={() => setIsMoving(!isMoving)}
+                  />
+                </Form.Group>
+              </Row>
 
-                  <PersonalDetails />
+              {isMoving && <AddMoving header='כתובת' withKindOfMoving={true} />}
 
-                  <div className="contact-btnDiv send">
-                    <MainBtn
-                      text='שליחה'
-                      handleSend={handleSend}
-                    />              </div>
+              <PersonalDetails />
 
-                </Form>
-              </>
-            }
+              <div className="contact-btnDiv send">
+                <MainBtn
+                  text='שליחה'
+                  link="/storagesummery"
+                />
+              </div>
+            </Form>
+
           </div>
         </div>
       </div>
