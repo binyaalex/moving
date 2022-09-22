@@ -13,7 +13,7 @@ import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 import SideGallery from "../repeats/sideGallery/SideGallery";
-import ItemList from "../repeats/itemList/ItemList";
+import SimpleItemList from "../repeats/itemList/SimpleItemList";
 import WhereAndWhen from "../repeats/whereAndWhen/WhereAndWhen";
 import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 
@@ -128,7 +128,7 @@ const TransportFewItems = () => {
                     <div className="formSide">
                         <h5 className="subTitle"> פריטים לדוגמה (200 - 1000 ₪)</h5>
 
-                        <ItemList
+                        <SimpleItemList
                             itemsArr={itemsArr}
                             withPrice={true}
                         />
