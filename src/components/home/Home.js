@@ -7,7 +7,7 @@ import "./Home.css";
 import Head from '../repeats/head/Head';
 import ServiceList from "../repeats/serviceList/ServiceList";
 import Review from "../repeats/review/Review";
-import MainBtn from '../storing/generalComponents/MainBtn'
+import MainBtn from '../repeats/mainBtn/MainBtn'
 import SpecialistsList from "../selectMovingCategory/specialistsList/SpecialistsList";
 import PersonalInfo from "../storing/generalComponents/PersonalInfo";
 import Pros from "../pros/Pros";

@@ -6,21 +6,18 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
-import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 //components
 import AddMoving from './AddMoving';
-import MainBtn from '../storing/generalComponents/MainBtn'
+import MainBtn from '../repeats/mainBtn/MainBtn'
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 import ItemList from "../repeats/itemList/ItemList";
 import SideGallery from "../repeats/sideGallery/SideGallery";
 import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
-import Box from './Box';
 import Cubes from './Cubes';
-import Item from './Item';
 //images
 import moving from "../../assets/images/moving.jpg";
 import storing from "../../assets/images/storing.jpg";
@@ -59,7 +56,7 @@ const galleryArr = [
 const radios = [
   {
     name: 'לפי קו"ב',
-    desc: 'תמחור מיידי לאחסנה בלבד)',
+    desc: 'תמחור מיידי לאחסנה בלבד',
     incl: '(תמחור הובלה בשיחה עם נציג)',
     value: 'cubes'
   },
@@ -75,17 +72,7 @@ const OnlineStorage = () => {
   const [checked, setChecked] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
   const [radioValue, setRadioValue] = useState('items');
-  const [show, setShow] = useState(false);
-  const [modal, setModal] = useState();
-  const [modalArr, setModalArr] = useState();
 
-  const handleClose = () => setShow(false);
-  const handleShow = (el) => {
-    console.log(el.modal);
-    setModal(el.title);
-    setModalArr(el.modalArr);
-    setShow(true);
-  }
 
   return (
     <>
@@ -170,42 +157,8 @@ const OnlineStorage = () => {
                   ))}
                 </ButtonGroup>
               </Row>
-              {radioValue === 'items'
-                ?
-                <>
-                  <Box />
-                  <ItemList withPrice={false} handleShow={handleShow} />
-                </>
-                :
-                <Cubes />
-              }
-              <Modal show={show} onHide={handleClose} className="modal">
-                <h1 className=''>{modal}  </h1>
-                <div className="modalItems">
-                  {modalArr && modalArr.map((el, i) => {
-                    return (
-                      <Item
-                        img={el.img}
-                        title={el.title}
-                        key={i}
-                      />
-                    );
-                  })}
-                </div>
 
-                {/* <Modal.Header closeButton>
-                  <Modal.Title>{modal}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-                <Modal.Footer>
-                  <Button variant="secondary" onClick={handleClose}>
-                    Close
-                  </Button>
-                  <Button variant="primary" onClick={handleClose}>
-                    Save Changes
-                  </Button>
-                </Modal.Footer> */}
-              </Modal>
+              {radioValue === 'items' ? <ItemList /> : <Cubes />}
 
               <Row className="mb-3 row" >
                 <Form.Group className="mb-3 text" controlId="formBasicList">
