@@ -7,10 +7,11 @@
     justify-content: center;
     /* align-items: center; */
     /* text-align: justify; */
-    gap: 15px;
+    gap: 0;
     border: 2px var(--primary) solid;
     padding: 20px 40px;
     color: #5A7184;
+    border-radius: 12px;
 }
 
 .order-summary-title {
@@ -20,6 +21,7 @@
 
 .address-title {
     font-size: 15px;
+    margin-bottom: 10px;
 }
 
 .pre .li-item {
@@ -27,7 +29,7 @@
 }
 
 p {
-    margin-bottom: 0px !important;
+    margin-bottom: 10px !important;
 }
 
 .order-personaldetails {
@@ -60,4 +62,8 @@ p {
 
 #add-products {
     text-align: center !important;
+}
+
+.order-summary-container .filter-btn-div {
+    margin: 0 0 10px;
 }
