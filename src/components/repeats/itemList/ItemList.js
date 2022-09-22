@@ -5,7 +5,9 @@ import Box from './Box';
 import Modal from 'react-bootstrap/Modal';
 import Item from './Item';
 import MainBtn from '../mainBtn/MainBtn'
-
+import Badge from 'react-bootstrap/Badge';
+import ListGroup from 'react-bootstrap/ListGroup';
+import { AiFillCloseCircle } from 'react-icons/ai';
 //images
 import closet from "../../../assets/images/moving/closet.jpg";
 import sofa from "../../../assets/images/moving/sofa.jpg";
@@ -128,12 +130,38 @@ const ItemList = (props) => {
             </div>
           )
         })}
+        <div className="myItems">
+          <h5>הפריטים שלי</h5>
+          <ListGroup >
+            <ListGroup.Item className="d-flex justify-content-between">
+              שולחן עבודה
+              <div className="badges">
+                <Badge bg="warning" pill>פירוק</Badge>
+                <Badge bg="warning" pill>הרכבה</Badge>
+                <AiFillCloseCircle />
+              </div>
+            </ListGroup.Item>
+            <ListGroup.Item className="d-flex justify-content-between">
+              ארון 4 דלתות
+              <div className="badges">
+                <AiFillCloseCircle />
+              </div>
+            </ListGroup.Item>
+            <ListGroup.Item className="d-flex justify-content-between">
+              טלויזיה 60"
+              <div className="badges">
 
+                <Badge bg="warning" pill>הרכבה</Badge>
+                <AiFillCloseCircle />
+              </div>
+            </ListGroup.Item>
+          </ListGroup>
+        </div>
       </div>
       <Modal show={show} onHide={handleClose} className="modal">
         <h1 className=''>{modal}  </h1>
         <div className="modalItems">
-          {categoryArr.map((el, i) => {
+          {closetArr.map((el, i) => {
             return (
               <Item
                 img={el.img}
@@ -144,7 +172,7 @@ const ItemList = (props) => {
           })}
         </div>
         <div className="modalBtn">
-          <MainBtn text='אישור' link='#' onClick={handleClose} />
+          <MainBtn text='אישור' link='#' handleClose={handleClose} />
         </div>
       </Modal>
     </>
