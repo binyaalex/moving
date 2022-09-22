@@ -9,5 +9,5 @@
 }
 
 .transport .provider_banner>img {
-    background: transparent url('/public/images/home-flipped.jpg')0% 50% no-repeat padding-box;
+    /* background: transparent url('/public/images/home-flipped.jpg')0% 50% no-repeat padding-box; */
 }

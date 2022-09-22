@@ -28,7 +28,7 @@
     direction: rtl;
 }
 
-p {
+.formBox .order-summary-container p {
     margin-bottom: 10px !important;
 }
 

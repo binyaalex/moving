@@ -104,7 +104,7 @@ const Footer = ({ isContact }) => {
         <img src={bg} />
         <div className="content">
           <div className="right">
-            <h5>Moving & Storing Solutions</h5>
+            <h5>הובלה ואחסנה</h5>
             <p>כל פתרונות ההובלה והאחסנה מרוכזים במקום אחד</p>
             <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
           </div>
