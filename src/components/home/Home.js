@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 //components
-import Head from '../repeats/head/Head';
-import ServiceList from "../repeats/serviceList/ServiceList";
-import Review from "../repeats/review/Review";
+// import Head from '../repeats/head/Head';
+// import ServiceList from "../repeats/serviceList/ServiceList";
+// import Review from "../repeats/review/Review";
 import MainBtn from '../repeats/mainBtn/MainBtn'
-import SpecialistsList from "../selectMovingCategory/specialistsList/SpecialistsList";
+// import SpecialistsList from "../selectMovingCategory/specialistsList/SpecialistsList";
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";

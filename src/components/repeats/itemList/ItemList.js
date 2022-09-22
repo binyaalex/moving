@@ -16,6 +16,7 @@ import wm from "../../../assets/images/moving/wm.jpg";
 import table from "../../../assets/images/moving/table.jpg";
 import tv from "../../../assets/images/moving/tv.jpg";
 import dresser from "../../../assets/images/moving/dresser.jpg";
+import chair from "../../../assets/images/moving/chair.jpg";
 import stuff from "../../../assets/images/moving/stuff.jpg";
 import kitchen from '../../../assets/images/moving/kitchen.jpg';
 import closet2 from '../../../assets/images/moving/closet2.jpg';
@@ -80,7 +81,7 @@ const categoryArr = [
     modalArr: closetArr
   },
   {
-    img: "/images/moving/chair.jpg",
+    img: chair,
     title: "כסאות",
     modalArr: closetArr
   },
