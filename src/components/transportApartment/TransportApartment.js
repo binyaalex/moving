@@ -41,7 +41,7 @@ const TransportApartment = () => {
             <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='הצעת מחיר אונליין' link='/transportonlineaddress' />
+            <MainBtn text='הזמנה אונליין' link='/transportonlineaddress' />
             <MainBtn text='הזמנה בעזרת נציג' link='/transportgetback' isLight={true} />
           </div>
         </div>

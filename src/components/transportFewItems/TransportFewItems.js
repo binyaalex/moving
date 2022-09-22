@@ -19,6 +19,8 @@ import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 
 //images
+import fewItems from "../../assets/images/TII/moving-service-worker-sealing-cardboard-box-GRM5SEC.jpg";
+
 import moving from "../../assets/images/moving.jpg";
 import kitchen from "../../assets/images/TI-price/kitchen.jpg";
 import closet2 from "../../assets/images/TI-price/Modern-MDF-Wooden-Bedroom-Clothes-Storage-2-Door-Wardrobe-HF-WB44-.jpg";
@@ -105,7 +107,7 @@ const TransportFewItems = () => {
         <div className="transportFewItems">
 
             <div className="page_banner">
-                <img src={moving} />
+                <img src={fewItems} />
                 <div className="banner_content">
                     <div className="banner_title">
                         <h1>הובלת פריטים בודדים</h1>
@@ -113,7 +115,7 @@ const TransportFewItems = () => {
                     </div>
                     <div className="btnDiv">
                         <MainBtn text='חזרה' link='/transport' />
-                        <MainBtn text='דירות ובתים' link='/transportapartment' isLight={true} />
+                        <MainBtn text='הובלת דירות ובתים' link='/transportapartment' isLight={true} />
                     </div>
                 </div>
             </div>
@@ -146,7 +148,6 @@ const TransportFewItems = () => {
                                     itemsArr={itemsArr}
                                     withPrice={true}
                                 />
-
 
                                 <Form className="formBox">
 
