@@ -144,7 +144,7 @@ const ItemList = (props) => {
           })}
         </div>
         <div className="contact-btnDiv send">
-          <MainBtn text='שליחה' link='#' />
+          <MainBtn text='אישור' link='#' onClick={handleClose} />
         </div>
       </Modal>
     </>
