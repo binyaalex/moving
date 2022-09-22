@@ -115,6 +115,11 @@
     font-weight: 600;
 }
 
+.modalBtn {
+    margin: 0 20px 20px 0;
+    /* direction: ltr; */
+}
+
 .modalItems #paidServiceSquareTitle {
     font-weight: bold;
 }

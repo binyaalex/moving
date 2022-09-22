@@ -133,7 +133,7 @@ const ItemList = (props) => {
       <Modal show={show} onHide={handleClose} className="modal">
         <h1 className=''>{modal}  </h1>
         <div className="modalItems">
-          {modalArr.map((el, i) => {
+          {categoryArr.map((el, i) => {
             return (
               <Item
                 img={el.img}
@@ -143,7 +143,7 @@ const ItemList = (props) => {
             );
           })}
         </div>
-        <div className="contact-btnDiv send">
+        <div className="modalBtn">
           <MainBtn text='אישור' link='#' onClick={handleClose} />
         </div>
       </Modal>
