@@ -44,19 +44,6 @@
   opacity: 1;
 }
 
-.btnDiv {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-}
-
-.btnDiv>* {
-  margin-left: 40px;
-  display: flex;
-  margin-top: 15px;
-  justify-content: center;
-}
-
 
 .servicesDiv {
   display: flex;
