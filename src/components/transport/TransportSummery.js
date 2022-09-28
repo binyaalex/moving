@@ -1,5 +1,4 @@
 import './TransportSummery.css'
-import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 // bootstrap
@@ -24,6 +23,7 @@ import galleryImg5 from "../../assets/images/MT/AdobeStock_300477109-min_a23ba32
 import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
 
 const TransportSummery = () => {
+
     const [totalPrice, setTotalPrice] = useState(2000);
     const [checked, setChecked] = React.useState(false);
     const [send, setSend] = useState(false);
