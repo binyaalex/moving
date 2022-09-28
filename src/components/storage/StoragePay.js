@@ -1,11 +1,5 @@
 import '../pay/addCard/AddCard.css'
-import { Link } from "react-router-dom";
 import React, { useState } from "react";
-
-// bootstrap
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 //components
 import MainBtn from '../repeats/mainBtn/MainBtn'
@@ -28,7 +22,8 @@ import cardTmg from "../../assets/images/icons/add_card.png";
 import masterCard from "../../assets/images/icons/master_card.png";
 
 const StoragePay = () => {
-  const [totalPrice, setTotalPrice] = useState(2000);
+
+  // const [totalPrice, setTotalPrice] = useState(2000);
   const [send, setSend] = useState(false);
   const handleSend = () => {
     setSend(true)
@@ -54,7 +49,7 @@ const StoragePay = () => {
       img: galleryImg6
     },
   ]
-  
+
   return (
     <div className="transportFewItems">
 
@@ -87,62 +82,62 @@ const StoragePay = () => {
 
           <div className="formSide">
             {send
-                ?
-                <PaymentSuccess
-                    text1="תודה שבחרת בנו!"
-                    text2="אישור ההזמנה נשלח אליך למייל"
-                />
-                :
-                <div className="add_card_pages">
-                  <div className="add_card_area">
-                    <img src={cardTmg} className="add_card_img" alt="card-img" />
-                    <h1 className="add_card_h1">אמצעי תשלום</h1>
-                    <div className="add_card_text_area">
-                        <div className="add_card_number">
-                            <img
-                                src={masterCard}
-                                className="master_card_img"
-                                alt="master-card"
-                            />
-                            <h1 className="add_card_number_h1">מספר כרטיס</h1>
-                            <input
-                                type={"text"}
-                                className="add_card_number_input"
-                                placeholder="9875 5214 2214 9856"
-                            />
-                        </div>
-                        <div className="add_expiry_cvv">
-                            <div className="add_cvv">
-                                <h1 className="add_cvv_h1">CVC/CVV</h1>
-                                <input
-                                type={"text"}
-                                className="add_cvv_input"
-                                placeholder="***"
-                                />
-                            </div>
-                            <div className="add_expiry_date">
-                                <h1 className="add_expiry_date_h1">תאריך תפוגה</h1>
-                                <input
-                                type={"text"}
-                                className="add_expiry_date_input"
-                                placeholder="MM/YY"
-                                />
-                            </div>
-                        </div>
-                        <div className="add_card_name">
-                            <h1 className="add_card_name_h1">השם שעל הכרטיס</h1>
-                            <input
-                                type={"text"}
-                                className="add_card_name_input"
-                                placeholder="ישראל ישראלי"
-                            />
-                        </div>
+              ?
+              <PaymentSuccess
+                text1="תודה שבחרת בנו!"
+                text2="אישור ההזמנה נשלח אליך למייל"
+              />
+              :
+              <div className="add_card_pages">
+                <div className="add_card_area">
+                  <img src={cardTmg} className="add_card_img" alt="card-img" />
+                  <h1 className="add_card_h1">אמצעי תשלום</h1>
+                  <div className="add_card_text_area">
+                    <div className="add_card_number">
+                      <img
+                        src={masterCard}
+                        className="master_card_img"
+                        alt="master-card"
+                      />
+                      <h1 className="add_card_number_h1">מספר כרטיס</h1>
+                      <input
+                        type={"text"}
+                        className="add_card_number_input"
+                        placeholder="9875 5214 2214 9856"
+                      />
                     </div>
-                    <div className="contact-btnDiv send">
-                      <MainBtn text='תשלום' link='#' handleSend={handleSend} />
+                    <div className="add_expiry_cvv">
+                      <div className="add_cvv">
+                        <h1 className="add_cvv_h1">CVC/CVV</h1>
+                        <input
+                          type={"text"}
+                          className="add_cvv_input"
+                          placeholder="***"
+                        />
+                      </div>
+                      <div className="add_expiry_date">
+                        <h1 className="add_expiry_date_h1">תאריך תפוגה</h1>
+                        <input
+                          type={"text"}
+                          className="add_expiry_date_input"
+                          placeholder="MM/YY"
+                        />
+                      </div>
+                    </div>
+                    <div className="add_card_name">
+                      <h1 className="add_card_name_h1">השם שעל הכרטיס</h1>
+                      <input
+                        type={"text"}
+                        className="add_card_name_input"
+                        placeholder="ישראל ישראלי"
+                      />
                     </div>
                   </div>
+                  <div className="contact-btnDiv send">
+                    <MainBtn text='תשלום' link='#' handleSend={handleSend} />
+                  </div>
                 </div>
+              </div>
             }
           </div>
 

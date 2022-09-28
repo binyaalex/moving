@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import Head from "../../repeats/head/Head";
-import Footer from "../../repeats/footer/Footer";
-
 import visaCard from "../../../assets/images/icons/visa_card.png";
 import masterCard from "../../../assets/images/icons/master_card_1.png";
-
 import "./PayNow.css";
 import { Link } from "react-router-dom";
 
@@ -115,7 +112,6 @@ const PayNow = () => {
               </div>
             </div>
           </div>
-          {/* <Footer /> */}
         </div>
       </div>
     </>

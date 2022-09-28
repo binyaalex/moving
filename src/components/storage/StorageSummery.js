@@ -26,6 +26,7 @@ import galleryImg5 from "../../assets/images/PS/maxresdefault.jpg";
 import galleryImg6 from "../../assets/images/PS/privateStorage.jpg";
 
 const StorageSummery = () => {
+
   const [totalPrice, setTotalPrice] = useState(2000);
   const [checked, setChecked] = React.useState(false);
   const [isMonths, setIsMonths] = React.useState(false);
@@ -33,6 +34,7 @@ const StorageSummery = () => {
   const handleSend = () => {
     setSend(true)
   }
+
   const items = ['מקרר', 'מכונת כביסה', 'ארון בגדים', 'מקרר']
 
   const galleryArr = [
@@ -56,7 +58,6 @@ const StorageSummery = () => {
     },
   ]
 
-
   const monthsDisplay = (event) => {
     setIsMonths(event.target.checked)
   };
@@ -74,7 +75,7 @@ const StorageSummery = () => {
   const handleShow1 = () => {
     console.log(1);
   }
-  
+
   return (
     <div className="transportFewItems">
 
@@ -106,157 +107,157 @@ const StorageSummery = () => {
           </div>
 
           <div className="formSide">
-            
-                <Form className="formBox">
 
-                  <div className="order-summary-header" style={{marginTop: 0}} >אחסנה</div>
+            <Form className="formBox">
 
-                  <div className="order-summary-container">
-                      <p><strong>כמות קו"ב:</strong> 20</p>
-                      <p>תאריך אחסנה: 22/09/23</p>
-                      <p>
-                        <strong className="moving-total-price">
-                          מחיר אחסנה לחודש כולל מע''מ: {totalPrice} ש''ח
-                        </strong>
-                      </p>
-                      <p className="storge-time-div">
-                        <label className="add-package" htmlFor="addPackage">
-                          האם לשריין תקופת אחסנה?
-                        </label>
-                        <input onChange={monthsDisplay} type="checkbox" id="addPackage" />
-                      </p>
-                      {isMonths ? (
-                        <Row className="mb-3 row">
-                          <Form.Group as={Col} controlId="formBasicName">
-                            <Form.Label>מספר חודשים לשריון מקום</Form.Label>
-                            <Form.Select aria-label="Default select example">
-                              <option value="2" selected >2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                              <option value="11">11</option>
-                              <option value="12">12</option>
-                              <option value="13">13</option>
-                              <option value="14">14</option>
-                              <option value="15">15</option>
-                              <option value="16">16</option>
-                              <option value="17">17</option>
-                              <option value="18">18</option>
-                              <option value="19">19</option>
-                              <option value="20">20</option>
-                            </Form.Select>
-                          </Form.Group>
-                        </Row>
-                      ) : (
-                        ""
-                      )}
+              <div className="order-summary-header" style={{ marginTop: 0 }} >אחסנה</div>
 
-                      <p>אי שריון פירושו אחסנה לחודש ימים עם אופציה להארכה על בסיס מקום פנוי בלבד, כאמור בתקנון האחסנה</p>
-                  </div>
+              <div className="order-summary-container">
+                <p><strong>כמות קו"ב:</strong> 20</p>
+                <p>תאריך אחסנה: 22/09/23</p>
+                <p>
+                  <strong className="moving-total-price">
+                    מחיר אחסנה לחודש כולל מע''מ: {totalPrice} ש''ח
+                  </strong>
+                </p>
+                <p className="storge-time-div">
+                  <label className="add-package" htmlFor="addPackage">
+                    האם לשריין תקופת אחסנה?
+                  </label>
+                  <input onChange={monthsDisplay} type="checkbox" id="addPackage" />
+                </p>
+                {isMonths ? (
+                  <Row className="mb-3 row">
+                    <Form.Group as={Col} controlId="formBasicName">
+                      <Form.Label>מספר חודשים לשריון מקום</Form.Label>
+                      <Form.Select aria-label="Default select example">
+                        <option value="2" selected >2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                      </Form.Select>
+                    </Form.Group>
+                  </Row>
+                ) : (
+                  ""
+                )}
 
-                  <div className="terms-container">
-                    <div className="filter-btn-div">
-                      <label htmlFor="terms">
-                        {" "}
-                        קראתי ואני מאשר את{" "}
-                        <div onClick={handleShow1} className="terms">
-                          התקנון
-                        </div>
-                      </label>
-                      <input type="checkbox" id="terms" />
+                <p>אי שריון פירושו אחסנה לחודש ימים עם אופציה להארכה על בסיס מקום פנוי בלבד, כאמור בתקנון האחסנה</p>
+              </div>
+
+              <div className="terms-container">
+                <div className="filter-btn-div">
+                  <label htmlFor="terms">
+                    {" "}
+                    קראתי ואני מאשר את{" "}
+                    <div onClick={handleShow1} className="terms">
+                      התקנון
                     </div>
-                  </div>
+                  </label>
+                  <input type="checkbox" id="terms" />
+                </div>
+              </div>
 
-                  <div className="order-summary-header">הובלה</div>
+              <div className="order-summary-header">הובלה</div>
 
-                  <div className="order-summary-container">
-                    <div className="order-personaldetails">
-                      <p><strong>שם מלא:</strong> ישראלה ישראלי</p>
-                      <p>שעת תחילה הובלה: 09:00-12:00</p>
-                      <p>תאריך מעבר: 24/09/22</p>
+              <div className="order-summary-container">
+                <div className="order-personaldetails">
+                  <p><strong>שם מלא:</strong> ישראלה ישראלי</p>
+                  <p>שעת תחילה הובלה: 09:00-12:00</p>
+                  <p>תאריך מעבר: 24/09/22</p>
+                </div>
+                <div className="present-address">
+                  <h5 className="address-title"><strong> כתובת נוכחית:</strong> נתניה</h5>
+                  <p> קומה: 2 </p>
+                  <p> מעלית: 4 נוסעים</p>
+                  <p> שביל כניסה חריג: אין</p>
+                  <p> מנוף: לא</p>
+                </div>
+                <div className="chosen-items-list">
+                  <strong>פריטים שבחרתי:</strong>
+                  <ul>
+                    {items.map((item, idx) => {
+                      const itemQuantity = items.filter(
+                        (item2) => item2 === item
+                      ).length;
+                      return (
+                        <li key={idx} className="li-item">
+                          {itemQuantity > 0 ? `${item}` : `${item} X ${itemQuantity}`}
+                        </li>
+                      );
+                    })}
+                  </ul>{" "}
+                </div>
+
+                <div className="contact-btnDiv send">
+                  <MainBtn text='הוספת/הסרת פריטים' link='/onlinestorage' />
+                </div>
+
+                <strong className="moving-total-price">
+                  מחיר הובלה כולל מע''מ: {totalPrice} ש''ח
+                </strong>
+              </div>
+
+
+              <div className="terms-container">
+
+                <div className="filter-btn-div">
+
+                  <label className="add-package" htmlFor="addPackage">
+                    הוספת שירותי אריזה ב-1000 ש''ח בלבד
+                  </label>
+                  <input onChange={handleChange} type="checkbox" id="addPackage" />
+                </div>
+
+                <div className="filter-btn-div">
+                  <label htmlFor="terms">
+                    {" "}
+                    קראתי ואני מאשר את{" "}
+                    <div onClick={handleShow1} className="terms">
+                      התקנון
                     </div>
-                    <div className="present-address">
-                      <h5 className="address-title"><strong> כתובת נוכחית:</strong> נתניה</h5>
-                      <p> קומה: 2 </p>
-                      <p> מעלית: 4 נוסעים</p>
-                      <p> שביל כניסה חריג: אין</p>
-                      <p> מנוף: לא</p>
-                    </div>
-                    <div className="chosen-items-list">
-                      <strong>פריטים שבחרתי:</strong>
-                      <ul>
-                        {items.map((item, idx) => {
-                          const itemQuantity = items.filter(
-                            (item2) => item2 === item
-                          ).length;
-                          return (
-                            <li key={idx} className="li-item">
-                              {itemQuantity > 0 ? `${item}` : `${item} X ${itemQuantity}`}
-                            </li>
-                          );
-                        })}
-                      </ul>{" "}
-                    </div>
+                  </label>
+                  <input type="checkbox" id="terms" />
+                </div>
+              </div>
 
-                    <div className="contact-btnDiv send">
-                      <MainBtn text='הוספת/הסרת פריטים' link='/onlinestorage' />
-                    </div>
+              <div className="filter-btn-div send">
+                <Link className="filter-btn" to="/storagepay" >
+                  <p>
+                    מחיר אחסנה כולל מע"מ: 1000 ש"ח
+                  </p>
+                  <h1 className='transportSummeryBtnApprove1'>
+                    הזמנת אחסנה בלבד
+                  </h1>
+                </Link>
+              </div>
 
-                    <strong className="moving-total-price">
-                      מחיר הובלה כולל מע''מ: {totalPrice} ש''ח
-                    </strong>
-                  </div>
-
-
-                  <div className="terms-container">
-
-                    <div className="filter-btn-div">
-
-                      <label className="add-package" htmlFor="addPackage">
-                        הוספת שירותי אריזה ב-1000 ש''ח בלבד
-                      </label>
-                      <input onChange={handleChange} type="checkbox" id="addPackage" />
-                    </div>
-
-                    <div className="filter-btn-div">
-                      <label htmlFor="terms">
-                        {" "}
-                        קראתי ואני מאשר את{" "}
-                        <div onClick={handleShow1} className="terms">
-                          התקנון
-                        </div>
-                      </label>
-                      <input type="checkbox" id="terms" />
-                    </div>
-                  </div>
-
-                  <div className="filter-btn-div send">
-                    <Link className="filter-btn" to="/storagepay" >
-                      <p>
-                        מחיר אחסנה כולל מע"מ: 1000 ש"ח
-                      </p>
-                      <h1 className='transportSummeryBtnApprove1'>
-                        הזמנת אחסנה בלבד
-                      </h1>
-                    </Link>
-                  </div>
-
-                  <div className="filter-btn-div send">
-                    <Link className="filter-btn" to="/storagepay" >
-                      <p>
-                        מחיר אחסנה והובלה כולל מע"מ: {totalPrice} ש"ח
-                      </p>
-                      <h1 className='transportSummeryBtnApprove1'>
-                        הזמנת אחסנה והובלה
-                      </h1>
-                    </Link>
-                  </div>
-                </Form>
+              <div className="filter-btn-div send">
+                <Link className="filter-btn" to="/storagepay" >
+                  <p>
+                    מחיר אחסנה והובלה כולל מע"מ: {totalPrice} ש"ח
+                  </p>
+                  <h1 className='transportSummeryBtnApprove1'>
+                    הזמנת אחסנה והובלה
+                  </h1>
+                </Link>
+              </div>
+            </Form>
           </div>
 
         </div>

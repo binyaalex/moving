@@ -20,7 +20,6 @@ import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 
 //images
 import fewItems from "../../assets/images/TII/moving-service-worker-sealing-cardboard-box-GRM5SEC.jpg";
-
 import moving from "../../assets/images/moving.jpg";
 import kitchen from "../../assets/images/TI-price/kitchen.jpg";
 import closet2 from "../../assets/images/TI-price/Modern-MDF-Wooden-Bedroom-Clothes-Storage-2-Door-Wardrobe-HF-WB44-.jpg";
@@ -57,7 +56,6 @@ const TransportFewItems = () => {
             img: galleryImg6
         },
     ]
-
 
     const itemsArr = [
         {
@@ -97,6 +95,7 @@ const TransportFewItems = () => {
             link: '#',
         },
     ]
+
     const [send, setSend] = useState(false);
     const handleSend = () => {
         setSend(true)

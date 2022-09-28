@@ -42,11 +42,6 @@
   height: 50px;
 }
 
-.reviewsDiv .reviews .review .stars {
-  /* display: flex; */
-  /* width: 100px; */
-}
-
 .reviewsDiv .reviews .review .stars>* {
   width: 15px
 }

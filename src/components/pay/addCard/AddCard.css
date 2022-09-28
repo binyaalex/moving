@@ -1,12 +1,8 @@
-/* Create the Default Paragraphs */
-
 .add_card_pages.rtl * {
     text-align: right !important;
 }
 
 .add_card_pages {
-    /* height: 100%; */
-    /* max-width: 428px; */
     width: 100%;
 }
 
@@ -24,7 +20,6 @@
 .add_card_pages .add_card_area .add_card_text_area {
     background-image: linear-gradient(to right, #fafafa, #f7f7f7, #fafafa);
     padding: 10px 10px 10px 10px;
-    /* margin-top: 30px; */
 }
 
 .add_card_pages .add_card_area .add_card_text_area .add_card_number {

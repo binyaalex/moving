@@ -3,7 +3,6 @@ import "./Bills.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import Head from "../../repeats/head/Head";
-import Footer from "../../repeats/footer/Footer";
 import Search from "../../repeats/starSearch/Search";
 
 import doctor1 from "../../../assets/images/doctor/doctor1.jpg";

@@ -38,7 +38,6 @@ const Cubes = () => {
             <ToggleButton
               key={i}
               id={`cube-${i}`}
-              // type="cube"
               variant={i % 2 ? 'outline-secondary' : 'outline-secondary'}
               name={cube.name}
               value={cube.value}

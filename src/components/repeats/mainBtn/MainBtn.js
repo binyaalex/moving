@@ -1,7 +1,7 @@
-// import './FactoryOrOffice.css'
 import React from 'react';
 import { Link } from "react-router-dom";
 import './MainBtn.css';
+
 function MainBtn(props) {
 
     return (

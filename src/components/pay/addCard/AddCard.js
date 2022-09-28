@@ -1,9 +1,6 @@
 import React from "react";
 import Head from "../../repeats/head/Head";
-import Footer from "../../repeats/footer/Footer";
-
 import "./AddCard.css";
-
 import cardTmg from "../../../assets/images/icons/add_card.png";
 import masterCard from "../../../assets/images/icons/master_card.png";
 import { Link } from "react-router-dom";
@@ -69,7 +66,6 @@ const AddCard = () => {
               </div>
             </div>
           </div>
-          {/* <Footer /> */}
         </div>
       </div>
     </>

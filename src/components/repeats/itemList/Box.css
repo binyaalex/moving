@@ -1,22 +1,3 @@
-/* .boxPick {
-    position: relative;
-}
-
-.boxPick .boxSelect {
-    border: 0;
-    position: absolute;
-    bottom: 2px;
-    right: 13px;
-    width: 77px;
-    direction: rtl;
-}
-
-.boxPick .boxLable {
-    position: absolute;
-    width: auto;
-    bottom: -23px;
-    right: 7px;
-} */
 .boxes {
     display: flex;
 }

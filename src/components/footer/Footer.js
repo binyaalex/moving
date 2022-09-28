@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Footer.css";
-import MainBtn from '../repeats/mainBtn/MainBtn'
 
-import clock from "../../assets/images/icons/clock.png";
+//components
+import MainBtn from '../repeats/mainBtn/MainBtn'
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -36,6 +36,7 @@ const Footer = ({ isContact }) => {
       icon: SupportAgentIcon,
     }
   ]
+
   return (
     <>
       {isContact &&

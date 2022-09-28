@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 // bootstrap
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 //components
 import MainBtn from '../repeats/mainBtn/MainBtn'
@@ -22,7 +20,6 @@ import galleryImg3 from "../../assets/images/MT/moving-checklist-2000-6ec63f4c4a
 import galleryImg4 from "../../assets/images/MT/6-Common-Mistakes-to-Avoid-When-Hiring-a-Moving-Company.jpeg";
 import galleryImg5 from "../../assets/images/MT/AdobeStock_300477109-min_a23ba322c2da1cd76ade9dd3d3983ed1_2000.jpeg";
 import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
-import AddMoving from '../storage/AddMoving';
 
 const TransportOnlineItems = () => {
 

@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Storage.css";
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import ToggleButton from 'react-bootstrap/ToggleButton';
+
 
 //components
 import MainBtn from '../repeats/mainBtn/MainBtn'
@@ -17,19 +15,15 @@ import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 
 //images
-import moving from "../../assets/images/moving.jpg";
 import storing from "../../assets/images/storing.jpg";
-import clip from "../../assets/images/magal/clip.mp4";
 import privateStorage from "../../assets/images/PS/privateStorage.jpg";
 import businessStorage from "../../assets/images/PS/businessStorage.jpg";
-import getback from "../../assets/images/PS/getback.jpg";
 import galleryImg1 from "../../assets/images/BS/50_off_banner_2-bg.jpeg";
 import galleryImg2 from "../../assets/images/BS/BUSINESS PARK-1.jpg";
 import galleryImg3 from "../../assets/images/BS/Chapman_Final-17-of-75.jpeg";
 import galleryImg4 from "../../assets/images/BS/stockage24-box-louer-box-location-depot-louer-garage-location-Stockage_1.jpg";
 import galleryImg5 from "../../assets/images/BS/small1.jpg";
 import galleryImg6 from "../../assets/images/BS/Professional-removals-and-storage-services-in-Bozeat-Wollaston-Irchester-Northamptonshire.jpg";
-import { Business } from "@mui/icons-material";
 
 const galleryArr = [
   {
@@ -51,12 +45,12 @@ const galleryArr = [
     img: galleryImg6
   },
 ]
+
 const BusinessStorage = () => {
   const [send, setSend] = useState(false);
   const handleSend = () => {
     setSend(true)
   }
-
 
   const servicesArr = [
     {

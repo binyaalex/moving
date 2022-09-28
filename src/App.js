@@ -11,16 +11,16 @@ import OnlineStorage from "./components/storage/OnlineStorage";
 import GetBack from "./components/storage/GetBack";
 import BusinessStorage from "./components/storage/BusinessStorage";
 import StorageSummery from "./components/storage/StorageSummery";
+import StoragePay from "./components/storage/StoragePay";
 
 import Transport from "./components/transport/Transport";
-import TransportFewItems from "./components/transportFewItems/TransportFewItems";
-import TransportApartment from "./components/transportApartment/TransportApartment";
-import TransportGetBack from "./components/transportGetBack/TransportGetBack";
-import TransportOnlineAddress from "./components/transportOnline/TransportOnlineAddress";
-import TransportOnlineItems from "./components/transportOnline/TransportOnlineItems";
-import TransportOffice from "./components/transportOffice/TransportOffice";
-import TransportSummery from "./components/transportSummery/TransportSummery";
-import StoragePay from "./components/storage/StoragePay";
+import TransportFewItems from "./components/transport/TransportFewItems";
+import TransportApartment from "./components/transport/TransportApartment";
+import TransportGetBack from "./components/transport/TransportGetBack";
+import TransportOnlineAddress from "./components/transport/TransportOnlineAddress";
+import TransportOnlineItems from "./components/transport/TransportOnlineItems";
+import TransportOffice from "./components/transport/TransportOffice";
+import TransportSummery from "./components/transport/TransportSummery";
 
 function App() {
   return (

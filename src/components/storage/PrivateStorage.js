@@ -3,19 +3,14 @@ import { Link } from "react-router-dom";
 import "./Storage.css";
 
 //components
-
 import MainBtn from '../repeats/mainBtn/MainBtn'
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 
 //images
-
-import moving from "../../assets/images/moving.jpg";
-import storing from "../../assets/images/storing.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
 import privateStorage from "../../assets/images/PS/privateStorage.jpg";
-import businessStorage from "../../assets/images/PS/businessStorage.jpg";
 import online from "../../assets/images/PS/online.jpg";
 import getback from "../../assets/images/PS/getback.jpg";
 

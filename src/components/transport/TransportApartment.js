@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 //components
-
 import MainBtn from '../repeats/mainBtn/MainBtn'
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 
 //images
-
 import clip from "../../assets/images/magal/clip.mp4";
 import apartments from "../../assets/images/MT/4.jpg";
 import online from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg";

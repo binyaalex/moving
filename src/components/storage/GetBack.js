@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Storage.css";
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import ToggleButton from 'react-bootstrap/ToggleButton';
-//components
 
+
+//components
 import MainBtn from '../repeats/mainBtn/MainBtn'
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
@@ -17,21 +15,15 @@ import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 
 //images
-
-import moving from "../../assets/images/moving.jpg";
 import storing from "../../assets/images/storing.jpg";
-import clip from "../../assets/images/magal/clip.mp4";
-import privateStorage from "../../assets/images/PS/privateStorage.jpg";
-import businessStorage from "../../assets/images/PS/businessStorage.jpg";
 import getback from "../../assets/images/PS/getback.jpg";
-
-
 import galleryImg1 from "../../assets/images/PS/912_0126.jpg";
 import galleryImg2 from "../../assets/images/PS/Boost_18_1101_149.jpg";
 import galleryImg3 from "../../assets/images/PS/Stokado_Self_Storage1lr-768x512-jpg.jpg";
 import galleryImg4 from "../../assets/images/PS/businessStorage.jpg";
 import galleryImg5 from "../../assets/images/PS/maxresdefault.jpg";
 import galleryImg6 from "../../assets/images/PS/privateStorage.jpg";
+
 const galleryArr = [
   {
     img: galleryImg1
@@ -52,6 +44,7 @@ const galleryArr = [
     img: galleryImg6
   },
 ]
+
 const GetBack = () => {
 
   const [send, setSend] = useState(false);

@@ -3,17 +3,14 @@ import { Link } from "react-router-dom";
 import "./Transport.css";
 
 //components
-
 import MainBtn from '../repeats/mainBtn/MainBtn'
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 
 //images
-
 import moving from "../../assets/images/moving.jpg";
 import fewItems from "../../assets/images/TII/moving-service-worker-sealing-cardboard-box-GRM5SEC.jpg";
-
 import apartments from "../../assets/images/MT/4.jpg";
 import office from "../../assets/images/MOF/shutterstock_313432601.jpg";
 import clip from "../../assets/images/magal/clip.mp4";

@@ -1,12 +1,6 @@
 import React, { useState } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faGripLines } from "@fortawesome/free-solid-svg-icons";
-// import { faClose } from "@fortawesome/free-solid-svg-icons";
-
 import Logo from "./Logo";
 import BtnsList from "./BtnsList";
-// import Sidebar from "../repeat/sidebar/Sidebar";
-
 import "./Nav.css";
 
 const Nav = () => {

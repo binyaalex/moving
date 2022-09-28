@@ -53,7 +53,6 @@ const closetArr = [
 ];
 
 const categoryArr = [
-
   {
     img: closet,
     title: "ארונות",
