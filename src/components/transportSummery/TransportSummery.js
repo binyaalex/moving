@@ -79,7 +79,7 @@ const TransportSummery = () => {
                         <p>רק למלא פרטים ולשלוח</p>
                     </div>
                     <div className="btnDiv">
-                        <MainBtn text='חזרה' link='/transportapartment' />
+                        <MainBtn text='חזרה' link='/transportonlineitems' />
                         <MainBtn text='הזמנה בעזרת נציג' link='/transportgetback' isLight={true} />
                     </div>
                 </div>
@@ -145,7 +145,7 @@ const TransportSummery = () => {
                                         </div>
 
                                         <div className="contact-btnDiv send">
-                                            <MainBtn text='הוספת/הסרת פריטים' link='#' />
+                                            <MainBtn text='הוספת/הסרת פריטים' link='/transportonlineitems' />
                                         </div>
 
                                         <strong className="moving-total-price">

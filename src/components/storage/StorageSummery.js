@@ -79,7 +79,7 @@ const StorageSummery = () => {
             <p>רק למלא פרטים ולשלוח</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='חזרה' link='/transportapartment' />
+            <MainBtn text='חזרה' link='/onlinestorage' />
             <MainBtn text='הזמנה בעזרת נציג' link='/transportgetback' isLight={true} />
           </div>
         </div>
@@ -145,7 +145,7 @@ const StorageSummery = () => {
                     </div>
 
                     <div className="contact-btnDiv send">
-                      <MainBtn text='הוספת/הסרת פריטים' link='#' />
+                      <MainBtn text='הוספת/הסרת פריטים' link='/onlinestorage' />
                     </div>
 
                     <strong className="moving-total-price">

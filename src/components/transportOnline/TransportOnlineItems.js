@@ -58,7 +58,7 @@ const TransportOnlineItems = () => {
             <p>רק למלא פרטים ולשלוח</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='חזרה' link='/transportapartment' />
+            <MainBtn text='חזרה' link='/transportonlineaddress' />
             <MainBtn text='הזמנה בעזרת נציג' link='/transportgetback' isLight={true} />
           </div>
         </div>
