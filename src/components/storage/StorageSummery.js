@@ -4,6 +4,8 @@ import React, { useState } from "react";
 
 // bootstrap
 import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 //components
 import MainBtn from '../repeats/mainBtn/MainBtn'
@@ -68,6 +70,8 @@ const StorageSummery = () => {
     console.log(1);
   }
 
+  const isSave = true
+
   return (
     <div className="transportFewItems">
 
@@ -109,8 +113,8 @@ const StorageSummery = () => {
               <>
                 <Form className="formBox">
 
-                  <div className="order-summary-header" >אחסנה</div>
-                  
+                  <div className="order-summary-header" style={{marginTop: 0}} >אחסנה</div>
+
                   <div className="order-summary-container">
                       <p><strong>כמות קו"ב:</strong> 20</p>
                       <p>תאריך אחסנה: 22/09/23</p>
@@ -125,7 +129,51 @@ const StorageSummery = () => {
                         </label>
                         <input type="checkbox" id="addPackage" />
                       </p>
+                      {isSave ? (
+                        <Row className="mb-3 row">
+                          <Form.Group as={Col} controlId="formBasicName">
+                            <Form.Label>מספר חודשים לשריון מקום</Form.Label>
+                            <Form.Select aria-label="Default select example">
+                              <option value="2" selected >2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                              <option value="13">13</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                            </Form.Select>
+                          </Form.Group>
+                        </Row>
+                      ) : (
+                        ""
+                      )}
+
                       <p>אי שריון פירושו אחסנה לחודש ימים עם אופציה להארכה על בסיס מקום פנוי בלבד, כאמור בתקנון האחסנה</p>
+                  </div>
+
+                  <div className="terms-container">
+                    <div className="filter-btn-div">
+                      <label htmlFor="terms">
+                        {" "}
+                        קראתי ואני מאשר את{" "}
+                        <div onClick={handleShow1} className="terms">
+                          התקנון
+                        </div>
+                      </label>
+                      <input type="checkbox" id="terms" />
+                    </div>
                   </div>
 
                   <div className="order-summary-header">הובלה</div>
@@ -138,13 +186,6 @@ const StorageSummery = () => {
                     </div>
                     <div className="present-address">
                       <h5 className="address-title"><strong> כתובת נוכחית:</strong> נתניה</h5>
-                      <p> קומה: 2 </p>
-                      <p> מעלית: 4 נוסעים</p>
-                      <p> שביל כניסה חריג: אין</p>
-                      <p> מנוף: לא</p>
-                    </div>
-                    <div className="future-address">
-                      <h5 className="address-title"><strong> כתובת חדשה:</strong> פתח תקווה</h5>
                       <p> קומה: 2 </p>
                       <p> מעלית: 4 נוסעים</p>
                       <p> שביל כניסה חריג: אין</p>
@@ -201,10 +242,21 @@ const StorageSummery = () => {
                   <div className="filter-btn-div send">
                     <div className="filter-btn" onClick={handleSend}>
                       <p>
-                        מחיר סופי כולל מע"מ: {totalPrice}
+                        מחיר אחסנה כולל מע"מ: 1000 ש"ח
                       </p>
                       <h1 className='transportSummeryBtnApprove1'>
-                        אישור
+                        הזמנת אחסנה בלבד
+                      </h1>
+                    </div>
+                  </div>
+
+                  <div className="filter-btn-div send">
+                    <div className="filter-btn" onClick={handleSend}>
+                      <p>
+                        מחיר אחסנה והובלה כולל מע"מ: {totalPrice} ש"ח
+                      </p>
+                      <h1 className='transportSummeryBtnApprove1'>
+                        הזמנת אחסנה והובלה
                       </h1>
                     </div>
                   </div>
