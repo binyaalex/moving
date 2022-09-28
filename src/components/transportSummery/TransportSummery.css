@@ -142,6 +142,19 @@
     width: 100% !important;
 }
 
+
+.storge-time-div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.order-summary-header {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 /* 
 .transportSummeryBtn {
     background: var(--primary);

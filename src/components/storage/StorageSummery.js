@@ -108,6 +108,28 @@ const StorageSummery = () => {
               :
               <>
                 <Form className="formBox">
+
+                  <div className="order-summary-header" >אחסנה</div>
+                  
+                  <div className="order-summary-container">
+                      <p><strong>כמות קו"ב:</strong> 20</p>
+                      <p>תאריך אחסנה: 22/09/23</p>
+                      <p>
+                        <strong className="moving-total-price">
+                          מחיר אחסנה לחודש כולל מע''מ: {totalPrice} ש''ח
+                        </strong>
+                      </p>
+                      <p className="storge-time-div">
+                        <label className="add-package" htmlFor="addPackage">
+                          האם לשריין תקופת אחסנה?
+                        </label>
+                        <input type="checkbox" id="addPackage" />
+                      </p>
+                      <p>אי שריון פירושו אחסנה לחודש ימים עם אופציה להארכה על בסיס מקום פנוי בלבד, כאמור בתקנון האחסנה</p>
+                  </div>
+
+                  <div className="order-summary-header">הובלה</div>
+
                   <div className="order-summary-container">
                     <div className="order-personaldetails">
                       <p><strong>שם מלא:</strong> ישראלה ישראלי</p>
