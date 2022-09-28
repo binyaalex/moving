@@ -28,6 +28,7 @@ import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
 const StorageSummery = () => {
   const [totalPrice, setTotalPrice] = useState(2000);
   const [checked, setChecked] = React.useState(false);
+  const [isMonths, setIsMonths] = React.useState(false);
   const [send, setSend] = useState(false);
   const handleSend = () => {
     setSend(true)
@@ -55,6 +56,10 @@ const StorageSummery = () => {
     },
   ]
 
+
+  const monthsDisplay = (event) => {
+    setIsMonths(event.target.checked)
+  };
 
   const handleChange = (event) => {
     setChecked(event.target.checked)
@@ -127,9 +132,9 @@ const StorageSummery = () => {
                         <label className="add-package" htmlFor="addPackage">
                           האם לשריין תקופת אחסנה?
                         </label>
-                        <input type="checkbox" id="addPackage" />
+                        <input onChange={monthsDisplay} type="checkbox" id="addPackage" />
                       </p>
-                      {isSave ? (
+                      {isMonths ? (
                         <Row className="mb-3 row">
                           <Form.Group as={Col} controlId="formBasicName">
                             <Form.Label>מספר חודשים לשריון מקום</Form.Label>
