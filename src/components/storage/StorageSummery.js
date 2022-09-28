@@ -106,14 +106,7 @@ const StorageSummery = () => {
           </div>
 
           <div className="formSide">
-            {send
-              ?
-              <PaymentSuccess
-                text1="תודה שבחרת בנו!"
-                text2="אישור ההזמנה נשלח אליך למייל"
-              />
-              :
-              <>
+            
                 <Form className="formBox">
 
                   <div className="order-summary-header" style={{marginTop: 0}} >אחסנה</div>
@@ -243,29 +236,27 @@ const StorageSummery = () => {
                   </div>
 
                   <div className="filter-btn-div send">
-                    <div className="filter-btn" onClick={handleSend}>
+                    <Link className="filter-btn" to="/storagepay" >
                       <p>
                         מחיר אחסנה כולל מע"מ: 1000 ש"ח
                       </p>
                       <h1 className='transportSummeryBtnApprove1'>
                         הזמנת אחסנה בלבד
                       </h1>
-                    </div>
+                    </Link>
                   </div>
 
                   <div className="filter-btn-div send">
-                    <div className="filter-btn" onClick={handleSend}>
+                    <Link className="filter-btn" to="/storagepay" >
                       <p>
                         מחיר אחסנה והובלה כולל מע"מ: {totalPrice} ש"ח
                       </p>
                       <h1 className='transportSummeryBtnApprove1'>
                         הזמנת אחסנה והובלה
                       </h1>
-                    </div>
+                    </Link>
                   </div>
                 </Form>
-              </>
-            }
           </div>
 
         </div>

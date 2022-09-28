@@ -215,3 +215,8 @@ textarea.form-control {
   height: 100px !important;
   resize: none;
 }
+
+.add_card_pages .add_card_area .add_card_text_area .add_card_number .master_card_img {
+  width: unset;
+  left: 0;
+}

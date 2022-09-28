@@ -1,4 +1,4 @@
-// import './TransportSummery.css'
+import '../pay/addCard/AddCard.css'
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
@@ -29,7 +29,7 @@ import masterCard from "../../assets/images/icons/master_card.png";
 
 const StoragePay = () => {
   const [totalPrice, setTotalPrice] = useState(2000);
-  const [send, setSend] = useState(true);
+  const [send, setSend] = useState(false);
   const handleSend = () => {
     setSend(true)
   }
@@ -66,7 +66,7 @@ const StoragePay = () => {
             <p>רק למלא פרטים ולשלוח</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='חזרה' link='/onlinestorage' />
+            <MainBtn text='חזרה' link='/storageSummery' />
             <MainBtn text='הזמנה בעזרת נציג' link='/getbackStorage' isLight={true} />
           </div>
         </div>
@@ -75,7 +75,7 @@ const StoragePay = () => {
       <Pros />
 
       <div className="servicesDiv">
-        <h1 className="homeTitle">פרטי הזמנה</h1>
+        <h1 className="homeTitle">תשלום</h1>
         <div className="splitDiv">
           <div className="imagesSide">
             <SideGallery
@@ -93,7 +93,8 @@ const StoragePay = () => {
                     text2="אישור ההזמנה נשלח אליך למייל"
                 />
                 :
-                <div className="add_card_area">
+                <div className="add_card_pages">
+                  <div className="add_card_area">
                     <img src={cardTmg} className="add_card_img" alt="card-img" />
                     <h1 className="add_card_h1">אמצעי תשלום</h1>
                     <div className="add_card_text_area">
@@ -137,6 +138,10 @@ const StoragePay = () => {
                             />
                         </div>
                     </div>
+                    <div className="contact-btnDiv send">
+                      <MainBtn text='תשלום' link='#' handleSend={handleSend} />
+                    </div>
+                  </div>
                 </div>
             }
           </div>
