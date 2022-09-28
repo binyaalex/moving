@@ -20,6 +20,7 @@ import TransportOnlineAddress from "./components/transportOnline/TransportOnline
 import TransportOnlineItems from "./components/transportOnline/TransportOnlineItems";
 import TransportOffice from "./components/transportOffice/TransportOffice";
 import TransportSummery from "./components/transportSummery/TransportSummery";
+import StoragePay from "./components/storage/StoragePay";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/transportonlineitems" element={<TransportOnlineItems />} />
         <Route path="/transportoffice" element={<TransportOffice />} />
         <Route path="/transportsummery" element={<TransportSummery />} />
+        <Route path="/storagepay" element={<StoragePay />} />
 
       </Routes>
     </BrowserRouter>
