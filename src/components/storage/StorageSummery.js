@@ -74,9 +74,7 @@ const StorageSummery = () => {
   const handleShow1 = () => {
     console.log(1);
   }
-
-  const isSave = true
-
+  
   return (
     <div className="transportFewItems">
 
