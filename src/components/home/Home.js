@@ -4,12 +4,11 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 //components
-import Head from '../repeats/head/Head';
-import ServiceList from "../repeats/serviceList/ServiceList";
-import Review from "../repeats/review/Review";
+// import Head from '../repeats/head/Head';
+// import ServiceList from "../repeats/serviceList/ServiceList";
+// import Review from "../repeats/review/Review";
 import MainBtn from '../repeats/mainBtn/MainBtn'
-import SpecialistsList from "../selectMovingCategory/specialistsList/SpecialistsList";
-import PersonalInfo from "../storing/generalComponents/PersonalInfo";
+// import SpecialistsList from "../selectMovingCategory/specialistsList/SpecialistsList";
 import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
@@ -61,10 +60,6 @@ const Home = () => {
 
   return (
     <>
-      {/* <div className="PageDad"> */}
-      {/* <div className="page"> */}
-      {/* <div className="doctor_pages rtl aboutProvider"> */}
-      {/* <Head text='א.א מובילים' /> */}
       <div className="home_banner">
         <img src={home} />
         <div className="banner_content">
@@ -109,59 +104,6 @@ const Home = () => {
       <Reviews />
       <Footer isContact={true} />
 
-      {/* <div className="bannerRight">
-            <div className="banner_content_phone">
-              <h6>03-7777777</h6>
-              <BsTelephone className="telephone-icon" />
-            </div>
-            <div className="doctor_heading align-center justify-between all_review_section">
-              <small>
-                <StarIcon />
-                4.6 (1435 ביקורות){" "}
-              </small>
-            </div>
-          </div>
-          <div className="bannerLeft">
-            <div
-              onClick={movingHandle}
-              to="#"
-              className="aboutBtn"
-            >
-              אודות
-            </div>
-          </div> */}
-
-      {/* {isMoving ? (
-        <div className="about_area">
-          <div className="about_text"> א.א מובילים חברת הובלות ואחסנה, מספקים שירותי הובלות לכל הארץ כולל הובלות קירור. </div>
-        </div>
-      ) : (
-        ""
-      )} */}
-
-      {/* <ServiceList serviceListArr={serviceListArr} text='השירותים שלנו' /> */}
-
-      {/* <div className="review_rating_sec office ">
-
-        <SpecialistsList />
-
-      </div>
-      <div className="add_card_pages rtl">
-        <div className="add_card_area factorytime">
-          <div className="storingType_h1_wrapper">
-            <h1 className="storingType_h1 storingType_h1">צור קשר</h1>
-          </div>
-          <div className="row specialistsBoxArea">
-            <PersonalInfo header='השאר פרטים ליצירת קשר' />
-          </div>
-        </div>
-      </div>
-      <div className="aboutProvidesMainBtnDiv" >
-        <MainBtn text='אישור' link='#' />
-      </div> */}
-      {/* </div> */}
-      {/* </div> */}
-      {/* </div> */}
     </>
   );
 };

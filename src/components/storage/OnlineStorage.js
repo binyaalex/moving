@@ -18,6 +18,7 @@ import ItemList from "../repeats/itemList/ItemList";
 import SideGallery from "../repeats/sideGallery/SideGallery";
 import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 import Cubes from './Cubes';
+
 //images
 import moving from "../../assets/images/moving.jpg";
 import storing from "../../assets/images/storing.jpg";
@@ -72,7 +73,6 @@ const OnlineStorage = () => {
   const [checked, setChecked] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
   const [radioValue, setRadioValue] = useState('items');
-
 
   return (
     <>
@@ -186,10 +186,13 @@ const OnlineStorage = () => {
               <PersonalDetails />
 
               <div className="contact-btnDiv send">
-                <MainBtn text='שליחה' link='#' />
+                <MainBtn
+                  text='שליחה'
+                  link="/storagesummery"
+                />
               </div>
-
             </Form>
+
           </div>
         </div>
       </div>

@@ -1,9 +1,13 @@
+.transport .servicesDiv .services .service {
+    width: 30%
+}
+
 .transport .servicesDiv .services .service img {
-    width: 29vw;
-    height: 19vw;
+    width: 22vw;
+    height: 13vw;
     transition: all .2s ease-in-out;
 }
 
 .transport .provider_banner>img {
-    background: transparent url('/public/images/home-flipped.jpg')0% 50% no-repeat padding-box;
+    /* background: transparent url('/public/images/home-flipped.jpg')0% 50% no-repeat padding-box; */
 }

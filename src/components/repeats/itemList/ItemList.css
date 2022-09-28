@@ -139,5 +139,10 @@
 input[type='checkbox'] {
     accent-color: rgb(251, 100, 0);
     color: white !important;
+}
+
+.form-check-input[type='checkbox']:checked {
+    background-color: rgb(251, 100, 0);
+    border-color: rgb(251, 100, 0);
 
 }

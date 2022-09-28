@@ -14,6 +14,7 @@ import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 import SideGallery from "../repeats/sideGallery/SideGallery";
 import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
+import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 
 //images
 import moving from "../../assets/images/moving.jpg";
@@ -51,7 +52,10 @@ const galleryArr = [
   },
 ]
 const BusinessStorage = () => {
-
+  const [send, setSend] = useState(false);
+  const handleSend = () => {
+    setSend(true)
+  }
 
 
   const servicesArr = [
@@ -97,31 +101,43 @@ const BusinessStorage = () => {
           </div>
 
           <div className="formSide">
+            {send
+              ?
+              <PaymentSuccess
+                text1="תודה שבחרת בנו!"
+                text2="נציג יחזור אליך בהקדם"
+              />
+              :
+              <>
+                <Form className="formBox" >
+                  <Row className="mb-3 row">
 
-            <Form className="formBox" >
-              <Row className="mb-3 row">
+                    <Form.Group as={Col} className="mb-3" controlId="formBasicName">
+                      <Form.Label>אזור אחסנה</Form.Label>
+                      <Form.Select aria-label="Default select example">
+                        <option>. . .</option>
+                        <option value="center">מרכז</option>
+                        <option value="sharon">שרון</option>
+                        <option value="north sharon">צפון השרון</option>
+                        <option value="north">צפון</option>
+                        <option value="shfela">שפלה</option>
+                        <option value="south">דרום</option>
+                        <option value="jerusalem">ירושלים והסביבה</option>
+                      </Form.Select>
 
-                <Form.Group as={Col} className="mb-3" controlId="formBasicName">
-                  <Form.Label>אזור אחסנה</Form.Label>
-                  <Form.Select aria-label="Default select example">
-                    <option>. . .</option>
-                    <option value="center">מרכז</option>
-                    <option value="sharon">שרון</option>
-                    <option value="north sharon">צפון השרון</option>
-                    <option value="north">צפון</option>
-                    <option value="shfela">שפלה</option>
-                    <option value="south">דרום</option>
-                    <option value="jerusalem">ירושלים והסביבה</option>
-                  </Form.Select>
+                    </Form.Group>
+                  </Row>
+                  <PersonalDetails />
 
-                </Form.Group>
-              </Row>
-              <PersonalDetails />
-
-              <div className="contact-btnDiv send">
-                <MainBtn text='שליחה' link='#' />
-              </div>
-            </Form>
+                  <div className="contact-btnDiv send">
+                    <MainBtn
+                      text='שליחה'
+                      handleSend={handleSend}
+                    />
+                  </div>
+                </Form>
+              </>
+            }
           </div>
         </div>
       </div>

@@ -11,14 +11,14 @@ import Footer from "../footer/Footer";
 
 //images
 
-import fewItems from "../../assets/images/moving.jpg";
+import moving from "../../assets/images/moving.jpg";
+import fewItems from "../../assets/images/TII/moving-service-worker-sealing-cardboard-box-GRM5SEC.jpg";
+
 import apartments from "../../assets/images/MT/4.jpg";
 import office from "../../assets/images/MOF/shutterstock_313432601.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
 
 const Transport = () => {
-
-
 
   const servicesArr = [
     {
@@ -42,14 +42,14 @@ const Transport = () => {
     <div className="transport">
 
       <div className="page_banner">
-        <img src={fewItems} />
+        <img src={moving} />
         <div className="banner_content">
           <div className="banner_title">
             <h1>הובלה</h1>
             <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
           </div>
           <div className="btnDiv">
-            <MainBtn text='פרטים בודדים' link='/transportfewitems' />
+            <MainBtn text='פריטים בודדים' link='/transportfewitems' />
             <MainBtn text='דירות ובתים' link='/transportapartment' isLight={true} />
             <MainBtn text='משרדים/מפעלים' link='/transportoffice' />
           </div>
@@ -67,7 +67,7 @@ const Transport = () => {
                 <Link to={el.link}>
                   <img src={el.img} />
                 </Link>
-                <h1>{el.header}</h1>
+                <h4>{el.header}</h4>
               </div>
             )
           })}

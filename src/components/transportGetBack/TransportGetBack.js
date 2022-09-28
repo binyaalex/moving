@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 // bootstrap
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
@@ -9,6 +10,7 @@ import Pros from "../pros/Pros";
 import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 import SideGallery from "../repeats/sideGallery/SideGallery";
+import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 
 //images
 import bannerImg from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
@@ -44,7 +46,10 @@ const TransportGetBack = () => {
             img: galleryImg6
         },
     ]
-
+    const [send, setSend] = useState(false);
+    const handleSend = () => {
+        setSend(true)
+    }
     return (
         <div className="transportFewItems">
 
@@ -76,40 +81,47 @@ const TransportGetBack = () => {
                     </div>
 
                     <div className="formSide">
+                        {send
+                            ?
+                            <PaymentSuccess
+                                text1="תודה שבחרת בנו!"
+                                text2="נציג יחזור אליך בהקדם"
+                            />
+                            :
+                            <>
+                                <Form className="formBox">
 
-                        <Form className="formBox">
-                            
-                            <WhereAndWhen />
+                                    <WhereAndWhen />
 
-                            <Row className="mb-3 row">
-                                <Form.Label>סוג הובלה</Form.Label>
-                                <Form.Select 
-                                    aria-label="Default select example"
-                                    style={{marginRight: '12px', width: '32.2vw'}}
-                                >
-                                    <option>. . .</option>
-                                    <option value="2">2 חדרים</option>
-                                    <option value="3">3 חדרים</option>
-                                    <option value="4">4 חדרים</option>
-                                    <option value="5">5 חדרים</option>
-                                    <option value="6">6 חדרים</option>
-                                    <option value="7">7 חדרים</option>
-                                    <option value="penthouse">פנטהאוז</option>
-                                    <option value="privet home">בית פרטי</option>
-                                </Form.Select>
-                            </Row>
+                                    <Row className="mb-3 row">
+                                        <Form.Label>סוג הובלה</Form.Label>
+                                        <Form.Select
+                                            aria-label="Default select example"
+                                            style={{ marginRight: '12px', width: '32.2vw' }}
+                                        >
+                                            <option>. . .</option>
+                                            <option value="2">2 חדרים</option>
+                                            <option value="3">3 חדרים</option>
+                                            <option value="4">4 חדרים</option>
+                                            <option value="5">5 חדרים</option>
+                                            <option value="6">6 חדרים</option>
+                                            <option value="7">7 חדרים</option>
+                                            <option value="penthouse">פנטהאוז</option>
+                                            <option value="privet home">בית פרטי</option>
+                                        </Form.Select>
+                                    </Row>
 
-                            <PersonalDetails />
+                                    <PersonalDetails />
 
-                            <div className="contact-btnDiv row">
-                                <MainBtn
-                                    text='שליחה'
-                                    link='/transportfewitemsSuccess'
-                                    style={{ padding: '5px 25px' }}
-                                />
-                            </div>
-                        </Form>
-
+                                    <div className="contact-btnDiv row">
+                                        <MainBtn
+                                            text='שליחה'
+                                            handleSend={handleSend}
+                                        />
+                                    </div>
+                                </Form>
+                            </>
+                        }
                     </div>
 
                 </div>
