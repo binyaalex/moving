@@ -16,6 +16,7 @@ import TransportFewItemsSuccess from "./components/transportFewItems/TransportFe
 import TransportApartment from "./components/transportApartment/TransportApartment";
 import TransportGetBack from "./components/transportGetBack/TransportGetBack";
 import TransportOnlineAddress from "./components/transportOnline/TransportOnlineAddress";
+import TransportOnlineItems from "./components/transportOnline/TransportOnlineItems";
 import TransportOffice from "./components/transportOffice/TransportOffice";
 import TransportOfficeSuccess from "./components/transportOffice/TransportOfficeSuccess";
 import TransportSummery from "./components/transportSummery/TransportSummery";
@@ -39,6 +40,7 @@ function App() {
         <Route path="/transportapartment" element={<TransportApartment />} />
         <Route path="/transportgetback" element={<TransportGetBack />} />
         <Route path="/transportonlineaddress" element={<TransportOnlineAddress />} />
+        <Route path="/transportonlineitems" element={<TransportOnlineItems />} />
         <Route path="/transportoffice" element={<TransportOffice />} />
         <Route path="/transportofficesuccess" element={<TransportOfficeSuccess />} />
         <Route path="/transportsummery" element={<TransportSummery />} />
