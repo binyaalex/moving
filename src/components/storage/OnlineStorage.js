@@ -66,9 +66,9 @@ const radios = [
 
 const OnlineStorage = (props) => {
 
-  useEffect (() => {
-    document.querySelector(".homeTitle").scrollIntoView();
-  })
+  // useEffect (() => {
+  //   document.querySelector(".homeTitle").scrollIntoView();
+  // })
 
   // const [checked, setChecked] = useState(false);
   // const [isMoving, setIsMoving] = useState(false);
@@ -182,7 +182,7 @@ const OnlineStorage = (props) => {
                 </Form.Group>
               </Row>
 
-              {props.isMoving && <AddMoving header='כתובת' withKindOfMoving={true} />}
+              {props.isMoving && <AddMoving header='מהיכן?' withKindOfMoving={true} />}
 
               <PersonalDetails />
 

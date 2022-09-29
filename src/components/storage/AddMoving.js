@@ -13,7 +13,7 @@ const AddMoving = (props) => {
       {
         props.withKindOfMoving ? (
           <Row className="mb-3 row">
-            <Form.Label>בחרו את סוג ההובלה שלכם</Form.Label>
+            <Form.Label>סוג הובלה</Form.Label>
             <Form.Select
               aria-label="Default select example"
               style={{ marginRight: '12px', width: '32.2vw' }}
