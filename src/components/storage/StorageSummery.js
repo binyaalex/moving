@@ -14,6 +14,8 @@ import Reviews from "../reviews/Reviews";
 import Footer from "../footer/Footer";
 import SideGallery from "../repeats/sideGallery/SideGallery";
 import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 
 //images
 import bannerImg from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg";
@@ -27,7 +29,7 @@ import galleryImg6 from "../../assets/images/PS/privateStorage.jpg";
 
 const StorageSummery = (props) => {
 
-  useEffect (() => {
+  useEffect(() => {
     document.querySelector(".homeTitle").scrollIntoView();
   })
 
@@ -36,10 +38,15 @@ const StorageSummery = (props) => {
   const [checked, setChecked] = React.useState(false);
   const [isMonths, setIsMonths] = React.useState(false);
   const [send, setSend] = useState(false);
+  const [only, setOnly] = useState(false);
   const handleSend = () => {
     setSend(true)
   }
-
+  const handleShowOnly = () => setOnly(true);
+  const handleCloseOnly = () => {
+    // document.querySelector(".web-sideBar").firstChild.firstChild.scrollBy(0, 100)
+    setOnly(false);
+  }
   const items = ['מקרר', 'מכונת כביסה', 'ארון בגדים', 'מקרר']
 
   const galleryArr = [
@@ -177,7 +184,7 @@ const StorageSummery = (props) => {
                   <input type="checkbox" id="terms" />
                 </div>
               </div>
-              { props.isMoving ? 
+              {props.isMoving ?
                 <>
                   <div className="order-summary-header">הובלה</div>
 
@@ -230,7 +237,7 @@ const StorageSummery = (props) => {
                       <input onChange={handleChange} type="checkbox" id="addPackage" />
                     </div>
 
-                    <div className="filter-btn-div">
+                    <div className="filter-btn-div ">
                       <label htmlFor="terms">
                         {" "}
                         קראתי ואני מאשר את{" "}
@@ -245,26 +252,49 @@ const StorageSummery = (props) => {
                 :
                 ""
               }
-              
+
               <div className="filter-btn-div send">
-                <Link className="filter-btn" to="/storagepay" >
-                  <p>
+                <Link className="filter-btn storagePay light" to="/storagepay" >
+                  <div className="rightPay">
+                    <h1> הזמנת </h1>
+                    <h3>אחסנה בלבד </h3>
+                  </div>
+                  <div className="leftPay">
+                    <p>חודש 1 (מתוך 3):</p>
+                    <h5>1000 ש"ח</h5>
+                    <p>(כולל מע"מ)</p>
+                  </div>
+
+
+                  {/* <p>
                     מחיר אחסנה כולל מע"מ: 1000 ש"ח
                   </p>
                   <h1 className='transportSummeryBtnApprove1'>
                     הזמנת אחסנה בלבד
-                  </h1>
+                  </h1> */}
                 </Link>
               </div>
 
               <div className="filter-btn-div send">
-                <Link className="filter-btn" to="/storagepay" >
-                  <p>
+                <Link className="filter-btn storagePay"
+                  to="#"
+                // to="/storagepay" 
+                >
+                  <div className="rightPay" onClick={handleShowOnly}>
+                    <h1> הזמנת </h1>
+                    <h3>אחסנה והובלה </h3>
+                  </div>
+                  <div className="leftPay">
+                    <p>חודש 1 (מתוך 3) + הובלה:</p>
+                    <h5>3000 ש"ח</h5>
+                    <p>(כולל מע"מ)</p>
+                  </div>
+                  {/* <p>
                     מחיר אחסנה והובלה כולל מע"מ: {totalPrice} ש"ח
                   </p>
                   <h1 className='transportSummeryBtnApprove1'>
                     הזמנת אחסנה והובלה
-                  </h1>
+                  </h1> */}
                 </Link>
               </div>
             </Form>
@@ -275,7 +305,24 @@ const StorageSummery = (props) => {
 
       <Reviews />
       <Footer />
-
+      <Modal show={only} onHide={handleCloseOnly} className="only">
+        <Modal.Header closeButton>
+          <Modal.Title className="modal-title">{"לתשומת ליבך:"}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h6>התשלום המקוון בעמוד הבא הוא לאחסנה בלבד!</h6>
+          <p>אישור הזמנת ההובלה יישלח למייל שלך ונציגנו ייצור עמך קשר בהקדם לתיאום והסדרת תשלום ההובלה</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Link to={"/storagepay"}>
+            <Button variant="warning"
+            // className="filter-btn storagePay "
+            >
+              הבנתי
+            </Button>
+          </Link>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };
