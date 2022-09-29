@@ -14,7 +14,7 @@ import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 
 //images
 import bannerImg from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
-import mainImg from "../../assets/images/MT/4.jpg";
+// import mainImg from "../../assets/images/MT/4.jpg";
 import galleryImg1 from "../../assets/images/MT/6.jpg";
 import galleryImg2 from "../../assets/images/MT/GettyImages-135385164_pczbmr.jpg";
 import galleryImg3 from "../../assets/images/MT/moving-checklist-2000-6ec63f4c4aa94bf9b9cb32f80bfd97a7.jpg";
@@ -24,7 +24,7 @@ import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
 import WhereAndWhen from '../repeats/whereAndWhen/WhereAndWhen';
 import PersonalDetails from '../repeats/personalDetails/PersonalDetails';
 
-const TransportGetBack = () => {
+const TransportGetBack = (props) => {
 
     const galleryArr = [
         {
@@ -74,7 +74,7 @@ const TransportGetBack = () => {
                 <div className="splitDiv">
                     <div className="imagesSide">
                         <SideGallery
-                            mainImg={mainImg}
+                            mainImg={props.mainLogo}
                             header='שירותי הובלות'
                             galleryArr={galleryArr}
                         />

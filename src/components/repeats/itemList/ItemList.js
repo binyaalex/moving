@@ -156,6 +156,7 @@ const ItemList = (props) => {
               </div>
             </ListGroup.Item>
           </ListGroup>
+          <h5 className="cubAmount" >כמות שטח נדרשת: <strong>2 קו"ב</strong></h5>
         </div>
       </div>
       <Modal show={show} onHide={handleClose} className="modal">

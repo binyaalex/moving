@@ -13,7 +13,7 @@ import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 
 //images
 import bannerImg from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg";
-import mainImg from "../../assets/images/MT/4.jpg";
+// import mainImg from "../../assets/images/MT/4.jpg";
 import galleryImg1 from "../../assets/images/MT/6.jpg";
 import galleryImg2 from "../../assets/images/MT/GettyImages-135385164_pczbmr.jpg";
 import galleryImg3 from "../../assets/images/MT/moving-checklist-2000-6ec63f4c4aa94bf9b9cb32f80bfd97a7.jpg";
@@ -21,7 +21,7 @@ import galleryImg4 from "../../assets/images/MT/6-Common-Mistakes-to-Avoid-When-
 import galleryImg5 from "../../assets/images/MT/AdobeStock_300477109-min_a23ba322c2da1cd76ade9dd3d3983ed1_2000.jpeg";
 import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
 
-const TransportOnlineItems = () => {
+const TransportOnlineItems = (props) => {
 
   const galleryArr = [
     {
@@ -68,7 +68,7 @@ const TransportOnlineItems = () => {
         <div className="splitDiv">
           <div className="imagesSide">
             <SideGallery
-              mainImg={mainImg}
+              mainImg={props.mainLogo}
               header='שירותי הובלות'
               galleryArr={galleryArr}
             />

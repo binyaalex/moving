@@ -17,7 +17,7 @@ import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 
 //images
 import bannerImg from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg";
-import mainImg from "../../assets/images/storing.jpg";
+// import mainImg from "../../assets/images/storing.jpg";
 import galleryImg1 from "../../assets/images/PS/912_0126.jpg";
 import galleryImg2 from "../../assets/images/PS/Boost_18_1101_149.jpg";
 import galleryImg3 from "../../assets/images/PS/Stokado_Self_Storage1lr-768x512-jpg.jpg";
@@ -101,7 +101,7 @@ const StorageSummery = (props) => {
         <div className="splitDiv">
           <div className="imagesSide">
             <SideGallery
-              mainImg={mainImg}
+              mainImg={props.mainLogo}
               header='שירותי אחסנה'
               galleryArr={galleryArr}
             />

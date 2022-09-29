@@ -18,7 +18,7 @@ import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 import Cubes from './Cubes';
 
 //images
-import storing from "../../assets/images/storing.jpg";
+// import storing from "../../assets/images/storing.jpg";
 import galleryImg1 from "../../assets/images/PS/912_0126.jpg";
 import galleryImg2 from "../../assets/images/PS/Boost_18_1101_149.jpg";
 import galleryImg3 from "../../assets/images/PS/Stokado_Self_Storage1lr-768x512-jpg.jpg";
@@ -93,7 +93,7 @@ const OnlineStorage = (props) => {
         <div className='splitDiv'>
           <div className="imagesSide">
             <SideGallery
-              mainImg={storing}
+              mainImg={props.mainLogo}
               header='אחסנה פרטית'
               galleryArr={galleryArr}
             />

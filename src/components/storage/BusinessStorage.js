@@ -15,7 +15,7 @@ import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 
 //images
-import storing from "../../assets/images/storing.jpg";
+// import storing from "../../assets/images/storing.jpg";
 import privateStorage from "../../assets/images/PS/privateStorage.jpg";
 import businessStorage from "../../assets/images/PS/businessStorage.jpg";
 import galleryImg1 from "../../assets/images/BS/50_off_banner_2-bg.jpeg";
@@ -46,7 +46,7 @@ const galleryArr = [
   },
 ]
 
-const BusinessStorage = () => {
+const BusinessStorage = (props) => {
   const [send, setSend] = useState(false);
   const handleSend = () => {
     setSend(true)
@@ -88,7 +88,7 @@ const BusinessStorage = () => {
         <div className='splitDiv'>
           <div className="imagesSide">
             <SideGallery
-              mainImg={storing}
+              mainImg={props.mainLogo}
               header='אחסנה עסקית'
               galleryArr={galleryArr}
             />
