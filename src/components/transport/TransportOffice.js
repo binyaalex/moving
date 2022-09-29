@@ -133,12 +133,12 @@ const TransportOffice = (props) => {
                             />
                             :
                             <>
-                                <h5 className="subTitle"> פריטים לדוגמה (200 - 1000 ₪)</h5>
+                                {/* <h5 className="subTitle"> פריטים לדוגמה (200 - 1000 ₪)</h5>
 
                                 <SimpleItemList
                                     itemsArr={itemsArr}
                                     withPrice={true}
-                                />
+                                /> */}
 
 
                                 <Form className="formBox">

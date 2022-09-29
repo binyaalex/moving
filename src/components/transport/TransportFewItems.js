@@ -80,24 +80,24 @@ const TransportFewItems = (props) => {
             img: closet3,
             link: '#',
         },
-        {
-            title: 'ארון 4 דלתות',
-            price: 600,
-            img: closet4,
-            link: '#',
-        },
-        {
-            title: 'ארון 5 דלתות',
-            price: 700,
-            img: closet5,
-            link: '#',
-        },
-        {
-            title: 'ארון 6 דלתות',
-            price: 800,
-            img: closet6,
-            link: '#',
-        },
+        // {
+        //     title: 'ארון 4 דלתות',
+        //     price: 600,
+        //     img: closet4,
+        //     link: '#',
+        // },
+        // {
+        //     title: 'ארון 5 דלתות',
+        //     price: 700,
+        //     img: closet5,
+        //     link: '#',
+        // },
+        // {
+        //     title: 'ארון 6 דלתות',
+        //     price: 800,
+        //     img: closet6,
+        //     link: '#',
+        // },
     ]
 
     const [send, setSend] = useState(false);
