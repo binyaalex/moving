@@ -29,9 +29,9 @@ const AddMoving = (props) => {
               <option value="privet home">בית פרטי</option>
             </Form.Select>
           </Row>
-        )  : ("")
+        ) : ("")
       }
-      
+
       <Row className="mb-3 row">
         <Form.Group as={Col} className="mb-3" controlId="formBasicFrom">
           <Form.Label>עיר</Form.Label>

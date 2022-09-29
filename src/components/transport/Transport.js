@@ -17,7 +17,7 @@ import clip from "../../assets/images/magal/clip.mp4";
 
 const Transport = () => {
 
-  useEffect (() => {
+  useEffect(() => {
     document.querySelector(".homeTitle").scrollIntoView();
   })
 
@@ -60,7 +60,7 @@ const Transport = () => {
       <Pros />
 
       <div className="servicesDiv">
-        <h1 className="homeTitle">סוגי הובלה</h1>
+        <h1 className="homeTitle">בחרו את סוג ההובלה שלכם</h1>
         <div className="services">
           {servicesArr.map((el, i) => {
             return (

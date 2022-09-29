@@ -6,10 +6,7 @@ const BtnsList = (props) => {
       link: "/",
       text: "בית",
     },
-    {
-      link: "#",
-      text: "יצירת קשר",
-    },
+
     {
       link: "/transport",
       text: "הובלה",
@@ -18,7 +15,10 @@ const BtnsList = (props) => {
       link: "/storage",
       text: "אחסנה",
     },
-
+    {
+      tel: "1-800-00-00-00",
+      // text: "1-800-00-00-00",
+    },
 
   ];
 
@@ -27,6 +27,7 @@ const BtnsList = (props) => {
       {btnsListArr.map((el, i) => {
         return (
           <Btn
+            tel={el.tel}
             link={el.link}
             text={el.text}
             key={i}
@@ -38,6 +39,7 @@ const BtnsList = (props) => {
           />
         );
       })}
+
     </div>
   );
 };

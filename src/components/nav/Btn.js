@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { AiFillPhone } from 'react-icons/ai';
 
 const Btn = (props) => {
   const url = useNavigate();
@@ -18,7 +19,7 @@ const Btn = (props) => {
 
   return (
     <div className="navBtnDiv nav">
-      {props.mobile ? (
+      {/* {props.mobile ? (
         <Link
           to={props.link}
           className={className}
@@ -45,7 +46,29 @@ const Btn = (props) => {
         >
           {props.text}
         </Link>
-      )}
+      )} */}
+      {props.tel ?
+        (<>
+          <a href={`tel:${props.tel}`} className={className}
+          >
+            {props.tel}
+          </a><AiFillPhone
+            fill="white" />
+        </>
+        ) : (
+          <Link
+            to={props.link}
+            className={className}
+            onClick={
+              props.const === "marketplace"
+                ? () => props.openSideBarComponent("marketplace")
+                : ""
+            }
+          >
+            {props.text}
+          </Link>
+        )}
+
     </div>
   );
 };

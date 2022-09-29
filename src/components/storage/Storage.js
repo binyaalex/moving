@@ -17,7 +17,7 @@ import businessStorage from "../../assets/images/PS/businessStorage.jpg";
 
 const Storage = () => {
 
-  useEffect (() => {
+  useEffect(() => {
     document.querySelector(".homeTitle").scrollIntoView();
   })
 
@@ -54,7 +54,7 @@ const Storage = () => {
       <Pros />
 
       <div className="servicesDiv">
-        <h1 className="homeTitle">סוגי אחסנה</h1>
+        <h1 className="homeTitle">בחרו את סוג האחסנה שלכם</h1>
         <div className="services">
           {servicesArr.map((el, i) => {
             return (
