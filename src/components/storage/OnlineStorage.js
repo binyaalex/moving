@@ -51,15 +51,15 @@ const galleryArr = [
 
 const radios = [
   {
-    name: 'לפי קו"ב',
+    name: 'לפי קוב',
     desc: 'תמחור מיידי לאחסנה בלבד',
-    incl: '(תמחור הובלה בשיחה עם נציג)',
+    incl: '',
     value: 'cubes'
   },
   {
     name: 'לפי פריטים',
     desc: 'תמחור מיידי לאחסנה והובלה',
-    incl: '(כולל מחשבון קו"ב)',
+    incl: '(כולל מחשבון קוב)',
     value: 'items'
   },
 ];
@@ -149,9 +149,10 @@ const OnlineStorage = (props) => {
                       value={radio.value}
                       checked={radioValue === radio.value}
                       onChange={(e) => setRadioValue(e.currentTarget.value)}
+                      style={{width: '50%'}}
                     >
-                      <h1>{radio.name}</h1>
-                      <p>{radio.desc}</p>
+                      <h1 className='toggleHeader'>{radio.name}</h1>
+                      {/* <p>{radio.desc}</p> */}
                       <p>{radio.incl}</p>
                     </ToggleButton>
                   ))}

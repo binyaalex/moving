@@ -220,3 +220,7 @@ textarea.form-control {
   width: unset;
   left: 0;
 }
+
+.toggleHeader {
+  font-size: 35px;
+}
