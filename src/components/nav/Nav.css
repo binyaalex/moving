@@ -50,10 +50,13 @@
 
 .navBtnDiv {
   padding-left: 3vw !important;
+  flex-direction: row-reverse;
 }
 
 .navBtnDiv>svg {
   margin: auto;
+  margin-left: 5px;
+  font-size: 20px;
 }
 
 .navBtn {
