@@ -35,10 +35,11 @@ const Home = () => {
         <img src={home} />
         <div className="banner_content">
           <div className="banner_title">
-            <h1>א.א מובילים &</h1>
-            <h1>ב.ר שירותי אחסון</h1>
-            <p>כל פתרונות ההובלה והאחסנה מרוכזים במקום אחד</p>
-            <p>שירות בכל רחבי הארץ באמינות ודיוק ללא פשרות</p>
+            <h1>הובלה ואחסנה </h1>
+            <h3>א.א מובילים & ב.ר שירותי אחסון</h3>
+            <div>כל הפתרונות מרוכזים עבורך במקום אחד</div>
+            <div>שירות בכל הארץ באמינות ודיוק ללא פשרות</div>
+
           </div>
           <div className="btnDiv">
             <MainBtn text='הובלה' link='/transport' />
