@@ -20,7 +20,7 @@ import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 
 //images
 import fewItems from "../../assets/images/TII/moving-service-worker-sealing-cardboard-box-GRM5SEC.jpg";
-import moving from "../../assets/images/moving.jpg";
+// import moving from "../../assets/images/moving.jpg";
 import kitchen from "../../assets/images/TI-price/kitchen.jpg";
 import closet2 from "../../assets/images/TI-price/Modern-MDF-Wooden-Bedroom-Clothes-Storage-2-Door-Wardrobe-HF-WB44-.jpg";
 import closet3 from "../../assets/images/TI-price/wardrobe00021-03eee9cf-ba75-4a4b-b5a4-44bbc88e0862-809x809.jpg";
@@ -34,7 +34,7 @@ import galleryImg4 from "../../assets/images/TII/moving-service-worker-sealing-c
 import galleryImg5 from "../../assets/images/TII/packing-furniture-moving-service.jpg";
 import galleryImg6 from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
 
-const TransportFewItems = () => {
+const TransportFewItems = (props) => {
 
     const galleryArr = [
         {
@@ -126,7 +126,7 @@ const TransportFewItems = () => {
                 <div className="splitDiv">
                     <div className="imagesSide">
                         <SideGallery
-                            mainImg={moving}
+                            mainImg={props.mainLogo}
                             header='שירותי הובלות'
                             galleryArr={galleryArr}
                         />

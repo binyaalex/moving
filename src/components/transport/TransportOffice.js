@@ -29,7 +29,7 @@ import computers from "../../assets/images/MFO-price/CORP5-min-800x480.jpg";
 import machines from "../../assets/images/MFO-price/pishevoe-oborudovanie.jpeg";
 import vehicles from "../../assets/images/MFO-price/15_03_02-tekhnologicheskie-mashiny-i-oborudovanie.jpg";
 
-const TransportOffice = () => {
+const TransportOffice = (props) => {
     const [send, setSend] = useState(false);
     const handleSend = () => {
         setSend(true)
@@ -113,7 +113,7 @@ const TransportOffice = () => {
                 <div className="splitDiv">
                     <div className="imagesSide">
                         <SideGallery
-                            mainImg={bannerImg}
+                            mainImg={props.mainLogo}
                             header='שירותי הובלות'
                             galleryArr={galleryArr}
                         />

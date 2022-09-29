@@ -15,7 +15,7 @@ import PersonalDetails from "../repeats/personalDetails/PersonalDetails";
 import PaymentSuccess from "../repeats/paymentSuccess/PaymentSuccess";
 
 //images
-import storing from "../../assets/images/storing.jpg";
+// import storing from "../../assets/images/storing.jpg";
 import getback from "../../assets/images/PS/getback.jpg";
 import galleryImg1 from "../../assets/images/PS/912_0126.jpg";
 import galleryImg2 from "../../assets/images/PS/Boost_18_1101_149.jpg";
@@ -45,7 +45,7 @@ const galleryArr = [
   },
 ]
 
-const GetBack = () => {
+const GetBack = (props) => {
 
   const [send, setSend] = useState(false);
   const handleSend = () => {
@@ -75,7 +75,7 @@ const GetBack = () => {
         <div className='splitDiv'>
           <div className="imagesSide">
             <SideGallery
-              mainImg={storing}
+              mainImg={props.mainLogo}
               header='אחסנה פרטית'
               galleryArr={galleryArr}
             />

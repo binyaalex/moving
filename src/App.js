@@ -22,6 +22,9 @@ import TransportOnlineItems from "./components/transport/TransportOnlineItems";
 import TransportOffice from "./components/transport/TransportOffice";
 import TransportSummery from "./components/transport/TransportSummery";
 
+import mainLogo from "./assets/images/aviLogo.jpeg";
+
+
 function App() {
   const [isMoving, setIsMoving] = useState(false);
 
@@ -33,20 +36,28 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/storage" element={<Storage />} />
         <Route path="/privatestorage" element={<PrivateStorage />} />
-        <Route path="/onlinestorage" element={<OnlineStorage  isMoving={isMoving} setIsMoving={setIsMoving} />} />
-        <Route path="/getbackstorage" element={<GetBack />} />
-        <Route path="/businessStorage" element={<BusinessStorage />} />
-        <Route path="/storageSummery" element={<StorageSummery isMoving={isMoving} setIsMoving={setIsMoving} />} />
+        <Route path="/onlinestorage" element={<OnlineStorage 
+          mainLogo={mainLogo}  
+          isMoving={isMoving} 
+          setIsMoving={setIsMoving} 
+        />} />
+        <Route path="/getbackstorage" element={<GetBack mainLogo={mainLogo} />} />
+        <Route path="/businessStorage" element={<BusinessStorage mainLogo={mainLogo} />} />
+        <Route path="/storageSummery" element={<StorageSummery 
+          mainLogo={mainLogo}
+          isMoving={isMoving} 
+          setIsMoving={setIsMoving} 
+        />} />
+        <Route path="/storagepay" element={<StoragePay mainLogo={mainLogo} />} />
 
         <Route path="/transport" element={<Transport />} />
-        <Route path="/transportfewitems" element={<TransportFewItems />} />
+        <Route path="/transportfewitems" element={<TransportFewItems mainLogo={mainLogo} />} />
         <Route path="/transportapartment" element={<TransportApartment />} />
-        <Route path="/transportgetback" element={<TransportGetBack />} />
-        <Route path="/transportonlineaddress" element={<TransportOnlineAddress />} />
-        <Route path="/transportonlineitems" element={<TransportOnlineItems />} />
-        <Route path="/transportoffice" element={<TransportOffice />} />
-        <Route path="/transportsummery" element={<TransportSummery />} />
-        <Route path="/storagepay" element={<StoragePay />} />
+        <Route path="/transportgetback" element={<TransportGetBack mainLogo={mainLogo} />} />
+        <Route path="/transportonlineaddress" element={<TransportOnlineAddress mainLogo={mainLogo} />} />
+        <Route path="/transportonlineitems" element={<TransportOnlineItems mainLogo={mainLogo} />} />
+        <Route path="/transportoffice" element={<TransportOffice mainLogo={mainLogo} />} />
+        <Route path="/transportsummery" element={<TransportSummery mainLogo={mainLogo} />} />
 
       </Routes>
     </BrowserRouter>
