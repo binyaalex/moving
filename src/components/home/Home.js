@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
@@ -15,6 +15,10 @@ import clip from "../../assets/images/magal/clip.mp4";
 import home from "../../assets/images/home-flipped.jpg";
 
 const Home = () => {
+
+  useEffect (() => {
+    document.querySelector(".webNav").scrollIntoView();
+  })
 
   const servicesArr = [
     {
