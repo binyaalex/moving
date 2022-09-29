@@ -64,10 +64,10 @@ const radios = [
   },
 ];
 
-const OnlineStorage = () => {
+const OnlineStorage = (props) => {
 
   // const [checked, setChecked] = useState(false);
-  const [isMoving, setIsMoving] = useState(false);
+  // const [isMoving, setIsMoving] = useState(false);
   const [radioValue, setRadioValue] = useState('items');
 
   return (
@@ -172,12 +172,12 @@ const OnlineStorage = () => {
                     type='checkbox'
                     label='הוספת שירותי הובלה'
                     variant="warning"
-                    onChange={() => setIsMoving(!isMoving)}
+                    onChange={() => props.setIsMoving(!props.isMoving)}
                   />
                 </Form.Group>
               </Row>
 
-              {isMoving && <AddMoving header='כתובת' withKindOfMoving={true} />}
+              {props.isMoving && <AddMoving header='כתובת' withKindOfMoving={true} />}
 
               <PersonalDetails />
 

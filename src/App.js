@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -23,6 +23,8 @@ import TransportOffice from "./components/transport/TransportOffice";
 import TransportSummery from "./components/transport/TransportSummery";
 
 function App() {
+  const [isMoving, setIsMoving] = useState(false);
+
   return (
     <BrowserRouter>
       <Nav />
@@ -31,10 +33,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/storage" element={<Storage />} />
         <Route path="/privatestorage" element={<PrivateStorage />} />
-        <Route path="/onlinestorage" element={<OnlineStorage />} />
+        <Route path="/onlinestorage" element={<OnlineStorage  isMoving={isMoving} setIsMoving={setIsMoving} />} />
         <Route path="/getbackstorage" element={<GetBack />} />
         <Route path="/businessStorage" element={<BusinessStorage />} />
-        <Route path="/storageSummery" element={<StorageSummery />} />
+        <Route path="/storageSummery" element={<StorageSummery isMoving={isMoving} setIsMoving={setIsMoving} />} />
 
         <Route path="/transport" element={<Transport />} />
         <Route path="/transportfewitems" element={<TransportFewItems />} />

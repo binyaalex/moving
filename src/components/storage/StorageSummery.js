@@ -25,8 +25,9 @@ import galleryImg4 from "../../assets/images/PS/businessStorage.jpg";
 import galleryImg5 from "../../assets/images/PS/maxresdefault.jpg";
 import galleryImg6 from "../../assets/images/PS/privateStorage.jpg";
 
-const StorageSummery = () => {
+const StorageSummery = (props) => {
 
+  // const [isMoving, setIsMoving] = useState();
   const [totalPrice, setTotalPrice] = useState(2000);
   const [checked, setChecked] = React.useState(false);
   const [isMonths, setIsMonths] = React.useState(false);
@@ -172,70 +173,75 @@ const StorageSummery = () => {
                   <input type="checkbox" id="terms" />
                 </div>
               </div>
+              { props.isMoving ? 
+                <>
+                  <div className="order-summary-header">הובלה</div>
 
-              <div className="order-summary-header">הובלה</div>
-
-              <div className="order-summary-container">
-                <div className="order-personaldetails">
-                  <p><strong>שם מלא:</strong> ישראלה ישראלי</p>
-                  <p>שעת תחילה הובלה: 09:00-12:00</p>
-                  <p>תאריך מעבר: 24/09/22</p>
-                </div>
-                <div className="present-address">
-                  <h5 className="address-title"><strong> כתובת נוכחית:</strong> נתניה</h5>
-                  <p> קומה: 2 </p>
-                  <p> מעלית: 4 נוסעים</p>
-                  <p> שביל כניסה חריג: אין</p>
-                  <p> מנוף: לא</p>
-                </div>
-                <div className="chosen-items-list">
-                  <strong>פריטים שבחרתי:</strong>
-                  <ul>
-                    {items.map((item, idx) => {
-                      const itemQuantity = items.filter(
-                        (item2) => item2 === item
-                      ).length;
-                      return (
-                        <li key={idx} className="li-item">
-                          {itemQuantity > 0 ? `${item}` : `${item} X ${itemQuantity}`}
-                        </li>
-                      );
-                    })}
-                  </ul>{" "}
-                </div>
-
-                <div className="contact-btnDiv send">
-                  <MainBtn text='הוספת/הסרת פריטים' link='/onlinestorage' />
-                </div>
-
-                <strong className="moving-total-price">
-                  מחיר הובלה כולל מע''מ: {totalPrice} ש''ח
-                </strong>
-              </div>
-
-
-              <div className="terms-container">
-
-                <div className="filter-btn-div">
-
-                  <label className="add-package" htmlFor="addPackage">
-                    הוספת שירותי אריזה ב-1000 ש''ח בלבד
-                  </label>
-                  <input onChange={handleChange} type="checkbox" id="addPackage" />
-                </div>
-
-                <div className="filter-btn-div">
-                  <label htmlFor="terms">
-                    {" "}
-                    קראתי ואני מאשר את{" "}
-                    <div onClick={handleShow1} className="terms">
-                      התקנון
+                  <div className="order-summary-container">
+                    <div className="order-personaldetails">
+                      <p><strong>שם מלא:</strong> ישראלה ישראלי</p>
+                      <p>שעת תחילה הובלה: 09:00-12:00</p>
+                      <p>תאריך מעבר: 24/09/22</p>
                     </div>
-                  </label>
-                  <input type="checkbox" id="terms" />
-                </div>
-              </div>
+                    <div className="present-address">
+                      <h5 className="address-title"><strong> כתובת נוכחית:</strong> נתניה</h5>
+                      <p> קומה: 2 </p>
+                      <p> מעלית: 4 נוסעים</p>
+                      <p> שביל כניסה חריג: אין</p>
+                      <p> מנוף: לא</p>
+                    </div>
+                    <div className="chosen-items-list">
+                      <strong>פריטים שבחרתי:</strong>
+                      <ul>
+                        {items.map((item, idx) => {
+                          const itemQuantity = items.filter(
+                            (item2) => item2 === item
+                          ).length;
+                          return (
+                            <li key={idx} className="li-item">
+                              {itemQuantity > 0 ? `${item}` : `${item} X ${itemQuantity}`}
+                            </li>
+                          );
+                        })}
+                      </ul>{" "}
+                    </div>
 
+                    <div className="contact-btnDiv send">
+                      <MainBtn text='הוספת/הסרת פריטים' link='/onlinestorage' />
+                    </div>
+
+                    <strong className="moving-total-price">
+                      מחיר הובלה כולל מע''מ: {totalPrice} ש''ח
+                    </strong>
+                  </div>
+
+
+                  <div className="terms-container">
+
+                    <div className="filter-btn-div">
+
+                      <label className="add-package" htmlFor="addPackage">
+                        הוספת שירותי אריזה ב-1000 ש''ח בלבד
+                      </label>
+                      <input onChange={handleChange} type="checkbox" id="addPackage" />
+                    </div>
+
+                    <div className="filter-btn-div">
+                      <label htmlFor="terms">
+                        {" "}
+                        קראתי ואני מאשר את{" "}
+                        <div onClick={handleShow1} className="terms">
+                          התקנון
+                        </div>
+                      </label>
+                      <input type="checkbox" id="terms" />
+                    </div>
+                  </div>
+                </>
+                :
+                ""
+              }
+              
               <div className="filter-btn-div send">
                 <Link className="filter-btn" to="/storagepay" >
                   <p>
