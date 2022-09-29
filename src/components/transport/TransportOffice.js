@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // bootstrap
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
@@ -30,6 +30,11 @@ import machines from "../../assets/images/MFO-price/pishevoe-oborudovanie.jpeg";
 import vehicles from "../../assets/images/MFO-price/15_03_02-tekhnologicheskie-mashiny-i-oborudovanie.jpg";
 
 const TransportOffice = (props) => {
+
+    useEffect (() => {
+        document.querySelector(".homeTitle").scrollIntoView();
+    })
+
     const [send, setSend] = useState(false);
     const handleSend = () => {
         setSend(true)
