@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Storage.css";
 
@@ -15,6 +15,10 @@ import online from "../../assets/images/PS/online.jpg";
 import getback from "../../assets/images/PS/getback.jpg";
 
 const PrivateStorage = () => {
+
+  useEffect (() => {
+    document.querySelector(".homeTitle").scrollIntoView();
+  })
 
   const servicesArr = [
     {

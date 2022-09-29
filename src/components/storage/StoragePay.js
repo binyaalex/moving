@@ -1,5 +1,5 @@
 import '../pay/addCard/AddCard.css'
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 //components
 import MainBtn from '../repeats/mainBtn/MainBtn'
@@ -22,6 +22,10 @@ import cardTmg from "../../assets/images/icons/add_card.png";
 import masterCard from "../../assets/images/icons/master_card.png";
 
 const StoragePay = (props) => {
+
+  useEffect (() => {
+    document.querySelector(".homeTitle").scrollIntoView();
+  })
 
   // const [totalPrice, setTotalPrice] = useState(2000);
   const [send, setSend] = useState(false);

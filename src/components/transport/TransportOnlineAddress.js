@@ -1,3 +1,5 @@
+import React, { useEffect } from "react";
+
 // bootstrap
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
@@ -22,6 +24,10 @@ import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
 import AddMoving from '../storage/AddMoving';
 
 const TransportOnlineAddress = (props) => {
+
+    useEffect (() => {
+        document.querySelector(".homeTitle").scrollIntoView();
+    })
 
     const galleryArr = [
         {

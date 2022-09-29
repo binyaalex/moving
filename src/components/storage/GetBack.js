@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Storage.css";
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
@@ -46,6 +46,10 @@ const galleryArr = [
 ]
 
 const GetBack = (props) => {
+
+  useEffect (() => {
+    document.querySelector(".homeTitle").scrollIntoView();
+  })
 
   const [send, setSend] = useState(false);
   const handleSend = () => {

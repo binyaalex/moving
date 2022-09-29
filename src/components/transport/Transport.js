@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Transport.css";
 
@@ -16,6 +16,10 @@ import office from "../../assets/images/MOF/shutterstock_313432601.jpg";
 import clip from "../../assets/images/magal/clip.mp4";
 
 const Transport = () => {
+
+  useEffect (() => {
+    document.querySelector(".homeTitle").scrollIntoView();
+  })
 
   const servicesArr = [
     {

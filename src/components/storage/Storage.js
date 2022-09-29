@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Storage.css";
 
@@ -16,6 +16,10 @@ import businessStorage from "../../assets/images/PS/businessStorage.jpg";
 
 
 const Storage = () => {
+
+  useEffect (() => {
+    document.querySelector(".homeTitle").scrollIntoView();
+  })
 
   const servicesArr = [
     {

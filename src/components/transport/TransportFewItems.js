@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./TransportFewItems.css";
 
@@ -35,6 +35,10 @@ import galleryImg5 from "../../assets/images/TII/packing-furniture-moving-servic
 import galleryImg6 from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
 
 const TransportFewItems = (props) => {
+
+    useEffect (() => {
+        document.querySelector(".homeTitle").scrollIntoView();
+    })
 
     const galleryArr = [
         {

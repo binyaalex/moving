@@ -66,6 +66,10 @@ const radios = [
 
 const OnlineStorage = (props) => {
 
+  useEffect (() => {
+    document.querySelector(".homeTitle").scrollIntoView();
+  })
+
   // const [checked, setChecked] = useState(false);
   // const [isMoving, setIsMoving] = useState(false);
   const [radioValue, setRadioValue] = useState('items');

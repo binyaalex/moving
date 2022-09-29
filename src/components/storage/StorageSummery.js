@@ -1,6 +1,6 @@
 // import './TransportSummery.css'
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // bootstrap
 import Form from 'react-bootstrap/Form';
@@ -26,6 +26,10 @@ import galleryImg5 from "../../assets/images/PS/maxresdefault.jpg";
 import galleryImg6 from "../../assets/images/PS/privateStorage.jpg";
 
 const StorageSummery = (props) => {
+
+  useEffect (() => {
+    document.querySelector(".homeTitle").scrollIntoView();
+  })
 
   // const [isMoving, setIsMoving] = useState();
   const [totalPrice, setTotalPrice] = useState(2000);

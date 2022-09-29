@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // bootstrap
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
@@ -25,6 +25,10 @@ import WhereAndWhen from '../repeats/whereAndWhen/WhereAndWhen';
 import PersonalDetails from '../repeats/personalDetails/PersonalDetails';
 
 const TransportGetBack = (props) => {
+
+    useEffect (() => {
+        document.querySelector(".homeTitle").scrollIntoView();
+    })
 
     const galleryArr = [
         {

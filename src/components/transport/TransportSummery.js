@@ -1,5 +1,5 @@
 import './TransportSummery.css'
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // bootstrap
 import Form from 'react-bootstrap/Form';
@@ -23,6 +23,10 @@ import galleryImg5 from "../../assets/images/MT/AdobeStock_300477109-min_a23ba32
 import galleryImg6 from "../../assets/images/MT/movers-collegeville.jpg";
 
 const TransportSummery = (props) => {
+
+    useEffect (() => {
+        document.querySelector(".homeTitle").scrollIntoView();
+    })
 
     const [totalPrice, setTotalPrice] = useState(2000);
     const [checked, setChecked] = React.useState(false);

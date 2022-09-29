@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 //components
@@ -14,6 +14,10 @@ import online from "../../assets/images/TII/0d29cde6ea92435fc56819d5d1f3d55a.jpg
 import getback from "../../assets/images/TII/Two-Movers-With-Box-On-Stairca-97352312.jpg";
 
 const TransportApartment = () => {
+
+  useEffect (() => {
+    document.querySelector(".homeTitle").scrollIntoView();
+  })
 
   const servicesArr = [
     {
